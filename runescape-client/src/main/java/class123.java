@@ -84,10 +84,10 @@ public enum class123 implements MouseWheel {
 	)
 	public static void method2781(int var0, int var1, int var2, boolean var3) {
 		PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.field2955, Client.packetWriter.isaacCipher); // L: 12656
-		var4.packetBuffer.method7551(var1); // L: 12657
-		var4.packetBuffer.method7550(var0); // L: 12658
-		var4.packetBuffer.method7596(var2); // L: 12659
-		var4.packetBuffer.writeIntME(var3 ? Client.field482 * -1673751255 * 1079039769 : 0); // L: 12660
+		var4.packetBuffer.writeShortAdd(var1); // L: 12657
+		var4.packetBuffer.writeShortLE(var0); // L: 12658
+		var4.packetBuffer.writeByteSub(var2); // L: 12659
+		var4.packetBuffer.writeIntIME(var3 ? Client.field482 * -1673751255 * 1079039769 : 0); // L: 12660
 		Client.packetWriter.addNode(var4); // L: 12661
 	} // L: 12662
 }

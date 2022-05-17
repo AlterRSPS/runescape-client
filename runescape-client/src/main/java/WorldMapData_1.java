@@ -303,6 +303,6 @@ public class WorldMapData_1 extends AbstractWorldMapData {
 		}
 
 		String var4 = "runescape.com"; // L: 12537
-		return var2 + var0 + "." + var4 + "/l=" + class263.clientLanguage + "/a=" + class230.field2807 + var3 + "/"; // L: 12538
+		return var2 + var0 + "." + var4 + "/l=" + ZoneUpdate.clientLanguage + "/a=" + class230.field2807 + var3 + "/"; // L: 12538
 	}
 }

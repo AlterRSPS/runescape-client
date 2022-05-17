@@ -16,7 +16,7 @@ public class UserComparator8 extends AbstractUserComparator {
 	@ObfuscatedSignature(
 		descriptor = "Loa;"
 	)
-	static class392 field1378;
+	static class392 o_field1210;
 	@ObfuscatedName("o")
 	@Export("reversed")
 	final boolean reversed;

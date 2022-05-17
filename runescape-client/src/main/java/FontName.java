@@ -205,7 +205,7 @@ public class FontName {
 						if (var0 == ScriptOpcodes.CHAT_SENDPUBLIC) { // L: 3606
 							var8 = Interpreter.Interpreter_stringStack[--class9.Interpreter_stringStackSize]; // L: 3607
 							var7 = Interpreter.Interpreter_intStack[--class12.Interpreter_intStackSize]; // L: 3608
-							var12 = GrandExchangeOfferNameComparator.method5784(var7, var8, class263.clientLanguage, -1); // L: 3609
+							var12 = GrandExchangeOfferNameComparator.method5784(var7, var8, ZoneUpdate.clientLanguage, -1); // L: 3609
 							Client.packetWriter.addNode(var12); // L: 3610
 							return 1; // L: 3611
 						} else if (var0 == ScriptOpcodes.CHAT_SENDPRIVATE) { // L: 3613
@@ -225,7 +225,7 @@ public class FontName {
 							class12.Interpreter_intStackSize -= 2; // L: 3629
 							var7 = Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize]; // L: 3630
 							var9 = Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize + 1]; // L: 3631
-							var6 = GrandExchangeOfferNameComparator.method5784(var7, var8, class263.clientLanguage, var9); // L: 3632
+							var6 = GrandExchangeOfferNameComparator.method5784(var7, var8, ZoneUpdate.clientLanguage, var9); // L: 3632
 							Client.packetWriter.addNode(var6); // L: 3633
 							return 1; // L: 3634
 						} else if (var0 != ScriptOpcodes.CHAT_PLAYERNAME) { // L: 3636

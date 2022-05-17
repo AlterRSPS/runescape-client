@@ -111,7 +111,7 @@ public class class136 extends class144 {
 
 				if (Client.gameState == 10 || Client.gameState == 11) { // L: 310
 					int var4;
-					if (Language.Language_EN == class263.clientLanguage) { // L: 311
+					if (Language.Language_EN == ZoneUpdate.clientLanguage) { // L: 311
 						if (MouseHandler.MouseHandler_lastButton == 1 || !Login.mouseCam && MouseHandler.MouseHandler_lastButton == 4) { // L: 312
 							var4 = Login.xPadding + 5; // L: 313
 							short var5 = 463; // L: 314

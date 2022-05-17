@@ -1904,7 +1904,7 @@ public class Widget extends Node {
 		}
 
 		if (Client.gameState >= 25) { // L: 4354
-			PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.field3054, Client.packetWriter.isaacCipher); // L: 4356
+			PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.WINDOW_STATUS, Client.packetWriter.isaacCipher); // L: 4356
 			var1.packetBuffer.writeByte(ClanChannelMember.getWindowedMode()); // L: 4357
 			var1.packetBuffer.writeShort(GraphicsObject.canvasWidth); // L: 4358
 			var1.packetBuffer.writeShort(class433.canvasHeight); // L: 4359

@@ -8,7 +8,7 @@ public class class145 {
 	@ObfuscatedGetter(
 		intValue = -627241765
 	)
-	static int field1690;
+	static int Zone_Y;
 	@ObfuscatedName("o")
 	@ObfuscatedGetter(
 		longValue = -4087609161665050259L

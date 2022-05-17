@@ -17,522 +17,522 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3166;
+	public static final ServerPacket REBUILD_REGION_NORMAL;
 	@ObfuscatedName("q")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3085;
+	public static final ServerPacket UNKNOWN1;
 	@ObfuscatedName("l")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3152;
+	public static final ServerPacket RESET_ANIMS;
 	@ObfuscatedName("k")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3087;
+	public static final ServerPacket IF_SETANIM;
 	@ObfuscatedName("a")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3088;
+	public static final ServerPacket TRADING_POST_UPDATE;
 	@ObfuscatedName("m")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3170;
+	public static final ServerPacket IF_MOVESUB;
 	@ObfuscatedName("p")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3090;
+	public static final ServerPacket UPDATE_RUNWEIGHT;
 	@ObfuscatedName("s")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3179;
+	public static final ServerPacket TRADING_POST_RESULTS;
 	@ObfuscatedName("r")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3149;
+	public static final ServerPacket UPDATE_IGNORELIST;
 	@ObfuscatedName("v")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3140;
+	public static final ServerPacket HEAT_MAP;
 	@ObfuscatedName("y")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3093;
+	public static final ServerPacket UPDATE_SITESETTINGS;
 	@ObfuscatedName("c")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3112;
+	public static final ServerPacket UPDATE_STAT;
 	@ObfuscatedName("w")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3096;
+	public static final ServerPacket MIDI_JINGLE;
 	@ObfuscatedName("b")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3092;
+	public static final ServerPacket FRIENDLIST_LOADED;
 	@ObfuscatedName("t")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3089;
+	public static final ServerPacket RUNCLIENTSCRIPT;
 	@ObfuscatedName("g")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3099;
+	public static final ServerPacket UPDATE_RUNENERGY;
 	@ObfuscatedName("x")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3100;
+	public static final ServerPacket NPC_INFO_LARGE;
 	@ObfuscatedName("n")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3101;
+	public static final ServerPacket UPDATE_FRIENDCHAT_CHANNEL_FULL;
 	@ObfuscatedName("e")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3102;
+	public static final ServerPacket TRIGGER_ONDIALOGABORT;
 	@ObfuscatedName("h")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3103;
+	public static final ServerPacket MESSAGE_CLANCHANNEL;
 	@ObfuscatedName("f")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3187;
+	public static final ServerPacket NPC_UPDATE_SMALL_LEGACY;
 	@ObfuscatedName("d")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3105;
+	public static final ServerPacket UPDATE_ZONE_PARTIAL_FOLLOWS;
 	@ObfuscatedName("j")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3106;
+	public static final ServerPacket UPDATE_FRIENDLIST;
 	@ObfuscatedName("z")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3107;
+	public static final ServerPacket IF_SETTEXT;
 	@ObfuscatedName("i")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3108;
+	public static final ServerPacket MESSAGE_FRIENDCHANNEL;
 	@ObfuscatedName("u")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3109;
+	public static final ServerPacket SET_MAP_FLAG;
 	@ObfuscatedName("ag")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3139;
+	public static final ServerPacket LOGOUT_TRANSFER;
 	@ObfuscatedName("ar")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3111;
+	public static final ServerPacket LOGOUT;
 	@ObfuscatedName("am")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3182;
+	public static final ServerPacket IF_CLOSESUB;
 	@ObfuscatedName("ac")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3084;
+	public static final ServerPacket UPDATE_FRIENDCHAT_CHANNEL_SINGLEUSER;
 	@ObfuscatedName("ab")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3183;
+	public static final ServerPacket UNKNOWN11;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3115;
+	public static final ServerPacket CLANCHANNEL_FULL;
 	@ObfuscatedName("ae")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3091;
+	public static final ServerPacket UPDATE_ZONE_PARTIAL_ENCLOSED;
 	@ObfuscatedName("az")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3117;
+	public static final ServerPacket SYNTH_SOUND;
 	@ObfuscatedName("ap")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3118;
+	public static final ServerPacket VARP_LARGE;
 	@ObfuscatedName("as")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3119;
+	public static final ServerPacket CAM_LOOKAT;
 	@ObfuscatedName("au")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3120;
+	public static final ServerPacket MESSAGE_GAME;
 	@ObfuscatedName("ak")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3121;
+	public static final ServerPacket IF_SETPOSITION;
 	@ObfuscatedName("af")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3122;
+	public static final ServerPacket VARCLAN_DISABLE;
 	@ObfuscatedName("al")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3123;
+	public static final ServerPacket UNKNOWN2;
 	@ObfuscatedName("aq")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3161;
+	public static final ServerPacket UPDATE_INV_STOP_TRANSMIT;
 	@ObfuscatedName("ad")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3125;
+	public static final ServerPacket GAMEFRAME_FULL;
 	@ObfuscatedName("an")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3124;
+	public static final ServerPacket UNKNOWN7;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3127;
+	public static final ServerPacket UPDATE_REBOOT_TIMER;
 	@ObfuscatedName("ah")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3154;
+	public static final ServerPacket PREFETCH_GAMEOBJECTS;
 	@ObfuscatedName("ao")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3129;
+	public static final ServerPacket CAM_MOVETO;
 	@ObfuscatedName("av")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3130;
+	public static final ServerPacket UNKNOWN6;
 	@ObfuscatedName("ai")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3131;
+	public static final ServerPacket TOGGLE_OCULUS_ORB;
 	@ObfuscatedName("ay")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3188;
+	public static final ServerPacket IF_OPENSUB;
 	@ObfuscatedName("aa")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3133;
+	public static final ServerPacket IF_OPENTOP;
 	@ObfuscatedName("ax")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3142;
+	public static final ServerPacket IF_SETNPCHEAD;
 	@ObfuscatedName("at")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3110;
+	public static final ServerPacket SYNC_CLIENT_VARCACHE;
 	@ObfuscatedName("br")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3114;
+	public static final ServerPacket UPDATE_INV_FULL;
 	@ObfuscatedName("ba")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3137;
+	public static final ServerPacket IF_SETCOLOUR;
 	@ObfuscatedName("bk")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3094;
+	public static final ServerPacket CHAT_FILTER_SETTINGS_PRIVATECHAT;
 	@ObfuscatedName("bi")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3190;
+	public static final ServerPacket UPDATE_INV_CLEAR;
 	@ObfuscatedName("bc")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3126;
+	public static final ServerPacket UPDATE_UID192;
 	@ObfuscatedName("bo")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3141;
+	public static final ServerPacket VARCLAN_ENABLE;
 	@ObfuscatedName("bl")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3180;
+	public static final ServerPacket NPC_UPDATE_SMALLL;
 	@ObfuscatedName("bs")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3143;
+	public static final ServerPacket OBJ_DEL;
 	@ObfuscatedName("bx")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3144;
+	public static final ServerPacket UPDATE_ZONE_FULL_FOLLOWS;
 	@ObfuscatedName("bd")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3153;
+	public static final ServerPacket IF_SETANGLE;
 	@ObfuscatedName("bj")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3146;
+	public static final ServerPacket MINIMAP_TOGGLE;
 	@ObfuscatedName("be")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3116;
+	public static final ServerPacket VARCLAN;
 	@ObfuscatedName("bf")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3148;
+	public static final ServerPacket IF_SETMODEL;
 	@ObfuscatedName("bz")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3097;
+	public static final ServerPacket IF_SETSCROLLPOS;
 	@ObfuscatedName("bv")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3150;
+	public static final ServerPacket MAP_ANIM;
 	@ObfuscatedName("bt")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3151;
+	public static final ServerPacket CLANSETTINGS_FULL;
 	@ObfuscatedName("bu")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3134;
+	public static final ServerPacket IF_SETHIDE;
 	@ObfuscatedName("bq")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3147;
+	public static final ServerPacket CAM_RESET;
 	@ObfuscatedName("bh")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3162;
+	public static final ServerPacket OBJ_COUNT;
 	@ObfuscatedName("bb")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3155;
+	public static final ServerPacket ENTER_FREECAM;
 	@ObfuscatedName("bm")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3156;
+	public static final ServerPacket IF_SETPLAYERHEAD;
 	@ObfuscatedName("by")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3157;
+	public static final ServerPacket IF1_MODELROTATE;
 	@ObfuscatedName("bn")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3158;
+	public static final ServerPacket UNKNOWN8;
 	@ObfuscatedName("bg")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3159;
+	public static final ServerPacket RESET_CLIENT_VARCACHE;
 	@ObfuscatedName("bp")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3160;
+	public static final ServerPacket HINT_ARROW;
 	@ObfuscatedName("bw")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3098;
+	public static final ServerPacket VARP_SMALL;
 	@ObfuscatedName("co")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3113;
+	public static final ServerPacket SET_PLAYER_OP;
 	@ObfuscatedName("ck")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3163;
+	public static final ServerPacket MESSAGE_PRIVATE_ECHO;
 	@ObfuscatedName("cr")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3164;
+	public static final ServerPacket PLAYER_INFO;
 	@ObfuscatedName("cv")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3165;
+	public static final ServerPacket MIDI_SONG;
 	@ObfuscatedName("cs")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3104;
+	public static final ServerPacket CHAT_FILTER_SETTINGS;
 	@ObfuscatedName("cm")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3167;
+	public static final ServerPacket LOC_DEL;
 	@ObfuscatedName("ca")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3168;
+	public static final ServerPacket CAM_SHAKE;
 	@ObfuscatedName("ci")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3169;
+	public static final ServerPacket LOC_ADD_CHANGE;
 	@ObfuscatedName("cx")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3135;
+	public static final ServerPacket AREA_SOUND;
 	@ObfuscatedName("cn")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3171;
+	public static final ServerPacket UNKNOWN5;
 	@ObfuscatedName("cc")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3172;
+	public static final ServerPacket UNKNOWN3;
 	@ObfuscatedName("cy")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3173;
+	public static final ServerPacket CLANSETTINGS_DELTA;
 	@ObfuscatedName("ct")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3174;
+	public static final ServerPacket IF_SETOBJECT;
 	@ObfuscatedName("cd")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3175;
+	public static final ServerPacket OBJ_ADD;
 	@ObfuscatedName("cw")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3176;
+	public static final ServerPacket LOGOUT_FULL;
 	@ObfuscatedName("cf")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3177;
+	public static final ServerPacket LOC_ANIM;
 	@ObfuscatedName("cq")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3132;
+	public static final ServerPacket UNKNOWN9;
 	@ObfuscatedName("cg")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3086;
+	public static final ServerPacket MESSAGE_PRIVATE;
 	@ObfuscatedName("cl")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3145;
+	public static final ServerPacket UPDATE_INV_PARTIAL;
 	@ObfuscatedName("cu")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3181;
+	public static final ServerPacket CLANCHANNEL_DELTA;
 	@ObfuscatedName("ch")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3095;
+	public static final ServerPacket REFLECTION_CHECK;
 	@ObfuscatedName("cz")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3186;
+	public static final ServerPacket SEND_PING;
 	@ObfuscatedName("ce")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3184;
+	public static final ServerPacket OPEN_URL;
 	@ObfuscatedName("cj")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3185;
+	public static final ServerPacket MESSAGE_CLANCHANNEL_SYSTEM;
 	@ObfuscatedName("cb")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3178;
+	public static final ServerPacket MAPPROJ_ANIM;
 	@ObfuscatedName("cp")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket field3136;
+	public static final ServerPacket REBUILD_REGION;
 	@ObfuscatedName("dc")
 	@ObfuscatedGetter(
 		intValue = -1591353555
@@ -547,110 +547,110 @@ public class ServerPacket {
 	public final int length;
 
 	static {
-		field3166 = new ServerPacket(0, -2); // L: 5
-		field3085 = new ServerPacket(1, 17); // L: 6
-		field3152 = new ServerPacket(2, 0); // L: 7
-		field3087 = new ServerPacket(3, 6); // L: 8
-		field3088 = new ServerPacket(4, 20); // L: 9
-		field3170 = new ServerPacket(5, 8); // L: 10
-		field3090 = new ServerPacket(6, 2); // L: 11
-		field3179 = new ServerPacket(7, -2); // L: 12
-		field3149 = new ServerPacket(8, -2); // L: 13
-		field3140 = new ServerPacket(9, 1); // L: 14
-		field3093 = new ServerPacket(10, -1); // L: 15
-		field3112 = new ServerPacket(11, 6); // L: 16
-		field3096 = new ServerPacket(12, 5); // L: 17
-		field3092 = new ServerPacket(13, 0); // L: 18
-		field3089 = new ServerPacket(14, -2); // L: 19
-		field3099 = new ServerPacket(15, 1); // L: 20
-		field3100 = new ServerPacket(16, -2); // L: 21
-		field3101 = new ServerPacket(17, -2); // L: 22
-		field3102 = new ServerPacket(18, 0); // L: 23
-		field3103 = new ServerPacket(19, -1); // L: 24
-		field3187 = new ServerPacket(20, -2); // L: 25
-		field3105 = new ServerPacket(21, 2); // L: 26
-		field3106 = new ServerPacket(22, -2); // L: 27
-		field3107 = new ServerPacket(23, -2); // L: 28
-		field3108 = new ServerPacket(24, -1); // L: 29
-		field3109 = new ServerPacket(25, 2); // L: 30
-		field3139 = new ServerPacket(26, -1); // L: 31
-		field3111 = new ServerPacket(27, 1); // L: 32
-		field3182 = new ServerPacket(28, 4); // L: 33
-		field3084 = new ServerPacket(29, -1); // L: 34
-		field3183 = new ServerPacket(30, -2); // L: 35
-		field3115 = new ServerPacket(31, -2); // L: 36
-		field3091 = new ServerPacket(32, -2); // L: 37
-		field3117 = new ServerPacket(33, 5); // L: 38
-		field3118 = new ServerPacket(34, 6); // L: 39
-		field3119 = new ServerPacket(35, 6); // L: 40
-		field3120 = new ServerPacket(36, -1); // L: 41
-		field3121 = new ServerPacket(37, 8); // L: 42
-		field3122 = new ServerPacket(38, 0); // L: 43
-		field3123 = new ServerPacket(39, 8); // L: 44
-		field3161 = new ServerPacket(40, 2); // L: 45
-		field3125 = new ServerPacket(41, -2); // L: 46
-		field3124 = new ServerPacket(42, 6); // L: 47
-		field3127 = new ServerPacket(43, 2); // L: 48
-		field3154 = new ServerPacket(44, 14); // L: 49
-		field3129 = new ServerPacket(45, 6); // L: 50
-		field3130 = new ServerPacket(46, 5); // L: 51
-		field3131 = new ServerPacket(47, 4); // L: 52
-		field3188 = new ServerPacket(48, 7); // L: 53
-		field3133 = new ServerPacket(49, 2); // L: 54
-		field3142 = new ServerPacket(50, 6); // L: 55
-		field3110 = new ServerPacket(51, 0); // L: 56
-		field3114 = new ServerPacket(52, -2); // L: 57
-		field3137 = new ServerPacket(53, 6); // L: 58
-		field3094 = new ServerPacket(54, 1); // L: 59
-		field3190 = new ServerPacket(55, 4); // L: 60
-		field3126 = new ServerPacket(56, 28); // L: 61
-		field3141 = new ServerPacket(57, 0); // L: 62
-		field3180 = new ServerPacket(58, -2); // L: 63
-		field3143 = new ServerPacket(59, 3); // L: 64
-		field3144 = new ServerPacket(60, 2); // L: 65
-		field3153 = new ServerPacket(61, 10); // L: 66
-		field3146 = new ServerPacket(62, 1); // L: 67
-		field3116 = new ServerPacket(63, -1); // L: 68
-		field3148 = new ServerPacket(64, 6); // L: 69
-		field3097 = new ServerPacket(65, 6); // L: 70
-		field3150 = new ServerPacket(66, 6); // L: 71
-		field3151 = new ServerPacket(67, -2); // L: 72
-		field3134 = new ServerPacket(68, 5); // L: 73
-		field3147 = new ServerPacket(69, 0); // L: 74
-		field3162 = new ServerPacket(70, 7); // L: 75
-		field3155 = new ServerPacket(71, 1); // L: 76
-		field3156 = new ServerPacket(72, 4); // L: 77
-		field3157 = new ServerPacket(73, 8); // L: 78
-		field3158 = new ServerPacket(74, 8); // L: 79
-		field3159 = new ServerPacket(75, 0); // L: 80
-		field3160 = new ServerPacket(76, 6); // L: 81
-		field3098 = new ServerPacket(77, 3); // L: 82
-		field3113 = new ServerPacket(78, -1); // L: 83
-		field3163 = new ServerPacket(79, -2); // L: 84
-		field3164 = new ServerPacket(80, -2); // L: 85
-		field3165 = new ServerPacket(81, 2); // L: 86
-		field3104 = new ServerPacket(82, 2); // L: 87
-		field3167 = new ServerPacket(83, 4); // L: 88
-		field3168 = new ServerPacket(84, 4); // L: 89
-		field3169 = new ServerPacket(85, 2); // L: 90
-		field3135 = new ServerPacket(86, 5); // L: 91
-		field3171 = new ServerPacket(87, 12); // L: 92
-		field3172 = new ServerPacket(88, 8); // L: 93
-		field3173 = new ServerPacket(89, -2); // L: 94
-		field3174 = new ServerPacket(90, 10); // L: 95
-		field3175 = new ServerPacket(91, 5); // L: 96
-		field3176 = new ServerPacket(92, 0); // L: 97
-		field3177 = new ServerPacket(93, 4); // L: 98
-		field3132 = new ServerPacket(94, 4); // L: 99
-		field3086 = new ServerPacket(95, -2); // L: 100
-		field3145 = new ServerPacket(96, -2); // L: 101
-		field3181 = new ServerPacket(97, -2); // L: 102
-		field3095 = new ServerPacket(98, -2); // L: 103
-		field3186 = new ServerPacket(99, 8); // L: 104
-		field3184 = new ServerPacket(100, -2); // L: 105
-		field3185 = new ServerPacket(101, -1); // L: 106
-		field3178 = new ServerPacket(102, 15); // L: 107
-		field3136 = new ServerPacket(103, -2); // L: 108
+		REBUILD_REGION_NORMAL = new ServerPacket(0, -2); // L: 5
+		UNKNOWN1 = new ServerPacket(1, 17); // L: 6
+		RESET_ANIMS = new ServerPacket(2, 0); // L: 7
+		IF_SETANIM = new ServerPacket(3, 6); // L: 8
+		TRADING_POST_UPDATE = new ServerPacket(4, 20); // L: 9
+		IF_MOVESUB = new ServerPacket(5, 8); // L: 10
+		UPDATE_RUNWEIGHT = new ServerPacket(6, 2); // L: 11
+		TRADING_POST_RESULTS = new ServerPacket(7, -2); // L: 12
+		UPDATE_IGNORELIST = new ServerPacket(8, -2); // L: 13
+		HEAT_MAP = new ServerPacket(9, 1); // L: 14
+		UPDATE_SITESETTINGS = new ServerPacket(10, -1); // L: 15
+		UPDATE_STAT = new ServerPacket(11, 6); // L: 16
+		MIDI_JINGLE = new ServerPacket(12, 5); // L: 17
+		FRIENDLIST_LOADED = new ServerPacket(13, 0); // L: 18
+		RUNCLIENTSCRIPT = new ServerPacket(14, -2); // L: 19
+		UPDATE_RUNENERGY = new ServerPacket(15, 1); // L: 20
+		NPC_INFO_LARGE = new ServerPacket(16, -2); // L: 21
+		UPDATE_FRIENDCHAT_CHANNEL_FULL = new ServerPacket(17, -2); // L: 22
+		TRIGGER_ONDIALOGABORT = new ServerPacket(18, 0); // L: 23
+		MESSAGE_CLANCHANNEL = new ServerPacket(19, -1); // L: 24
+		NPC_UPDATE_SMALL_LEGACY = new ServerPacket(20, -2); // L: 25
+		UPDATE_ZONE_PARTIAL_FOLLOWS = new ServerPacket(21, 2); // L: 26
+		UPDATE_FRIENDLIST = new ServerPacket(22, -2); // L: 27
+		IF_SETTEXT = new ServerPacket(23, -2); // L: 28
+		MESSAGE_FRIENDCHANNEL = new ServerPacket(24, -1); // L: 29
+		SET_MAP_FLAG = new ServerPacket(25, 2); // L: 30
+		LOGOUT_TRANSFER = new ServerPacket(26, -1); // L: 31
+		LOGOUT = new ServerPacket(27, 1); // L: 32
+		IF_CLOSESUB = new ServerPacket(28, 4); // L: 33
+		UPDATE_FRIENDCHAT_CHANNEL_SINGLEUSER = new ServerPacket(29, -1); // L: 34
+		UNKNOWN11 = new ServerPacket(30, -2); // L: 35
+		CLANCHANNEL_FULL = new ServerPacket(31, -2); // L: 36
+		UPDATE_ZONE_PARTIAL_ENCLOSED = new ServerPacket(32, -2); // L: 37
+		SYNTH_SOUND = new ServerPacket(33, 5); // L: 38
+		VARP_LARGE = new ServerPacket(34, 6); // L: 39
+		CAM_LOOKAT = new ServerPacket(35, 6); // L: 40
+		MESSAGE_GAME = new ServerPacket(36, -1); // L: 41
+		IF_SETPOSITION = new ServerPacket(37, 8); // L: 42
+		VARCLAN_DISABLE = new ServerPacket(38, 0); // L: 43
+		UNKNOWN2 = new ServerPacket(39, 8); // L: 44
+		UPDATE_INV_STOP_TRANSMIT = new ServerPacket(40, 2); // L: 45
+		GAMEFRAME_FULL = new ServerPacket(41, -2); // L: 46
+		UNKNOWN7 = new ServerPacket(42, 6); // L: 47
+		UPDATE_REBOOT_TIMER = new ServerPacket(43, 2); // L: 48
+		PREFETCH_GAMEOBJECTS = new ServerPacket(44, 14); // L: 49
+		CAM_MOVETO = new ServerPacket(45, 6); // L: 50
+		UNKNOWN6 = new ServerPacket(46, 5); // L: 51
+		TOGGLE_OCULUS_ORB = new ServerPacket(47, 4); // L: 52
+		IF_OPENSUB = new ServerPacket(48, 7); // L: 53
+		IF_OPENTOP = new ServerPacket(49, 2); // L: 54
+		IF_SETNPCHEAD = new ServerPacket(50, 6); // L: 55
+		SYNC_CLIENT_VARCACHE = new ServerPacket(51, 0); // L: 56
+		UPDATE_INV_FULL = new ServerPacket(52, -2); // L: 57
+		IF_SETCOLOUR = new ServerPacket(53, 6); // L: 58
+		CHAT_FILTER_SETTINGS_PRIVATECHAT = new ServerPacket(54, 1); // L: 59
+		UPDATE_INV_CLEAR = new ServerPacket(55, 4); // L: 60
+		UPDATE_UID192 = new ServerPacket(56, 28); // L: 61
+		VARCLAN_ENABLE = new ServerPacket(57, 0); // L: 62
+		NPC_UPDATE_SMALLL = new ServerPacket(58, -2); // L: 63
+		OBJ_DEL = new ServerPacket(59, 3); // L: 64
+		UPDATE_ZONE_FULL_FOLLOWS = new ServerPacket(60, 2); // L: 65
+		IF_SETANGLE = new ServerPacket(61, 10); // L: 66
+		MINIMAP_TOGGLE = new ServerPacket(62, 1); // L: 67
+		VARCLAN = new ServerPacket(63, -1); // L: 68
+		IF_SETMODEL = new ServerPacket(64, 6); // L: 69
+		IF_SETSCROLLPOS = new ServerPacket(65, 6); // L: 70
+		MAP_ANIM = new ServerPacket(66, 6); // L: 71
+		CLANSETTINGS_FULL = new ServerPacket(67, -2); // L: 72
+		IF_SETHIDE = new ServerPacket(68, 5); // L: 73
+		CAM_RESET = new ServerPacket(69, 0); // L: 74
+		OBJ_COUNT = new ServerPacket(70, 7); // L: 75
+		ENTER_FREECAM = new ServerPacket(71, 1); // L: 76
+		IF_SETPLAYERHEAD = new ServerPacket(72, 4); // L: 77
+		IF1_MODELROTATE = new ServerPacket(73, 8); // L: 78
+		UNKNOWN8 = new ServerPacket(74, 8); // L: 79
+		RESET_CLIENT_VARCACHE = new ServerPacket(75, 0); // L: 80
+		HINT_ARROW = new ServerPacket(76, 6); // L: 81
+		VARP_SMALL = new ServerPacket(77, 3); // L: 82
+		SET_PLAYER_OP = new ServerPacket(78, -1); // L: 83
+		MESSAGE_PRIVATE_ECHO = new ServerPacket(79, -2); // L: 84
+		PLAYER_INFO = new ServerPacket(80, -2); // L: 85
+		MIDI_SONG = new ServerPacket(81, 2); // L: 86
+		CHAT_FILTER_SETTINGS = new ServerPacket(82, 2); // L: 87
+		LOC_DEL = new ServerPacket(83, 4); // L: 88
+		CAM_SHAKE = new ServerPacket(84, 4); // L: 89
+		LOC_ADD_CHANGE = new ServerPacket(85, 2); // L: 90
+		AREA_SOUND = new ServerPacket(86, 5); // L: 91
+		UNKNOWN5 = new ServerPacket(87, 12); // L: 92
+		UNKNOWN3 = new ServerPacket(88, 8); // L: 93
+		CLANSETTINGS_DELTA = new ServerPacket(89, -2); // L: 94
+		IF_SETOBJECT = new ServerPacket(90, 10); // L: 95
+		OBJ_ADD = new ServerPacket(91, 5); // L: 96
+		LOGOUT_FULL = new ServerPacket(92, 0); // L: 97
+		LOC_ANIM = new ServerPacket(93, 4); // L: 98
+		UNKNOWN9 = new ServerPacket(94, 4); // L: 99
+		MESSAGE_PRIVATE = new ServerPacket(95, -2); // L: 100
+		UPDATE_INV_PARTIAL = new ServerPacket(96, -2); // L: 101
+		CLANCHANNEL_DELTA = new ServerPacket(97, -2); // L: 102
+		REFLECTION_CHECK = new ServerPacket(98, -2); // L: 103
+		SEND_PING = new ServerPacket(99, 8); // L: 104
+		OPEN_URL = new ServerPacket(100, -2); // L: 105
+		MESSAGE_CLANCHANNEL_SYSTEM = new ServerPacket(101, -1); // L: 106
+		MAPPROJ_ANIM = new ServerPacket(102, 15); // L: 107
+		REBUILD_REGION = new ServerPacket(103, -2); // L: 108
 	}
 
 	ServerPacket(int var1, int var2) {

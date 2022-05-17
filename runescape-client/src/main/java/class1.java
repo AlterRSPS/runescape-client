@@ -205,7 +205,7 @@ public class class1 implements Callable {
 							var4 = Players.Players_pendingUpdateIndices[var3]; // L: 174
 							var5 = Client.players[var4]; // L: 175
 							var6 = var0.readUnsignedByte(); // L: 176
-							if ((var6 & 2) != 0) { // L: 177
+							if ((var6 & 2) != 0) { // @TODO Excess Flag
 								var6 += var0.readUnsignedByte() << 8;
 							}
 

@@ -4,57 +4,57 @@ import net.runelite.mapping.ObfuscatedName;
 import net.runelite.mapping.ObfuscatedSignature;
 
 @ObfuscatedName("ja")
-public class class263 {
+public class ZoneUpdate {
 	@ObfuscatedName("o")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3071;
+	public static final ZoneUpdate MAP_ANIM;
 	@ObfuscatedName("q")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3058;
+	public static final ZoneUpdate OBJ_COUNT;
 	@ObfuscatedName("l")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3060;
+	public static final ZoneUpdate MAPPROJ_ANIM;
 	@ObfuscatedName("k")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3062;
+	public static final ZoneUpdate PREFETCH_GAMEOBJECTS;
 	@ObfuscatedName("a")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3068;
+	public static final ZoneUpdate LOC_DEL;
 	@ObfuscatedName("m")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3063;
+	public static final ZoneUpdate OBJ_DEL;
 	@ObfuscatedName("p")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3059;
+	public static final ZoneUpdate LOC_ADD_CHANGE;
 	@ObfuscatedName("s")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3064;
+	public static final ZoneUpdate AREA_SOUND;
 	@ObfuscatedName("r")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3066;
+	public static final ZoneUpdate OBJ_ADD;
 	@ObfuscatedName("v")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final class263 field3067;
+	public static final ZoneUpdate LOC_ANIM;
 	@ObfuscatedName("bx")
 	@ObfuscatedSignature(
 		descriptor = "Llq;"
@@ -68,23 +68,23 @@ public class class263 {
 	static int field3070;
 
 	static {
-		field3071 = new class263(6); // L: 5
-		field3058 = new class263(7); // L: 6
-		field3060 = new class263(15); // L: 7
-		field3062 = new class263(14); // L: 8
-		field3068 = new class263(4); // L: 9
-		field3063 = new class263(3); // L: 10
-		field3059 = new class263(2); // L: 11
-		field3064 = new class263(5); // L: 12
-		field3066 = new class263(5); // L: 13
-		field3067 = new class263(4); // L: 14
+		MAP_ANIM = new ZoneUpdate(6); // L: 5
+		OBJ_COUNT = new ZoneUpdate(7); // L: 6
+		MAPPROJ_ANIM = new ZoneUpdate(15); // L: 7
+		PREFETCH_GAMEOBJECTS = new ZoneUpdate(14); // L: 8
+		LOC_DEL = new ZoneUpdate(4); // L: 9
+		OBJ_DEL = new ZoneUpdate(3); // L: 10
+		LOC_ADD_CHANGE = new ZoneUpdate(2); // L: 11
+		AREA_SOUND = new ZoneUpdate(5); // L: 12
+		OBJ_ADD = new ZoneUpdate(5); // L: 13
+		LOC_ANIM = new ZoneUpdate(4); // L: 14
 	}
 
 	@ObfuscatedSignature(
 		descriptor = "(I)V",
 		garbageValue = "6"
 	)
-	class263(int var1) {
+    ZoneUpdate(int var1) {
 	} // L: 20
 
 	@ObfuscatedName("l")

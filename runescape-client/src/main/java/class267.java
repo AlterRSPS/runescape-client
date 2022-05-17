@@ -68,7 +68,7 @@ public class class267 {
 						return 1; // L: 3312
 					} else if (var0 == ScriptOpcodes.COMPARE) { // L: 3314
 						class9.Interpreter_stringStackSize -= 2; // L: 3315
-						Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = ItemContainer.method2059(HealthBarDefinition.compareStrings(Interpreter.Interpreter_stringStack[class9.Interpreter_stringStackSize], Interpreter.Interpreter_stringStack[class9.Interpreter_stringStackSize + 1], class263.clientLanguage)); // L: 3316
+						Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = ItemContainer.method2059(HealthBarDefinition.compareStrings(Interpreter.Interpreter_stringStack[class9.Interpreter_stringStackSize], Interpreter.Interpreter_stringStack[class9.Interpreter_stringStackSize + 1], ZoneUpdate.clientLanguage)); // L: 3316
 						return 1; // L: 3317
 					} else {
 						int var5;

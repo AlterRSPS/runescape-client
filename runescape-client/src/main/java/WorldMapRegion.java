@@ -1271,10 +1271,10 @@ public class WorldMapRegion {
 											if (var22 != null) { // L: 11421
 												PacketBufferNode var23 = WallDecoration.getPacketBufferNode(ClientPacket.field3000, Client.packetWriter.isaacCipher); // L: 11422
 												var23.packetBuffer.writeInt(var22[2]); // L: 11423
-												var23.packetBuffer.writeIntME(var9.id); // L: 11424
-												var23.packetBuffer.method7550(var9.childIndex); // L: 11425
-												var23.packetBuffer.writeIntME(var22[1]); // L: 11426
-												var23.packetBuffer.writeIntME(var22[0]); // L: 11427
+												var23.packetBuffer.writeIntIME(var9.id); // L: 11424
+												var23.packetBuffer.writeShortLE(var9.childIndex); // L: 11425
+												var23.packetBuffer.writeIntIME(var22[1]); // L: 11426
+												var23.packetBuffer.writeIntIME(var22[0]); // L: 11427
 												var23.packetBuffer.writeInt(var9.method5458()); // L: 11428
 												Client.packetWriter.addNode(var23); // L: 11429
 											}

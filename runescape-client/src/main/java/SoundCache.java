@@ -592,7 +592,7 @@ public class SoundCache {
 			}
 
 			class358.title_muteSprite[class12.clientPreferences.method2226() ? 1 : 0].drawAt(Login.xPadding + 765 - 40, 463); // L: 1636
-			if (Client.gameState > 5 && class263.clientLanguage == Language.Language_EN) { // L: 1637
+			if (Client.gameState > 5 && ZoneUpdate.clientLanguage == Language.Language_EN) { // L: 1637
 				if (ArchiveDiskAction.field3997 != null) { // L: 1638
 					var26 = Login.xPadding + 5; // L: 1639
 					var27 = 463; // L: 1640

@@ -494,7 +494,7 @@ public class CollisionMap {
 	)
 	static void method3778() {
 		if (Client.renderSelf) { // L: 4947
-			class263.addPlayerToScene(ModelData0.localPlayer, false); // L: 4948
+			ZoneUpdate.addPlayerToScene(ModelData0.localPlayer, false); // L: 4948
 		}
 
 	} // L: 4950

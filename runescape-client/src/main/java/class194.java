@@ -41,8 +41,8 @@ public class class194 {
 		descriptor = "(B)[Lja;",
 		garbageValue = "-67"
 	)
-	public static class263[] method3807() {
-		return new class263[]{class263.field3071, class263.field3058, class263.field3060, class263.field3062, class263.field3068, class263.field3063, class263.field3059, class263.field3064, class263.field3066, class263.field3067}; // L: 17
+	public static ZoneUpdate[] method3807() {
+		return new ZoneUpdate[]{ZoneUpdate.MAP_ANIM, ZoneUpdate.OBJ_COUNT, ZoneUpdate.MAPPROJ_ANIM, ZoneUpdate.PREFETCH_GAMEOBJECTS, ZoneUpdate.LOC_DEL, ZoneUpdate.OBJ_DEL, ZoneUpdate.LOC_ADD_CHANGE, ZoneUpdate.AREA_SOUND, ZoneUpdate.OBJ_ADD, ZoneUpdate.LOC_ANIM}; // L: 17
 	}
 
 	@ObfuscatedName("q")

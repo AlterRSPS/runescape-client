@@ -94,8 +94,8 @@ public class class129 extends class128 {
 					int var12 = ModelData0.localPlayer.y - var10 >> 7; // L: 3869
 					PacketBufferNode var13 = WallDecoration.getPacketBufferNode(ClientPacket.field3023, Client.packetWriter.isaacCipher); // L: 3871
 					var13.packetBuffer.writeByte(18); // L: 3872
-					var13.packetBuffer.method7596(KeyHandler.KeyHandler_pressedKeys[82] ? (KeyHandler.KeyHandler_pressedKeys[81] ? 2 : 1) : 0); // L: 3873
-					var13.packetBuffer.method7641(var12 + GrandExchangeOfferOwnWorldComparator.baseY); // L: 3874
+					var13.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? (KeyHandler.KeyHandler_pressedKeys[81] ? 2 : 1) : 0); // L: 3873
+					var13.packetBuffer.writeShortAddLE(var12 + GrandExchangeOfferOwnWorldComparator.baseY); // L: 3874
 					var13.packetBuffer.writeShort(var11 + SecureRandomCallable.baseX); // L: 3875
 					var13.packetBuffer.writeByte(var4); // L: 3876
 					var13.packetBuffer.writeByte(var5); // L: 3877

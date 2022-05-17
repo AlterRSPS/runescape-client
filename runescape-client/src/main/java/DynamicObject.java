@@ -577,17 +577,17 @@ public class DynamicObject extends Renderable {
 				} else if (var0 == 4) { // L: 9741
 					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2962, Client.packetWriter.isaacCipher); // L: 9743
 					var8.packetBuffer.writeByte(0); // L: 9744
-					var8.packetBuffer.method7641(var3[var6]); // L: 9745
+					var8.packetBuffer.writeShortAddLE(var3[var6]); // L: 9745
 					Client.packetWriter.addNode(var8); // L: 9746
 				} else if (var0 == 6) { // L: 9748
 					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2969, Client.packetWriter.isaacCipher); // L: 9750
-					var8.packetBuffer.method7641(var3[var6]); // L: 9751
+					var8.packetBuffer.writeShortAddLE(var3[var6]); // L: 9751
 					var8.packetBuffer.method7687(0); // L: 9752
 					Client.packetWriter.addNode(var8); // L: 9753
 				} else if (var0 == 7) { // L: 9755
 					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2980, Client.packetWriter.isaacCipher); // L: 9757
-					var8.packetBuffer.method7596(0); // L: 9758
-					var8.packetBuffer.method7641(var3[var6]); // L: 9759
+					var8.packetBuffer.writeByteSub(0); // L: 9758
+					var8.packetBuffer.writeShortAddLE(var3[var6]); // L: 9759
 					Client.packetWriter.addNode(var8); // L: 9760
 				}
 

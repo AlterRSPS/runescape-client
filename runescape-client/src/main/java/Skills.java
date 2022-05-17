@@ -131,8 +131,8 @@ public class Skills {
 	@Export("resumePauseWidget")
 	static void resumePauseWidget(int var0, int var1) {
 		PacketBufferNode var2 = WallDecoration.getPacketBufferNode(ClientPacket.field2967, Client.packetWriter.isaacCipher); // L: 9801
-		var2.packetBuffer.writeIntME(var0); // L: 9802
-		var2.packetBuffer.method7551(var1); // L: 9803
+		var2.packetBuffer.writeIntIME(var0); // L: 9802
+		var2.packetBuffer.writeShortAdd(var1); // L: 9803
 		Client.packetWriter.addNode(var2); // L: 9804
 	} // L: 9805
 

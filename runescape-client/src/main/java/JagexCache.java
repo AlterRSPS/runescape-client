@@ -252,9 +252,9 @@ public class JagexCache {
 			int var8;
 			if ((var4 & 16) != 0) { // L: 8182
 				var5 = var0.readUnsignedShort(); // L: 8183
-				var6 = var0.method7716(); // L: 8184
+				var6 = var0.readUShortLE(); // L: 8184
 				if (class393.field4428) { // L: 8185
-					var3.field1173 = var0.method7546() == 1; // L: 8186
+					var3.field1173 = var0.readUByteSub() == 1; // L: 8186
 				}
 
 				var7 = var3.x - (var5 - SecureRandomCallable.baseX - SecureRandomCallable.baseX) * 64; // L: 8188
@@ -265,18 +265,18 @@ public class JagexCache {
 			}
 
 			if ((var4 & 1024) != 0) { // L: 8192
-				var3.field1210 = var0.method7568(); // L: 8193
+				var3.field1210 = var0.readIntME(); // L: 8193
 			}
 
 			if ((var4 & 2) != 0) { // L: 8195
-				var3.targetIndex = var0.method7554(); // L: 8196
+				var3.targetIndex = var0.readUShortAdd(); // L: 8196
 				if (var3.targetIndex == 65535) { // L: 8197
 					var3.targetIndex = -1;
 				}
 			}
 
 			if ((var4 & 32) != 0) { // L: 8199
-				var5 = var0.method7716(); // L: 8200
+				var5 = var0.readUShortLE(); // L: 8200
 				if (var5 == 65535) { // L: 8201
 					var5 = -1; // L: 8202
 				}
@@ -305,21 +305,21 @@ public class JagexCache {
 			}
 
 			if ((var4 & 512) != 0) { // L: 8227
-				var3.field1196 = Client.cycle + var0.method7576(); // L: 8228
-				var3.field1197 = Client.cycle + var0.method7576(); // L: 8229
+				var3.field1196 = Client.cycle + var0.readUShortAddLE(); // L: 8228
+				var3.field1197 = Client.cycle + var0.readUShortAddLE(); // L: 8229
 				var3.field1143 = var0.readByte(); // L: 8230
-				var3.field1199 = var0.method7548(); // L: 8231
-				var3.field1153 = var0.method7548(); // L: 8232
+				var3.field1199 = var0.readByteNeg(); // L: 8231
+				var3.field1153 = var0.readByteNeg(); // L: 8232
 				var3.field1140 = (byte)var0.readUnsignedByte(); // L: 8233
 			}
 
 			if (class393.field4428 && (var4 & 256) != 0 || !class393.field4428 && (var4 & 8) != 0) { // L: 8235
-				var3.field1187 = var0.method7548(); // L: 8236
-				var3.field1189 = var0.method7549(); // L: 8237
-				var3.field1188 = var0.method7548(); // L: 8238
-				var3.field1190 = var0.method7547(); // L: 8239
-				var3.field1191 = var0.method7716() + Client.cycle; // L: 8240
-				var3.field1192 = var0.method7716() + Client.cycle; // L: 8241
+				var3.field1187 = var0.readByteNeg(); // L: 8236
+				var3.field1189 = var0.readByteSub(); // L: 8237
+				var3.field1188 = var0.readByteNeg(); // L: 8238
+				var3.field1190 = var0.readByteAdd(); // L: 8239
+				var3.field1191 = var0.readUShortLE() + Client.cycle; // L: 8240
+				var3.field1192 = var0.readUShortLE() + Client.cycle; // L: 8241
 				var3.field1139 = var0.readUnsignedShort(); // L: 8242
 				var3.pathLength = 1; // L: 8243
 				var3.field1200 = 0; // L: 8244
@@ -335,8 +335,8 @@ public class JagexCache {
 			}
 
 			if ((var4 & 1) != 0) { // L: 8254
-				var3.spotAnimation = var0.method7576(); // L: 8255
-				var5 = var0.method7701(); // L: 8256
+				var3.spotAnimation = var0.readUShortAddLE(); // L: 8255
+				var5 = var0.readIntLE(); // L: 8256
 				var3.spotAnimationHeight = var5 >> 16; // L: 8257
 				var3.field1185 = (var5 & 65535) + Client.cycle; // L: 8258
 				var3.spotAnimationFrame = 0; // L: 8259
@@ -377,7 +377,7 @@ public class JagexCache {
 					}
 				}
 
-				var6 = var0.method7546(); // L: 8287
+				var6 = var0.readUByteSub(); // L: 8287
 				if (var6 > 0) { // L: 8288
 					for (var7 = 0; var7 < var6; ++var7) { // L: 8289
 						var8 = var0.readUShortSmart(); // L: 8290
@@ -385,7 +385,7 @@ public class JagexCache {
 						if (var9 != 32767) { // L: 8292
 							var10 = var0.readUShortSmart(); // L: 8293
 							var11 = var0.readUnsignedByte(); // L: 8294
-							int var12 = var9 > 0 ? var0.method7546() : var11; // L: 8295
+							int var12 = var9 > 0 ? var0.readUByteSub() : var11; // L: 8295
 							var3.addHealthBar(var8, Client.cycle, var9, var10, var11, var12); // L: 8296
 						} else {
 							var3.removeHealthBar(var8); // L: 8298
@@ -399,7 +399,7 @@ public class JagexCache {
 			}
 
 			if ((var4 & 128) != 0) { // L: 8305
-				var3.definition = WorldMapSectionType.getNpcDefinition(var0.method7554()); // L: 8306
+				var3.definition = WorldMapSectionType.getNpcDefinition(var0.readUShortAdd()); // L: 8306
 				var3.field1167 = var3.definition.size; // L: 8307
 				var3.field1204 = var3.definition.rotation; // L: 8308
 				var3.walkSequence = var3.definition.walkSequence; // L: 8309

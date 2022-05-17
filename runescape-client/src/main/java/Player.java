@@ -276,6 +276,14 @@ public final class Player extends Actor {
 			super.runSequence = -1;
 		}
 
+		System.out.println("idleSequence: " + idleSequence);
+		System.out.println("turnLeftSequence: " + turnLeftSequence);
+		System.out.println("turnRightSequence: " + turnRightSequence);
+		System.out.println("walkBackSequence: " + walkBackSequence);
+		System.out.println("walkLeftSequence: " + walkLeftSequence);
+		System.out.println("walkRightSequence: " + walkRightSequence);
+		System.out.println("runSequence: " + runSequence);
+
 		this.username = new Username(var1.readStringCp1252NullTerminated(), class391.loginType); // L: 102
 		this.clearIsFriend(); // L: 103
 		this.clearIsInFriendsChat(); // L: 104

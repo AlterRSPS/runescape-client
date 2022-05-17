@@ -79,7 +79,7 @@ public class FriendsChat extends UserList {
 	)
 	@Export("readName")
 	final void readName(String var1) {
-		String var3 = class263.base37DecodeLong(class114.method2626(var1)); // L: 37
+		String var3 = ZoneUpdate.base37DecodeLong(class114.method2626(var1)); // L: 37
 		if (var3 == null) {
 			var3 = ""; // L: 38
 		}
@@ -94,7 +94,7 @@ public class FriendsChat extends UserList {
 	)
 	@Export("setOwner")
 	final void setOwner(String var1) {
-		String var3 = class263.base37DecodeLong(class114.method2626(var1)); // L: 47
+		String var3 = ZoneUpdate.base37DecodeLong(class114.method2626(var1)); // L: 47
 		if (var3 == null) {
 			var3 = ""; // L: 48
 		}

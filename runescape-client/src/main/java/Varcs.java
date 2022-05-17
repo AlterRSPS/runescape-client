@@ -9,7 +9,6 @@ import net.runelite.mapping.ObfuscatedGetter;
 import net.runelite.mapping.ObfuscatedName;
 import net.runelite.mapping.ObfuscatedSignature;
 
-@Deprecated
 @ObfuscatedName("cu")
 @Implements("Varcs")
 public class Varcs {

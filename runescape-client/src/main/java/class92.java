@@ -140,7 +140,7 @@ public class class92 {
 
 			Client var16 = class82.client; // L: 12565
 			var5 = "document.cookie=\"" + var3 + "\""; // L: 12566
-			JSObject.getWindow(var16).eval(var5); // L: 12569
+			//JSObject.getWindow(var16).eval(var5); // L: 12569 /@TODO DISA|BLED
 		} catch (Throwable var15) { // L: 12572
 		}
 

@@ -53,10 +53,10 @@ public abstract class class144 extends Node {
 		int var7;
 		int var8;
 		if (!Client.isInInstance) { // L: 5557
-			int var2 = var1.method7576(); // L: 5558
-			var3 = var1.readUnsignedShort(); // L: 5559
-			var4 = var1.readUnsignedShort(); // L: 5560
-			class138.xteaKeys = new int[var4][4]; // L: 5561
+			int var2 = var1.readUShortAddLE(); // Y
+			var3 = var1.readUnsignedShort(); // X
+			var4 = var1.readUnsignedShort(); // Size
+			class138.xteaKeys = new int[var4][4]; //
 
 			for (var5 = 0; var5 < var4; ++var5) { // L: 5562
 				for (var6 = 0; var6 < 4; ++var6) { // L: 5563
@@ -96,10 +96,10 @@ public abstract class class144 extends Node {
 
 			class329.method5875(var3, var2, true); // L: 5588
 		} else {
-			boolean var15 = var1.method7546() == 1; // L: 5591
-			var3 = var1.method7554(); // L: 5592
-			var4 = var1.method7554(); // L: 5593
-			var5 = var1.readUnsignedShort(); // L: 5594
+			boolean var15 = var1.readUByteSub() == 1; // Force
+			var3 = var1.readUShortAdd(); // X
+			var4 = var1.readUShortAdd(); // Y
+			var5 = var1.readUnsignedShort(); // DATA Size
 			var1.importIndex(); // L: 5595
 
 			int var9;

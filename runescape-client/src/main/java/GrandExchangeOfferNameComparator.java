@@ -227,17 +227,19 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 		descriptor = "(Lpc;ILca;IB)V",
 		garbageValue = "98"
 	)
-	static final void method5786(PacketBuffer var0, int var1, Player var2, int var3) {
+	static final void method5786(PacketBuffer var0, int var1, Player var2, int updateBlock) {
 		byte var4 = class193.field2250.field2252; // L: 451
 		int var5;
 		int var8;
 		int var9;
 		int var12;
-		if ((var3 & 1) != 0) { // L: 452
-			var5 = var0.method7576(); // L: 453
+		// Public Chat
+		if ((updateBlock & 1) != 0) { // L: 452
+			System.out.println("Public Chat");
+			var5 = var0.readUShortAddLE(); // L: 453
 			PlayerType var6 = (PlayerType)class291.findEnumerated(class118.PlayerType_values(), var0.readUnsignedByte()); // L: 454
-			boolean var7 = var0.method7593() == 1; // L: 455
-			var8 = var0.method7545(); // L: 456
+			boolean var7 = var0.readUnsignedByteAdd() == 1; // L: 455
+			var8 = var0.readUByteNeg(); // L: 456
 			var9 = var0.offset; // L: 457
 			if (var2.username != null && var2.appearance != null) { // L: 458
 				boolean var10 = false; // L: 459
@@ -247,7 +249,7 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 
 				if (!var10 && Client.field606 == 0 && !var2.isHidden) { // L: 463
 					Players.field1306.offset = 0; // L: 464
-					var0.method7569(Players.field1306.array, 0, var8); // L: 465
+					var0.readAdditiveSliceReversed(Players.field1306.array, 0, var8); // L: 465
 					Players.field1306.offset = 0; // L: 466
 					String var11 = AbstractFont.escapeBrackets(WorldMapManager.method4679(LoginPacket.method5025(Players.field1306))); // L: 467
 					var2.overheadText = var11.trim(); // L: 468
@@ -272,27 +274,32 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 
 			var0.offset = var9 + var8; // L: 481
 		}
-
-		if ((var3 & 4) != 0) { // L: 483
-			var2.field1172 = var0.method7576(); // L: 484
+		// face tile
+		if ((updateBlock & 4) != 0) { // L: 483
+			System.out.println("Face tile");
+			var2.field1172 = var0.readUShortAddLE(); // L: 484
 			if (var2.pathLength == 0) { // L: 485
 				var2.orientation = var2.field1172; // L: 486
 				var2.field1172 = -1; // L: 487
 			}
 		}
-
-		if ((var3 & 16) != 0) { // L: 490
-			var5 = var0.method7593(); // L: 491
+		// Appearance
+		if ((updateBlock & 16) != 0) { // L: 490
+			System.out.println("Appearance");
+			var5 = var0.readUnsignedByteAdd(); // L: 491
+			System.out.println("var5: " + var5);
 			byte[] var17 = new byte[var5]; // L: 492
 			Buffer var13 = new Buffer(var17); // L: 493
-			var0.method7569(var17, 0, var5); // L: 494
+			var0.readAdditiveSliceReversed(var17, 0, var5); // L: 494
 			Players.field1307[var1] = var13; // L: 495
 			var2.read(var13); // L: 496
 		}
 
-		if ((var3 & 4096) != 0) { // L: 498
-			var2.spotAnimation = var0.method7576(); // L: 499
-			var5 = var0.method7567(); // L: 500
+		// gfx
+		if ((updateBlock & 4096) != 0) { // L: 498
+			System.out.println("Gfx");
+			var2.spotAnimation = var0.readUShortAddLE(); // L: 499
+			var5 = var0.readIntIME(); // L: 500
 			var2.spotAnimationHeight = var5 >> 16; // L: 501
 			var2.field1185 = (var5 & 65535) + Client.cycle; // L: 502
 			var2.spotAnimationFrame = 0; // L: 503
@@ -306,19 +313,23 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 			}
 		}
 
-		if ((var3 & 2048) != 0) { // L: 508
+		// Name Change (New)
+		if ((updateBlock & 2048) != 0) { // L: 508
+			System.out.println("Name Change");
 			class193[] var14 = Players.field1302; // L: 509
 			class193[] var21 = new class193[]{class193.field2248, class193.field2250, class193.field2249, class193.field2251}; // L: 513
-			var14[var1] = (class193)class291.findEnumerated(var21, var0.method7549()); // L: 515
+			var14[var1] = (class193)class291.findEnumerated(var21, var0.readByteSub()); // L: 515
 		}
 
-		if ((var3 & 16384) != 0) { // L: 517
-			var2.field1187 = var0.method7547(); // L: 518
-			var2.field1189 = var0.method7548(); // L: 519
-			var2.field1188 = var0.method7548(); // L: 520
-			var2.field1190 = var0.method7549(); // L: 521
+		// Force Movement
+		if ((updateBlock & 16384) != 0) { // L: 517
+			System.out.println("Force Movement");
+			var2.field1187 = var0.readByteAdd(); // L: 518
+			var2.field1189 = var0.readByteNeg(); // L: 519
+			var2.field1188 = var0.readByteNeg(); // L: 520
+			var2.field1190 = var0.readByteSub(); // L: 521
 			var2.field1191 = var0.readUnsignedShort() + Client.cycle; // L: 522
-			var2.field1192 = var0.method7554() + Client.cycle; // L: 523
+			var2.field1192 = var0.readUShortAdd() + Client.cycle; // L: 523
 			var2.field1139 = var0.readUnsignedShort(); // L: 524
 			if (var2.field1095) { // L: 525
 				var2.field1187 += var2.tileX; // L: 526
@@ -336,39 +347,48 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 
 			var2.field1200 = 0; // L: 539
 		}
-
-		if ((var3 & 1024) != 0) { // L: 541
-			var2.field1196 = Client.cycle + var0.method7576(); // L: 542
+		// Apply tint
+		if ((updateBlock & 1024) != 0) { // L: 541
+			System.out.println("Apply tint");
+			var2.field1196 = Client.cycle + var0.readUShortAddLE(); // L: 542
 			var2.field1197 = Client.cycle + var0.readUnsignedShort(); // L: 543
-			var2.field1143 = var0.method7547(); // L: 544
-			var2.field1199 = var0.method7549(); // L: 545
-			var2.field1153 = var0.method7548(); // L: 546
+			var2.field1143 = var0.readByteAdd(); // L: 544
+			var2.field1199 = var0.readByteSub(); // L: 545
+			var2.field1153 = var0.readByteNeg(); // L: 546
 			var2.field1140 = (byte)var0.readUnsignedByte(); // L: 547
 		}
 
+		// Animation
 		int var15;
-		if ((var3 & 32) != 0) { // L: 549
-			var5 = var0.method7554(); // L: 550
+		if ((updateBlock & 32) != 0) { // L: 549
+			System.out.println("Animation");
+			var5 = var0.readUShortAdd(); // L: 550
 			if (var5 == 65535) { // L: 551
 				var5 = -1;
 			}
 
-			var15 = var0.method7593(); // L: 552
+			var15 = var0.readUnsignedByteAdd(); // L: 552
 			JagexCache.performPlayerAnimation(var2, var5, var15); // L: 553
 		}
 
-		if ((var3 & 256) != 0) { // L: 555
-			var4 = var0.method7549(); // L: 556
+		// movement (one tick state) Temp Move
+		if ((updateBlock & 256) != 0) { // L: 555
+			System.out.println("Movement (one tick state) Temp Move");
+			var4 = var0.readByteSub(); // L: 556
 		}
 
-		if ((var3 & 128) != 0) { // L: 558
-			var2.targetIndex = var0.method7554(); // L: 559
+		// face pawn
+		if ((updateBlock & 128) != 0) { // L: 558
+			System.out.println("Face pawn");
+			var2.targetIndex = var0.readUShortAdd(); // L: 559
 			if (var2.targetIndex == 65535) { // L: 560
 				var2.targetIndex = -1;
 			}
 		}
 
-		if ((var3 & 64) != 0) { // L: 562
+		// Hitmark
+		if ((updateBlock & 64) != 0) { // L: 562
+			System.out.println("Hitmark");
 			var5 = var0.readUnsignedByte(); // L: 563
 			int var16;
 			int var19;
@@ -395,7 +415,7 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 				}
 			}
 
-			var15 = var0.method7546(); // L: 585
+			var15 = var0.readUByteSub(); // L: 585
 			if (var15 > 0) { // L: 586
 				for (var19 = 0; var19 < var15; ++var19) { // L: 587
 					var8 = var0.readUShortSmart(); // L: 588
@@ -403,7 +423,7 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 					if (var9 != 32767) { // L: 590
 						var20 = var0.readUShortSmart(); // L: 591
 						var16 = var0.readUnsignedByte(); // L: 592
-						var12 = var9 > 0 ? var0.method7593() : var16; // L: 593
+						var12 = var9 > 0 ? var0.readUnsignedByteAdd() : var16; // L: 593
 						var2.addHealthBar(var8, Client.cycle, var9, var20, var16, var12); // L: 594
 					} else {
 						var2.removeHealthBar(var8); // L: 596
@@ -411,14 +431,17 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 				}
 			}
 		}
-
-		if ((var3 & 8192) != 0) { // L: 600
+		// Context Menu
+		if ((updateBlock & 8192) != 0) { // L: 600
+			System.out.println("Context Menu");
 			for (var5 = 0; var5 < 3; ++var5) { // L: 601
 				var2.actions[var5] = var0.readStringCp1252NullTerminated();
 			}
 		}
 
-		if ((var3 & 8) != 0) { // L: 603
+		// Force Chat
+		if ((updateBlock & 8) != 0) { // L: 603
+			System.out.println("Force Chat");
 			var2.overheadText = var0.readStringCp1252NullTerminated(); // L: 604
 			if (var2.overheadText.charAt(0) == '~') { // L: 605
 				var2.overheadText = var2.overheadText.substring(1); // L: 606

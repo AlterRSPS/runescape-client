@@ -68,7 +68,7 @@ public class class140 extends class144 {
 		garbageValue = "-1349623910"
 	)
 	static void method2951() {
-		PacketBufferNode var0 = WallDecoration.getPacketBufferNode(ClientPacket.field3054, Client.packetWriter.isaacCipher); // L: 4366
+		PacketBufferNode var0 = WallDecoration.getPacketBufferNode(ClientPacket.WINDOW_STATUS, Client.packetWriter.isaacCipher); // L: 4366
 		var0.packetBuffer.writeByte(ClanChannelMember.getWindowedMode()); // L: 4367
 		var0.packetBuffer.writeShort(GraphicsObject.canvasWidth); // L: 4368
 		var0.packetBuffer.writeShort(class433.canvasHeight); // L: 4369

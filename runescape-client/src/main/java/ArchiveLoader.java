@@ -171,7 +171,7 @@ public class ArchiveLoader {
 
 		CollisionMap.method3778(); // L: 4590
 		if (Client.combatTargetPlayerIndex >= 0 && Client.players[Client.combatTargetPlayerIndex] != null) { // L: 4592
-			class263.addPlayerToScene(Client.players[Client.combatTargetPlayerIndex], false); // L: 4593
+			ZoneUpdate.addPlayerToScene(Client.players[Client.combatTargetPlayerIndex], false); // L: 4593
 		}
 
 		class137.addNpcsToScene(true); // L: 4596
@@ -181,7 +181,7 @@ public class ArchiveLoader {
 		int var6;
 		for (var6 = 0; var6 < var4; ++var6) { // L: 4600
 			if (var5[var6] != Client.combatTargetPlayerIndex && var5[var6] != Client.localPlayerIndex) { // L: 4601
-				class263.addPlayerToScene(Client.players[var5[var6]], true); // L: 4602
+				ZoneUpdate.addPlayerToScene(Client.players[var5[var6]], true); // L: 4602
 			}
 		}
 

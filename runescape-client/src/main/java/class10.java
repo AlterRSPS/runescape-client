@@ -483,7 +483,7 @@ public class class10 {
 														throw new IllegalStateException(); // L: 381
 													}
 
-													var39 = UserComparator8.field1378.method6905(var7[var20]); // L: 372
+													var39 = UserComparator8.o_field1210.method6905(var7[var20]); // L: 372
 													if (var39 == null) { // L: 373
 														Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = -1; // L: 374
 													} else {

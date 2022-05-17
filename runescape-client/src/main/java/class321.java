@@ -9,7 +9,7 @@ public class class321 {
 	@ObfuscatedGetter(
 		intValue = 1257274213
 	)
-	static int field4076;
+	static int ZONE_X;
 
 	@ObfuscatedName("jw")
 	@ObfuscatedSignature(

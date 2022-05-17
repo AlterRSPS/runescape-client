@@ -965,8 +965,8 @@ public class ClanSettings {
 						VarcInt.VarcInt_archive = var16; // L: 1737
 						class16.method179(class356.archive2); // L: 1739
 						class305.method5592(class356.archive2); // L: 1740
-						Login.HitSplatDefinition_cachedSprites = new class428(ApproximateRouteStrategy.field473, 54, class263.clientLanguage, class356.archive2); // L: 1741
-						class221.HitSplatDefinition_cached = new class428(ApproximateRouteStrategy.field473, 47, class263.clientLanguage, class356.archive2); // L: 1742
+						Login.HitSplatDefinition_cachedSprites = new class428(ApproximateRouteStrategy.field473, 54, ZoneUpdate.clientLanguage, class356.archive2); // L: 1741
+						class221.HitSplatDefinition_cached = new class428(ApproximateRouteStrategy.field473, 47, ZoneUpdate.clientLanguage, class356.archive2); // L: 1742
 						class125.varcs = new Varcs(); // L: 1743
 						GameEngine.method505(class356.archive2, class305.archive8, class16.archive13); // L: 1744
 						Archive var17 = class356.archive2; // L: 1745

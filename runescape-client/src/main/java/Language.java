@@ -631,7 +631,7 @@ public class Language implements MouseWheel {
 						Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize - 1] = class1.field2.getSortedMembers()[Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize - 1]]; // L: 2881
 						return 1; // L: 2882
 					} else if (var0 == ScriptOpcodes.CLANPROFILE_FIND) { // L: 2884
-						Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = UserComparator8.field1378 != null ? 1 : 0; // L: 2885
+						Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = UserComparator8.o_field1210 != null ? 1 : 0; // L: 2885
 						return 1; // L: 2886
 					} else {
 						return 2; // L: 2888

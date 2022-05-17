@@ -471,7 +471,7 @@ public class ClientPacket implements class261 {
 	@ObfuscatedSignature(
 		descriptor = "Ljj;"
 	)
-	public static final ClientPacket field3054;
+	public static final ClientPacket WINDOW_STATUS;
 	@ObfuscatedName("cf")
 	@ObfuscatedSignature(
 		descriptor = "Ljj;"
@@ -653,7 +653,7 @@ public class ClientPacket implements class261 {
 		field3037 = new ClientPacket(89, -1); // L: 94
 		field3041 = new ClientPacket(90, 7); // L: 95
 		field3039 = new ClientPacket(91, -1); // L: 96
-		field3054 = new ClientPacket(92, 5); // L: 97
+		WINDOW_STATUS = new ClientPacket(92, 5); // L: 97
 		field2974 = new ClientPacket(93, 4); // L: 98
 		field3042 = new ClientPacket(94, 9); // L: 99
 		field3043 = new ClientPacket(95, 8); // L: 100

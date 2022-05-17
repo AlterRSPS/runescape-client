@@ -183,7 +183,7 @@ public final class Occluder {
 		descriptor = "(Lja;I)V",
 		garbageValue = "791986228"
 	)
-	static final void method4222(class263 var0) {
+	static final void processZoneUpdate(ZoneUpdate var0) {
 		PacketBuffer var1 = Client.packetWriter.packetBuffer; // L: 7547
 		int var2;
 		int var3;
@@ -194,15 +194,15 @@ public final class Occluder {
 		int var8;
 		int var9;
 		int var10;
-		if (class263.field3064 == var0) { // L: 7548
+		if (ZoneUpdate.AREA_SOUND == var0) { // L: 7548
 			var2 = var1.readUnsignedShort(); // L: 7549
 			var3 = var1.readUnsignedByte(); // L: 7550
-			var4 = (var3 >> 4 & 7) + class145.field1690; // L: 7551
-			var5 = (var3 & 7) + class321.field4076; // L: 7552
-			var6 = var1.method7545(); // L: 7553
+			var4 = (var3 >> 4 & 7) + class145.Zone_Y; // L: 7551
+			var5 = (var3 & 7) + class321.ZONE_X; // L: 7552
+			var6 = var1.readUByteNeg(); // L: 7553
 			var7 = var6 >> 4 & 15; // L: 7554
 			var8 = var6 & 7; // L: 7555
-			var9 = var1.method7593(); // L: 7556
+			var9 = var1.readUnsignedByteAdd(); // L: 7556
 			if (var4 >= 0 && var5 >= 0 && var4 < 104 && var5 < 104) { // L: 7557
 				var10 = var7 + 1; // L: 7558
 				if (ModelData0.localPlayer.pathX[0] >= var4 - var10 && ModelData0.localPlayer.pathX[0] <= var10 + var4 && ModelData0.localPlayer.pathY[0] >= var5 - var10 && ModelData0.localPlayer.pathY[0] <= var10 + var5 && class12.clientPreferences.method2239() != 0 && var8 > 0 && Client.soundEffectCount < 50) { // L: 7559 7560
@@ -217,12 +217,12 @@ public final class Occluder {
 		}
 
 		TileItem var35;
-		if (class263.field3066 == var0) { // L: 7571
-			var2 = var1.method7593(); // L: 7572
-			var3 = (var2 >> 4 & 7) + class145.field1690; // L: 7573
-			var4 = (var2 & 7) + class321.field4076; // L: 7574
-			var5 = var1.method7554(); // L: 7575
-			var6 = var1.method7716(); // L: 7576
+		if (ZoneUpdate.OBJ_ADD == var0) { // L: 7571
+			var2 = var1.readUnsignedByteAdd(); // L: 7572
+			var3 = (var2 >> 4 & 7) + class145.Zone_Y; // L: 7573
+			var4 = (var2 & 7) + class321.ZONE_X; // L: 7574
+			var5 = var1.readUShortAdd(); // L: 7575
+			var6 = var1.readUShortLE(); // L: 7576
 			if (var3 >= 0 && var4 >= 0 && var3 < 104 && var4 < 104) { // L: 7577
 				var35 = new TileItem(); // L: 7578
 				var35.id = var6; // L: 7579
@@ -235,26 +235,26 @@ public final class Occluder {
 				Frames.updateItemPile(var3, var4); // L: 7583
 			}
 
-		} else if (class263.field3068 == var0) { // L: 7587
+		} else if (ZoneUpdate.LOC_DEL == var0) { // L: 7587
 			var2 = var1.readUnsignedShort(); // L: 7588
-			var3 = var1.method7593(); // L: 7589
+			var3 = var1.readUnsignedByteAdd(); // L: 7589
 			var4 = var3 >> 2; // L: 7590
 			var5 = var3 & 3; // L: 7591
 			var6 = Client.field553[var4]; // L: 7592
 			var7 = var1.readUnsignedByte(); // L: 7593
-			var8 = (var7 >> 4 & 7) + class145.field1690; // L: 7594
-			var9 = (var7 & 7) + class321.field4076; // L: 7595
+			var8 = (var7 >> 4 & 7) + class145.Zone_Y; // L: 7594
+			var9 = (var7 & 7) + class321.ZONE_X; // L: 7595
 			if (var8 >= 0 && var9 >= 0 && var8 < 104 && var9 < 104) { // L: 7596
 				class221.updatePendingSpawn(class128.Client_plane, var8, var9, var6, var2, var4, var5, 0, -1); // L: 7597
 			}
 
-		} else if (class263.field3058 == var0) { // L: 7601
-			var2 = var1.method7545(); // L: 7602
-			var3 = (var2 >> 4 & 7) + class145.field1690; // L: 7603
-			var4 = (var2 & 7) + class321.field4076; // L: 7604
+		} else if (ZoneUpdate.OBJ_COUNT == var0) { // L: 7601
+			var2 = var1.readUByteNeg(); // L: 7602
+			var3 = (var2 >> 4 & 7) + class145.Zone_Y; // L: 7603
+			var4 = (var2 & 7) + class321.ZONE_X; // L: 7604
 			var5 = var1.readUnsignedShort(); // L: 7605
-			var6 = var1.method7576(); // L: 7606
-			var7 = var1.method7576(); // L: 7607
+			var6 = var1.readUShortAddLE(); // L: 7606
+			var7 = var1.readUShortAddLE(); // L: 7607
 			if (var3 >= 0 && var4 >= 0 && var3 < 104 && var4 < 104) { // L: 7608
 				NodeDeque var43 = Client.groundItems[class128.Client_plane][var3][var4]; // L: 7609
 				if (var43 != null) { // L: 7610
@@ -269,11 +269,11 @@ public final class Occluder {
 				}
 			}
 
-		} else if (class263.field3063 == var0) { // L: 7624
-			var2 = var1.method7716(); // L: 7625
-			var3 = var1.method7545(); // L: 7626
-			var4 = (var3 >> 4 & 7) + class145.field1690; // L: 7627
-			var5 = (var3 & 7) + class321.field4076; // L: 7628
+		} else if (ZoneUpdate.OBJ_DEL == var0) { // L: 7624
+			var2 = var1.readUShortLE(); // L: 7625
+			var3 = var1.readUByteNeg(); // L: 7626
+			var4 = (var3 >> 4 & 7) + class145.Zone_Y; // L: 7627
+			var5 = (var3 & 7) + class321.ZONE_X; // L: 7628
 			if (var4 >= 0 && var5 >= 0 && var4 < 104 && var5 < 104) { // L: 7629
 				NodeDeque var34 = Client.groundItems[class128.Client_plane][var4][var5]; // L: 7630
 				if (var34 != null) { // L: 7631
@@ -292,11 +292,11 @@ public final class Occluder {
 				}
 			}
 
-		} else if (class263.field3059 == var0) { // L: 7646
-			var2 = var1.method7545(); // L: 7647
-			var3 = (var2 >> 4 & 7) + class145.field1690; // L: 7648
-			var4 = (var2 & 7) + class321.field4076; // L: 7649
-			var5 = var1.method7593(); // L: 7650
+		} else if (ZoneUpdate.LOC_ADD_CHANGE == var0) { // L: 7646
+			var2 = var1.readUByteNeg(); // L: 7647
+			var3 = (var2 >> 4 & 7) + class145.Zone_Y; // L: 7648
+			var4 = (var2 & 7) + class321.ZONE_X; // L: 7649
+			var5 = var1.readUnsignedByteAdd(); // L: 7650
 			var6 = var5 >> 2; // L: 7651
 			var7 = var5 & 3; // L: 7652
 			var8 = Client.field553[var6]; // L: 7653
@@ -304,13 +304,13 @@ public final class Occluder {
 				class221.updatePendingSpawn(class128.Client_plane, var3, var4, var8, -1, var6, var7, 0, -1); // L: 7655
 			}
 
-		} else if (class263.field3071 == var0) { // L: 7659
-			var2 = var1.method7546(); // L: 7660
-			var3 = (var2 >> 4 & 7) + class145.field1690; // L: 7661
-			var4 = (var2 & 7) + class321.field4076; // L: 7662
-			var5 = var1.method7545(); // L: 7663
-			var6 = var1.method7716(); // L: 7664
-			var7 = var1.method7716(); // L: 7665
+		} else if (ZoneUpdate.MAP_ANIM == var0) { // L: 7659
+			var2 = var1.readUByteSub(); // L: 7660
+			var3 = (var2 >> 4 & 7) + class145.Zone_Y; // L: 7661
+			var4 = (var2 & 7) + class321.ZONE_X; // L: 7662
+			var5 = var1.readUByteNeg(); // L: 7663
+			var6 = var1.readUShortLE(); // L: 7664
+			var7 = var1.readUShortLE(); // L: 7665
 			if (var3 >= 0 && var4 >= 0 && var3 < 104 && var4 < 104) { // L: 7666
 				var3 = var3 * 128 + 64; // L: 7667
 				var4 = var4 * 128 + 64; // L: 7668
@@ -324,20 +324,20 @@ public final class Occluder {
 			int var13;
 			int var14;
 			byte var37;
-			if (class263.field3060 == var0) { // L: 7674
-				var2 = var1.method7556(); // L: 7675
-				var3 = var1.method7716(); // L: 7676
-				var37 = var1.method7549(); // L: 7677
-				var5 = var1.method7545(); // L: 7678
-				var6 = (var5 >> 4 & 7) + class145.field1690; // L: 7679
-				var7 = (var5 & 7) + class321.field4076; // L: 7680
-				var8 = var1.method7576(); // L: 7681
+			if (ZoneUpdate.MAPPROJ_ANIM == var0) { // L: 7674
+				var2 = var1.readShortLE(); // L: 7675
+				var3 = var1.readUShortLE(); // L: 7676
+				var37 = var1.readByteSub(); // L: 7677
+				var5 = var1.readUByteNeg(); // L: 7678
+				var6 = (var5 >> 4 & 7) + class145.Zone_Y; // L: 7679
+				var7 = (var5 & 7) + class321.ZONE_X; // L: 7680
+				var8 = var1.readUShortAddLE(); // L: 7681
 				var9 = var1.readUnsignedShort(); // L: 7682
 				var10 = var1.readUnsignedByte() * 4; // L: 7683
-				var11 = var1.method7546(); // L: 7684
-				var12 = var1.method7545() * 4; // L: 7685
-				var13 = var1.method7546(); // L: 7686
-				byte var39 = var1.method7549(); // L: 7687
+				var11 = var1.readUByteSub(); // L: 7684
+				var12 = var1.readUByteNeg() * 4; // L: 7685
+				var13 = var1.readUByteSub(); // L: 7686
+				byte var39 = var1.readByteSub(); // L: 7687
 				var14 = var39 + var6; // L: 7688
 				var4 = var37 + var7; // L: 7689
 				if (var6 >= 0 && var7 >= 0 && var6 < 104 && var7 < 104 && var14 >= 0 && var4 >= 0 && var14 < 104 && var4 < 104 && var3 != 65535) { // L: 7690
@@ -351,22 +351,22 @@ public final class Occluder {
 				}
 
 			} else {
-				if (class263.field3062 == var0) { // L: 7701
-					var2 = var1.method7554(); // L: 7702
-					var3 = var1.method7716(); // L: 7703
-					var37 = var1.method7547(); // L: 7704
-					var5 = var1.method7546(); // L: 7705
-					var6 = (var5 >> 4 & 7) + class145.field1690; // L: 7706
-					var7 = (var5 & 7) + class321.field4076; // L: 7707
-					var8 = var1.method7554(); // L: 7708
+				if (ZoneUpdate.PREFETCH_GAMEOBJECTS == var0) { // L: 7701
+					var2 = var1.readUShortAdd(); // L: 7702
+					var3 = var1.readUShortLE(); // L: 7703
+					var37 = var1.readByteAdd(); // L: 7704
+					var5 = var1.readUByteSub(); // L: 7705
+					var6 = (var5 >> 4 & 7) + class145.Zone_Y; // L: 7706
+					var7 = (var5 & 7) + class321.ZONE_X; // L: 7707
+					var8 = var1.readUShortAdd(); // L: 7708
 					var9 = var1.readUnsignedShort(); // L: 7709
-					byte var38 = var1.method7547(); // L: 7710
+					byte var38 = var1.readByteAdd(); // L: 7710
 					var11 = var1.readUnsignedByte(); // L: 7711
 					var12 = var11 >> 2; // L: 7712
 					var13 = var11 & 3; // L: 7713
 					var14 = Client.field553[var12]; // L: 7714
-					byte var15 = var1.method7547(); // L: 7715
-					byte var16 = var1.method7547(); // L: 7716
+					byte var15 = var1.readByteAdd(); // L: 7715
+					byte var16 = var1.readByteAdd(); // L: 7716
 					Player var17;
 					if (var2 == Client.localPlayerIndex) { // L: 7718
 						var17 = ModelData0.localPlayer;
@@ -424,15 +424,15 @@ public final class Occluder {
 					}
 				}
 
-				if (class263.field3067 == var0) { // L: 7766
-					var2 = var1.method7593(); // L: 7767
+				if (ZoneUpdate.LOC_ANIM == var0) { // L: 7766
+					var2 = var1.readUnsignedByteAdd(); // L: 7767
 					var3 = var2 >> 2; // L: 7768
 					var4 = var2 & 3; // L: 7769
 					var5 = Client.field553[var3]; // L: 7770
-					var6 = var1.method7546(); // L: 7771
-					var7 = (var6 >> 4 & 7) + class145.field1690; // L: 7772
-					var8 = (var6 & 7) + class321.field4076; // L: 7773
-					var9 = var1.method7554(); // L: 7774
+					var6 = var1.readUByteSub(); // L: 7771
+					var7 = (var6 >> 4 & 7) + class145.Zone_Y; // L: 7772
+					var8 = (var6 & 7) + class321.ZONE_X; // L: 7773
+					var9 = var1.readUShortAdd(); // L: 7774
 					if (var7 >= 0 && var8 >= 0 && var7 < 103 && var8 < 103) { // L: 7775
 						if (var5 == 0) { // L: 7776
 							BoundaryObject var31 = class175.scene.method4147(class128.Client_plane, var7, var8); // L: 7777
