@@ -22,7 +22,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN1;
+	public static final ServerPacket PROJANIM_SPECIFIC;
 	@ObfuscatedName("l")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -117,7 +117,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket NPC_UPDATE_SMALL_LEGACY;
+	public static final ServerPacket NPC_INFO_SMALL;
 	@ObfuscatedName("d")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -167,7 +167,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN11;
+	public static final ServerPacket LEGACY_NPC_INFO_SMALL;
 	@ObfuscatedName("aj")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -212,7 +212,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN2;
+	public static final ServerPacket MAP_SPOTANIM_SPECIFIC;
 	@ObfuscatedName("aq")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -227,7 +227,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN7;
+	public static final ServerPacket LOC_ANIM_SPECIFIC;
 	@ObfuscatedName("aw")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -247,7 +247,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN6;
+	public static final ServerPacket NPC_ANIM_SPECIFIC;
 	@ObfuscatedName("ai")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -307,7 +307,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket NPC_UPDATE_SMALLL;
+	public static final ServerPacket LEGACY_NPC_INFO_LARGE;
 	@ObfuscatedName("bs")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -387,7 +387,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN8;
+	public static final ServerPacket SPOTANIM_SPECIFIC;
 	@ObfuscatedName("bg")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -452,12 +452,12 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN5;
+	public static final ServerPacket IF_SETEVENTS;
 	@ObfuscatedName("cc")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN3;
+	public static final ServerPacket PLAYER_SPOTANIM_SPECIFIC;
 	@ObfuscatedName("cy")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -487,7 +487,7 @@ public class ServerPacket {
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
 	)
-	public static final ServerPacket UNKNOWN9;
+	public static final ServerPacket CAM_SMOOTHRESET;
 	@ObfuscatedName("cg")
 	@ObfuscatedSignature(
 		descriptor = "Ljg;"
@@ -548,7 +548,7 @@ public class ServerPacket {
 
 	static {
 		REBUILD_REGION_NORMAL = new ServerPacket(0, -2); // L: 5
-		UNKNOWN1 = new ServerPacket(1, 17); // L: 6
+		PROJANIM_SPECIFIC = new ServerPacket(1, 17); // L: 6
 		RESET_ANIMS = new ServerPacket(2, 0); // L: 7
 		IF_SETANIM = new ServerPacket(3, 6); // L: 8
 		TRADING_POST_UPDATE = new ServerPacket(4, 20); // L: 9
@@ -567,7 +567,7 @@ public class ServerPacket {
 		UPDATE_FRIENDCHAT_CHANNEL_FULL = new ServerPacket(17, -2); // L: 22
 		TRIGGER_ONDIALOGABORT = new ServerPacket(18, 0); // L: 23
 		MESSAGE_CLANCHANNEL = new ServerPacket(19, -1); // L: 24
-		NPC_UPDATE_SMALL_LEGACY = new ServerPacket(20, -2); // L: 25
+		NPC_INFO_SMALL = new ServerPacket(20, -2); // L: 25
 		UPDATE_ZONE_PARTIAL_FOLLOWS = new ServerPacket(21, 2); // L: 26
 		UPDATE_FRIENDLIST = new ServerPacket(22, -2); // L: 27
 		IF_SETTEXT = new ServerPacket(23, -2); // L: 28
@@ -577,7 +577,7 @@ public class ServerPacket {
 		LOGOUT = new ServerPacket(27, 1); // L: 32
 		IF_CLOSESUB = new ServerPacket(28, 4); // L: 33
 		UPDATE_FRIENDCHAT_CHANNEL_SINGLEUSER = new ServerPacket(29, -1); // L: 34
-		UNKNOWN11 = new ServerPacket(30, -2); // L: 35
+		LEGACY_NPC_INFO_SMALL = new ServerPacket(30, -2); // L: 35
 		CLANCHANNEL_FULL = new ServerPacket(31, -2); // L: 36
 		UPDATE_ZONE_PARTIAL_ENCLOSED = new ServerPacket(32, -2); // L: 37
 		SYNTH_SOUND = new ServerPacket(33, 5); // L: 38
@@ -586,14 +586,14 @@ public class ServerPacket {
 		MESSAGE_GAME = new ServerPacket(36, -1); // L: 41
 		IF_SETPOSITION = new ServerPacket(37, 8); // L: 42
 		VARCLAN_DISABLE = new ServerPacket(38, 0); // L: 43
-		UNKNOWN2 = new ServerPacket(39, 8); // L: 44
+		MAP_SPOTANIM_SPECIFIC = new ServerPacket(39, 8); // L: 44
 		UPDATE_INV_STOP_TRANSMIT = new ServerPacket(40, 2); // L: 45
 		GAMEFRAME_FULL = new ServerPacket(41, -2); // L: 46
-		UNKNOWN7 = new ServerPacket(42, 6); // L: 47
+		LOC_ANIM_SPECIFIC = new ServerPacket(42, 6); // L: 47
 		UPDATE_REBOOT_TIMER = new ServerPacket(43, 2); // L: 48
 		PREFETCH_GAMEOBJECTS = new ServerPacket(44, 14); // L: 49
 		CAM_MOVETO = new ServerPacket(45, 6); // L: 50
-		UNKNOWN6 = new ServerPacket(46, 5); // L: 51
+		NPC_ANIM_SPECIFIC = new ServerPacket(46, 5); // L: 51
 		TOGGLE_OCULUS_ORB = new ServerPacket(47, 4); // L: 52
 		IF_OPENSUB = new ServerPacket(48, 7); // L: 53
 		IF_OPENTOP = new ServerPacket(49, 2); // L: 54
@@ -605,7 +605,7 @@ public class ServerPacket {
 		UPDATE_INV_CLEAR = new ServerPacket(55, 4); // L: 60
 		UPDATE_UID192 = new ServerPacket(56, 28); // L: 61
 		VARCLAN_ENABLE = new ServerPacket(57, 0); // L: 62
-		NPC_UPDATE_SMALLL = new ServerPacket(58, -2); // L: 63
+		LEGACY_NPC_INFO_LARGE = new ServerPacket(58, -2); // L: 63
 		OBJ_DEL = new ServerPacket(59, 3); // L: 64
 		UPDATE_ZONE_FULL_FOLLOWS = new ServerPacket(60, 2); // L: 65
 		IF_SETANGLE = new ServerPacket(61, 10); // L: 66
@@ -621,7 +621,7 @@ public class ServerPacket {
 		ENTER_FREECAM = new ServerPacket(71, 1); // L: 76
 		IF_SETPLAYERHEAD = new ServerPacket(72, 4); // L: 77
 		IF1_MODELROTATE = new ServerPacket(73, 8); // L: 78
-		UNKNOWN8 = new ServerPacket(74, 8); // L: 79
+		SPOTANIM_SPECIFIC = new ServerPacket(74, 8); // L: 79
 		RESET_CLIENT_VARCACHE = new ServerPacket(75, 0); // L: 80
 		HINT_ARROW = new ServerPacket(76, 6); // L: 81
 		VARP_SMALL = new ServerPacket(77, 3); // L: 82
@@ -634,14 +634,14 @@ public class ServerPacket {
 		CAM_SHAKE = new ServerPacket(84, 4); // L: 89
 		LOC_ADD_CHANGE = new ServerPacket(85, 2); // L: 90
 		AREA_SOUND = new ServerPacket(86, 5); // L: 91
-		UNKNOWN5 = new ServerPacket(87, 12); // L: 92
-		UNKNOWN3 = new ServerPacket(88, 8); // L: 93
+		IF_SETEVENTS = new ServerPacket(87, 12); // L: 92
+		PLAYER_SPOTANIM_SPECIFIC = new ServerPacket(88, 8); // L: 93
 		CLANSETTINGS_DELTA = new ServerPacket(89, -2); // L: 94
 		IF_SETOBJECT = new ServerPacket(90, 10); // L: 95
 		OBJ_ADD = new ServerPacket(91, 5); // L: 96
 		LOGOUT_FULL = new ServerPacket(92, 0); // L: 97
 		LOC_ANIM = new ServerPacket(93, 4); // L: 98
-		UNKNOWN9 = new ServerPacket(94, 4); // L: 99
+		CAM_SMOOTHRESET = new ServerPacket(94, 4); // L: 99
 		MESSAGE_PRIVATE = new ServerPacket(95, -2); // L: 100
 		UPDATE_INV_PARTIAL = new ServerPacket(96, -2); // L: 101
 		CLANCHANNEL_DELTA = new ServerPacket(97, -2); // L: 102
