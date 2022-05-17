@@ -130,7 +130,7 @@ public class Skills {
 	)
 	@Export("resumePauseWidget")
 	static void resumePauseWidget(int var0, int var1) {
-		PacketBufferNode var2 = WallDecoration.getPacketBufferNode(ClientPacket.field2967, Client.packetWriter.isaacCipher); // L: 9801
+		PacketBufferNode var2 = WallDecoration.getPacketBufferNode(ClientPacket.RESUME_PAUSEBUTTON, Client.packetWriter.isaacCipher); // L: 9801
 		var2.packetBuffer.writeIntIME(var0); // L: 9802
 		var2.packetBuffer.writeShortAdd(var1); // L: 9803
 		Client.packetWriter.addNode(var2); // L: 9804
@@ -144,7 +144,7 @@ public class Skills {
 	@Export("Clan_joinChat")
 	static final void Clan_joinChat(String var0) {
 		if (!var0.equals("")) { // L: 12447
-			PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.field2970, Client.packetWriter.isaacCipher); // L: 12449
+			PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.CLAN_JOINCHAT_LEAVECHAT, Client.packetWriter.isaacCipher); // L: 12449
 			var1.packetBuffer.writeByte(class392.stringCp1252NullTerminatedByteSize(var0)); // L: 12450
 			var1.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 12451
 			Client.packetWriter.addNode(var1); // L: 12452

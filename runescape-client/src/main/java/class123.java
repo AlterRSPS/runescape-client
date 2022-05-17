@@ -83,7 +83,7 @@ public enum class123 implements MouseWheel {
 		garbageValue = "16"
 	)
 	public static void method2781(int var0, int var1, int var2, boolean var3) {
-		PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.field2955, Client.packetWriter.isaacCipher); // L: 12656
+		PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.TELEPORT, Client.packetWriter.isaacCipher); // L: 12656
 		var4.packetBuffer.writeShortAdd(var1); // L: 12657
 		var4.packetBuffer.writeShortLE(var0); // L: 12658
 		var4.packetBuffer.writeByteSub(var2); // L: 12659

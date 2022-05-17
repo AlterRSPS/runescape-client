@@ -32,7 +32,7 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 		garbageValue = "-1715525516"
 	)
 	public static PacketBufferNode method5784(int var0, String var1, Language var2, int var3) {
-		PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.field2973, Client.packetWriter.isaacCipher); // L: 17
+		PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.MESSAGE_PUBLIC, Client.packetWriter.isaacCipher); // L: 17
 		var4.packetBuffer.writeByte(0); // L: 18
 		int var5 = var4.packetBuffer.offset; // L: 19
 		var4.packetBuffer.writeByte(var0); // L: 20

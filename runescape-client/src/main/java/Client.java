@@ -3297,7 +3297,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 						PacketBufferNode var14;
 						int var15;
 						if (timer.field4235) { // L: 3103
-							var14 = WallDecoration.getPacketBufferNode(ClientPacket.field3009, packetWriter.isaacCipher); // L: 3105
+							var14 = WallDecoration.getPacketBufferNode(ClientPacket.LOGIN_STATISTICS, packetWriter.isaacCipher); // L: 3105
 							var14.packetBuffer.writeByte(0); // L: 3106
 							var15 = var14.packetBuffer.offset; // L: 3107
 							timer.write(var14.packetBuffer); // L: 3108
@@ -3344,7 +3344,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 
 									if (var9 != field492 || var8 != field681) { // L: 3132
 										if (var31 == null) { // L: 3135
-											var31 = WallDecoration.getPacketBufferNode(ClientPacket.field2952, packetWriter.isaacCipher); // L: 3136
+											var31 = WallDecoration.getPacketBufferNode(ClientPacket.EVENT_MOUSE_MOVE, packetWriter.isaacCipher); // L: 3136
 											var31.packetBuffer.writeByte(0); // L: 3137
 											var3 = var31.packetBuffer.offset; // L: 3138
 											var10000 = var31.packetBuffer; // L: 3139
@@ -3441,7 +3441,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 							}
 
 							var5 = (int)var16; // L: 3213
-							var18 = WallDecoration.getPacketBufferNode(ClientPacket.field3051, packetWriter.isaacCipher); // L: 3214
+							var18 = WallDecoration.getPacketBufferNode(ClientPacket.EVENT_MOUSE_CLICK, packetWriter.isaacCipher); // L: 3214
 							var18.packetBuffer.writeShort((MouseHandler.MouseHandler_lastButton == 2 ? 1 : 0) + (var5 << 1)); // L: 3215
 							var18.packetBuffer.writeShort(var4); // L: 3216
 							var18.packetBuffer.writeShort(var3); // L: 3217
@@ -3449,7 +3449,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 						}
 
 						if (KeyHandler.field139 > 0) { // L: 3220
-							var14 = WallDecoration.getPacketBufferNode(ClientPacket.field2949, packetWriter.isaacCipher); // L: 3221
+							var14 = WallDecoration.getPacketBufferNode(ClientPacket.EVENT_KEYBOARD, packetWriter.isaacCipher); // L: 3221
 							var14.packetBuffer.writeShort(0); // L: 3222
 							var15 = var14.packetBuffer.offset; // L: 3223
 							long var19 = class113.method2624(); // L: 3224
@@ -3480,7 +3480,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 						if (field557 && field576 <= 0) { // L: 3237
 							field576 = 20; // L: 3238
 							field557 = false; // L: 3239
-							var14 = WallDecoration.getPacketBufferNode(ClientPacket.field3035, packetWriter.isaacCipher); // L: 3241
+							var14 = WallDecoration.getPacketBufferNode(ClientPacket.EVENT_CAMERA_POSITION, packetWriter.isaacCipher); // L: 3241
 							var14.packetBuffer.writeShort(camAngleY); // L: 3242
 							var14.packetBuffer.writeShort(camAngleX); // L: 3243
 							packetWriter.addNode(var14); // L: 3244
@@ -3488,14 +3488,14 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 
 						if (WorldMapArea.hasFocus && !hadFocus) { // L: 3246
 							hadFocus = true; // L: 3247
-							var14 = WallDecoration.getPacketBufferNode(ClientPacket.field3038, packetWriter.isaacCipher); // L: 3249
+							var14 = WallDecoration.getPacketBufferNode(ClientPacket.EVENT_APPLET_FOCUS, packetWriter.isaacCipher); // L: 3249
 							var14.packetBuffer.writeByte(1); // L: 3250
 							packetWriter.addNode(var14); // L: 3251
 						}
 
 						if (!WorldMapArea.hasFocus && hadFocus) { // L: 3253
 							hadFocus = false; // L: 3254
-							var14 = WallDecoration.getPacketBufferNode(ClientPacket.field3038, packetWriter.isaacCipher); // L: 3256
+							var14 = WallDecoration.getPacketBufferNode(ClientPacket.EVENT_APPLET_FOCUS, packetWriter.isaacCipher); // L: 3256
 							var14.packetBuffer.writeByte(0); // L: 3257
 							packetWriter.addNode(var14); // L: 3258
 						}
@@ -3778,7 +3778,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 																				var52.swapItems(dragItemSlotDestination, dragItemSlotSource); // L: 3517
 																			}
 
-																			PacketBufferNode var26 = WallDecoration.getPacketBufferNode(ClientPacket.field3042, packetWriter.isaacCipher); // L: 3520
+																			PacketBufferNode var26 = WallDecoration.getPacketBufferNode(ClientPacket.OPHELD_D, packetWriter.isaacCipher); // L: 3520
 																			var26.packetBuffer.writeShort(dragItemSlotSource); // L: 3521
 																			var26.packetBuffer.writeShort(dragItemSlotDestination); // L: 3522
 																			var26.packetBuffer.writeByte(var36); // L: 3523
@@ -3809,7 +3809,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 															if (Scene.shouldSendWalk()) { // L: 3558
 																var4 = Scene.Scene_selectedX; // L: 3559
 																var5 = Scene.Scene_selectedY; // L: 3560
-																var18 = WallDecoration.getPacketBufferNode(ClientPacket.field2957, packetWriter.isaacCipher); // L: 3562
+																var18 = WallDecoration.getPacketBufferNode(ClientPacket.MOVE_GAMECLICK, packetWriter.isaacCipher); // L: 3562
 																var18.packetBuffer.writeByte(5); // L: 3563
 																var18.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? (KeyHandler.KeyHandler_pressedKeys[81] ? 2 : 1) : 0); // L: 3564
 																var18.packetBuffer.writeShortAddLE(var5 + GrandExchangeOfferOwnWorldComparator.baseY); // L: 3565
@@ -4067,14 +4067,14 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 															if (var4 > 15000 && var5 > 15000) { // L: 3732
 																logoutTimer = 250; // L: 3733
 																MouseHandler.MouseHandler_idleCycles = 14500; // L: 3735
-																var18 = WallDecoration.getPacketBufferNode(ClientPacket.field3027, packetWriter.isaacCipher); // L: 3738
+																var18 = WallDecoration.getPacketBufferNode(ClientPacket.IDLE_LOGOUT, packetWriter.isaacCipher); // L: 3738
 																packetWriter.addNode(var18); // L: 3739
 															}
 
 															BufferedSource.friendSystem.processFriendUpdates(); // L: 3741
 															++packetWriter.pendingWrites; // L: 3742
 															if (packetWriter.pendingWrites > 50) { // L: 3743
-																var18 = WallDecoration.getPacketBufferNode(ClientPacket.field2982, packetWriter.isaacCipher); // L: 3745
+																var18 = WallDecoration.getPacketBufferNode(ClientPacket.NO_TIMEOUT, packetWriter.isaacCipher); // L: 3745
 																packetWriter.addNode(var18); // L: 3746
 															}
 
@@ -4123,7 +4123,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 						}
 					}
 
-					var31 = WallDecoration.getPacketBufferNode(ClientPacket.field3047, packetWriter.isaacCipher); // L: 3096
+					var31 = WallDecoration.getPacketBufferNode(ClientPacket.REFLECTION_CHECK_REPLY, packetWriter.isaacCipher); // L: 3096
 					var31.packetBuffer.writeByte(0); // L: 3097
 					var3 = var31.packetBuffer.offset; // L: 3098
 					UserComparator3.performReflectionCheck(var31.packetBuffer); // L: 3099
@@ -4802,7 +4802,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 					var67 = var3.readInt(); // L: 6427
 					var5 = var3.readInt(); // L: 6428
 					var6 = class17.getGcDuration(); // L: 6429
-					PacketBufferNode var58 = WallDecoration.getPacketBufferNode(ClientPacket.field3053, packetWriter.isaacCipher); // L: 6431
+					PacketBufferNode var58 = WallDecoration.getPacketBufferNode(ClientPacket.SEND_PING_REPLY, packetWriter.isaacCipher); // L: 6431
 					var58.packetBuffer.writeIntME(var67); // L: 6432
 					var58.packetBuffer.writeIntME(var5); // L: 6433
 					var58.packetBuffer.writeByteSub(GameEngine.fps); // L: 6434
@@ -6479,7 +6479,7 @@ public final class Client extends GameEngine implements Usernamed, OAuthApi {
 						}
 
 						if (var18 != null) { // L: 11874
-							PacketBufferNode var19 = WallDecoration.getPacketBufferNode(ClientPacket.field3029, packetWriter.isaacCipher); // L: 11876
+							PacketBufferNode var19 = WallDecoration.getPacketBufferNode(ClientPacket.UNKNOWN2, packetWriter.isaacCipher); // L: 11876
 							var19.packetBuffer.writeShort(clickedWidget.childIndex); // L: 11877
 							var19.packetBuffer.writeIntLE(draggedOnWidget.id); // L: 11878
 							var19.packetBuffer.writeShort(draggedOnWidget.childIndex); // L: 11879

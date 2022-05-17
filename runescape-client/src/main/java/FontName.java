@@ -122,7 +122,7 @@ public class FontName {
 			}
 
 			Client.tradeChatMode = Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize + 2]; // L: 3534
-			PacketBufferNode var13 = WallDecoration.getPacketBufferNode(ClientPacket.field3052, Client.packetWriter.isaacCipher); // L: 3536
+			PacketBufferNode var13 = WallDecoration.getPacketBufferNode(ClientPacket.SET_CHATFILTERSETTINGS, Client.packetWriter.isaacCipher); // L: 3536
 			var13.packetBuffer.writeByte(Client.publicChatMode); // L: 3537
 			var13.packetBuffer.writeByte(class21.privateChatMode.field4796); // L: 3538
 			var13.packetBuffer.writeByte(Client.tradeChatMode); // L: 3539
@@ -138,7 +138,7 @@ public class FontName {
 				class12.Interpreter_intStackSize -= 2; // L: 3545
 				var7 = Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize]; // L: 3546
 				var9 = Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize + 1]; // L: 3547
-				var6 = WallDecoration.getPacketBufferNode(ClientPacket.field3039, Client.packetWriter.isaacCipher); // L: 3549
+				var6 = WallDecoration.getPacketBufferNode(ClientPacket.SEND_SNAPSHOT, Client.packetWriter.isaacCipher); // L: 3549
 				var6.packetBuffer.writeByte(class392.stringCp1252NullTerminatedByteSize(var8) + 2); // L: 3550
 				var6.packetBuffer.writeStringCp1252NullTerminated(var8); // L: 3551
 				var6.packetBuffer.writeByte(var7 - 1); // L: 3552
@@ -212,7 +212,7 @@ public class FontName {
 							class9.Interpreter_stringStackSize -= 2; // L: 3614
 							var8 = Interpreter.Interpreter_stringStack[class9.Interpreter_stringStackSize]; // L: 3615
 							String var11 = Interpreter.Interpreter_stringStack[class9.Interpreter_stringStackSize + 1]; // L: 3616
-							var12 = WallDecoration.getPacketBufferNode(ClientPacket.field2953, Client.packetWriter.isaacCipher); // L: 3618
+							var12 = WallDecoration.getPacketBufferNode(ClientPacket.MESSAGE_PRIVATE, Client.packetWriter.isaacCipher); // L: 3618
 							var12.packetBuffer.writeShort(0); // L: 3619
 							int var10 = var12.packetBuffer.offset; // L: 3620
 							var12.packetBuffer.writeStringCp1252NullTerminated(var8); // L: 3621

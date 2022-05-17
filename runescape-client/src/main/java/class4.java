@@ -37,7 +37,7 @@ public final class class4 {
 		garbageValue = "-924904180"
 	)
 	static void method22() {
-		Client.packetWriter.addNode(WallDecoration.getPacketBufferNode(ClientPacket.field3020, Client.packetWriter.isaacCipher)); // L: 12669
+		Client.packetWriter.addNode(WallDecoration.getPacketBufferNode(ClientPacket.EXIT_FREECAM, Client.packetWriter.isaacCipher)); // L: 12669
 		Client.oculusOrbState = 0; // L: 12670
 	} // L: 12671
 }

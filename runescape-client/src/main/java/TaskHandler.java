@@ -212,7 +212,7 @@ public class TaskHandler implements Runnable {
 				if (MenuAction.method1880(UrlRequester.getWidgetFlags(var5), var0 - 1)) { // L: 9821
 					PacketBufferNode var7;
 					if (var0 == 1) { // L: 9824
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field3006, Client.packetWriter.isaacCipher); // L: 9826
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON1, Client.packetWriter.isaacCipher); // L: 9826
 						var7.packetBuffer.writeInt(var1); // L: 9827
 						var7.packetBuffer.writeShort(var2); // L: 9828
 						var7.packetBuffer.writeShort(var3); // L: 9829
@@ -220,7 +220,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 2) { // L: 9832
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field3032, Client.packetWriter.isaacCipher); // L: 9834
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON2, Client.packetWriter.isaacCipher); // L: 9834
 						var7.packetBuffer.writeInt(var1); // L: 9835
 						var7.packetBuffer.writeShort(var2); // L: 9836
 						var7.packetBuffer.writeShort(var3); // L: 9837
@@ -228,7 +228,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 3) { // L: 9840
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field3011, Client.packetWriter.isaacCipher); // L: 9842
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON3, Client.packetWriter.isaacCipher); // L: 9842
 						var7.packetBuffer.writeInt(var1); // L: 9843
 						var7.packetBuffer.writeShort(var2); // L: 9844
 						var7.packetBuffer.writeShort(var3); // L: 9845
@@ -236,7 +236,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 4) { // L: 9848
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field2956, Client.packetWriter.isaacCipher); // L: 9850
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON4, Client.packetWriter.isaacCipher); // L: 9850
 						var7.packetBuffer.writeInt(var1); // L: 9851
 						var7.packetBuffer.writeShort(var2); // L: 9852
 						var7.packetBuffer.writeShort(var3); // L: 9853
@@ -244,7 +244,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 5) { // L: 9856
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field2960, Client.packetWriter.isaacCipher); // L: 9858
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON5, Client.packetWriter.isaacCipher); // L: 9858
 						var7.packetBuffer.writeInt(var1); // L: 9859
 						var7.packetBuffer.writeShort(var2); // L: 9860
 						var7.packetBuffer.writeShort(var3); // L: 9861
@@ -252,7 +252,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 6) { // L: 9864
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field2968, Client.packetWriter.isaacCipher); // L: 9866
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON6, Client.packetWriter.isaacCipher); // L: 9866
 						var7.packetBuffer.writeInt(var1); // L: 9867
 						var7.packetBuffer.writeShort(var2); // L: 9868
 						var7.packetBuffer.writeShort(var3); // L: 9869
@@ -260,7 +260,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 7) { // L: 9872
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field3002, Client.packetWriter.isaacCipher); // L: 9874
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON7, Client.packetWriter.isaacCipher); // L: 9874
 						var7.packetBuffer.writeInt(var1); // L: 9875
 						var7.packetBuffer.writeShort(var2); // L: 9876
 						var7.packetBuffer.writeShort(var3); // L: 9877
@@ -268,7 +268,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 8) { // L: 9880
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field2989, Client.packetWriter.isaacCipher); // L: 9882
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON8, Client.packetWriter.isaacCipher); // L: 9882
 						var7.packetBuffer.writeInt(var1); // L: 9883
 						var7.packetBuffer.writeShort(var2); // L: 9884
 						var7.packetBuffer.writeShort(var3); // L: 9885
@@ -276,7 +276,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 9) { // L: 9888
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field3015, Client.packetWriter.isaacCipher); // L: 9890
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON9, Client.packetWriter.isaacCipher); // L: 9890
 						var7.packetBuffer.writeInt(var1); // L: 9891
 						var7.packetBuffer.writeShort(var2); // L: 9892
 						var7.packetBuffer.writeShort(var3); // L: 9893
@@ -284,7 +284,7 @@ public class TaskHandler implements Runnable {
 					}
 
 					if (var0 == 10) { // L: 9896
-						var7 = WallDecoration.getPacketBufferNode(ClientPacket.field3043, Client.packetWriter.isaacCipher); // L: 9898
+						var7 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTON10, Client.packetWriter.isaacCipher); // L: 9898
 						var7.packetBuffer.writeInt(var1); // L: 9899
 						var7.packetBuffer.writeShort(var2); // L: 9900
 						var7.packetBuffer.writeShort(var3); // L: 9901

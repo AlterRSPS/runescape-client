@@ -85,7 +85,7 @@ public class class168 {
 		if (Client.currentClanChannels[var0] != null) { // L: 12490
 			if (var1 >= 0 && var1 < Client.currentClanChannels[var0].method3005()) { // L: 12491
 				ClanChannelMember var3 = (ClanChannelMember)Client.currentClanChannels[var0].members.get(var1); // L: 12492
-				PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.field2993, Client.packetWriter.isaacCipher); // L: 12493
+				PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.AFFINEDCLANSETTINGS_SETMUTED_FROMCHANNEL, Client.packetWriter.isaacCipher); // L: 12493
 				var4.packetBuffer.writeByte(4 + class392.stringCp1252NullTerminatedByteSize(var3.username.getName())); // L: 12494
 				var4.packetBuffer.writeByte(var0); // L: 12495
 				var4.packetBuffer.writeShort(var1); // L: 12496

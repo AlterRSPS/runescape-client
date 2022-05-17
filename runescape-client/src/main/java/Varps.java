@@ -41,7 +41,7 @@ public class Varps {
 		garbageValue = "-20299938"
 	)
 	static final void method5366() {
-		PacketBufferNode var0 = WallDecoration.getPacketBufferNode(ClientPacket.field3001, Client.packetWriter.isaacCipher); // L: 12197
+		PacketBufferNode var0 = WallDecoration.getPacketBufferNode(ClientPacket.CLOSE_MODAL, Client.packetWriter.isaacCipher); // L: 12197
 		Client.packetWriter.addNode(var0); // L: 12198
 		Interpreter.field833 = true; // L: 12199
 

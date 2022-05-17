@@ -473,7 +473,7 @@ public class WorldMap {
 					}
 
 					if (var9) { // L: 227
-						PacketBufferNode var12 = WallDecoration.getPacketBufferNode(ClientPacket.field2974, Client.packetWriter.isaacCipher); // L: 228
+						PacketBufferNode var12 = WallDecoration.getPacketBufferNode(ClientPacket.CLICKWORLDMAP, Client.packetWriter.isaacCipher); // L: 228
 						var12.packetBuffer.writeIntIME(this.mouseCoord.packed()); // L: 229
 						Client.packetWriter.addNode(var12); // L: 230
 						this.field4554 = 0L; // L: 231

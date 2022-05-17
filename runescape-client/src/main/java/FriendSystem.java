@@ -172,7 +172,7 @@ public class FriendSystem {
 				} else if (this.isIgnored(var2)) { // L: 110
 					InterfaceParent.method2067("Please remove " + var1 + " from your ignore list first"); // L: 112
 				} else {
-					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.field2998, Client.packetWriter.isaacCipher); // L: 118
+					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.FRIENDLIST_ADD, Client.packetWriter.isaacCipher); // L: 118
 					var3.packetBuffer.writeByte(class392.stringCp1252NullTerminatedByteSize(var1)); // L: 119
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 120
 					Client.packetWriter.addNode(var3); // L: 121
@@ -210,7 +210,7 @@ public class FriendSystem {
 				} else if (this.isFriended(var2, false)) { // L: 158
 					InterfaceParent.method2067("Please remove " + var1 + " from your friend list first"); // L: 160
 				} else {
-					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.field2959, Client.packetWriter.isaacCipher); // L: 166
+					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.IGNORELIST_ADD, Client.packetWriter.isaacCipher); // L: 166
 					var3.packetBuffer.writeByte(class392.stringCp1252NullTerminatedByteSize(var1)); // L: 167
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 168
 					Client.packetWriter.addNode(var3); // L: 169
@@ -241,7 +241,7 @@ public class FriendSystem {
 			if (var2.hasCleanName()) { // L: 191
 				if (this.friendsList.removeByUsername(var2)) { // L: 192
 					Renderable.method4210(); // L: 193
-					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.field2954, Client.packetWriter.isaacCipher); // L: 195
+					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.FRIENDLIST_DEL, Client.packetWriter.isaacCipher); // L: 195
 					var3.packetBuffer.writeByte(class392.stringCp1252NullTerminatedByteSize(var1)); // L: 196
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 197
 					Client.packetWriter.addNode(var3); // L: 198
@@ -279,7 +279,7 @@ public class FriendSystem {
 			if (var2.hasCleanName()) { // L: 222
 				if (this.ignoreList.removeByUsername(var2)) { // L: 223
 					Renderable.method4210(); // L: 224
-					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.field3034, Client.packetWriter.isaacCipher); // L: 226
+					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.IGNORELIST_DEL, Client.packetWriter.isaacCipher); // L: 226
 					var3.packetBuffer.writeByte(class392.stringCp1252NullTerminatedByteSize(var1)); // L: 227
 					var3.packetBuffer.writeStringCp1252NullTerminated(var1); // L: 228
 					Client.packetWriter.addNode(var3); // L: 229

@@ -214,7 +214,7 @@ public class DynamicObject extends Renderable {
 					var15 = class92.method2373(var7);
 				}
 
-				PacketBufferNode var13 = WallDecoration.getPacketBufferNode(ClientPacket.field2972, Client.packetWriter.isaacCipher); // L: 1491
+				PacketBufferNode var13 = WallDecoration.getPacketBufferNode(ClientPacket.RESUME_P_COUNTDIALOG, Client.packetWriter.isaacCipher); // L: 1491
 				var13.packetBuffer.writeInt(var15); // L: 1492
 				Client.packetWriter.addNode(var13); // L: 1493
 				return 1; // L: 1494
@@ -222,14 +222,14 @@ public class DynamicObject extends Renderable {
 				PacketBufferNode var11;
 				if (var0 == ScriptOpcodes.RESUME_NAMEDIALOG) {
 					var7 = Interpreter.Interpreter_stringStack[--class9.Interpreter_stringStackSize]; // L: 1497
-					var11 = WallDecoration.getPacketBufferNode(ClientPacket.field3048, Client.packetWriter.isaacCipher); // L: 1499
+					var11 = WallDecoration.getPacketBufferNode(ClientPacket.RESUME_P_NAMEDIALOG, Client.packetWriter.isaacCipher); // L: 1499
 					var11.packetBuffer.writeByte(var7.length() + 1); // L: 1500
 					var11.packetBuffer.writeStringCp1252NullTerminated(var7); // L: 1501
 					Client.packetWriter.addNode(var11); // L: 1502
 					return 1; // L: 1503
 				} else if (var0 == ScriptOpcodes.RESUME_STRINGDIALOG) {
 					var7 = Interpreter.Interpreter_stringStack[--class9.Interpreter_stringStackSize]; // L: 1506
-					var11 = WallDecoration.getPacketBufferNode(ClientPacket.field3033, Client.packetWriter.isaacCipher); // L: 1508
+					var11 = WallDecoration.getPacketBufferNode(ClientPacket.RESUME_P_STRINGDIALOG, Client.packetWriter.isaacCipher); // L: 1508
 					var11.packetBuffer.writeByte(var7.length() + 1); // L: 1509
 					var11.packetBuffer.writeStringCp1252NullTerminated(var7); // L: 1510
 					Client.packetWriter.addNode(var11); // L: 1511
@@ -273,7 +273,7 @@ public class DynamicObject extends Renderable {
 						return 1; // L: 1553
 					} else if (var0 == ScriptOpcodes.RESUME_OBJDIALOG) {
 						var10 = Interpreter.Interpreter_intStack[--class12.Interpreter_intStackSize]; // L: 1556
-						var11 = WallDecoration.getPacketBufferNode(ClientPacket.field3017, Client.packetWriter.isaacCipher); // L: 1558
+						var11 = WallDecoration.getPacketBufferNode(ClientPacket.RESUME_P_OBJDIALOG, Client.packetWriter.isaacCipher); // L: 1558
 						var11.packetBuffer.writeShort(var10); // L: 1559
 						Client.packetWriter.addNode(var11); // L: 1560
 						return 1; // L: 1561
@@ -287,7 +287,7 @@ public class DynamicObject extends Renderable {
 						} else if (var5.length() > 500) { // L: 1569
 							return 1;
 						} else {
-							PacketBufferNode var6 = WallDecoration.getPacketBufferNode(ClientPacket.field3044, Client.packetWriter.isaacCipher); // L: 1570
+							PacketBufferNode var6 = WallDecoration.getPacketBufferNode(ClientPacket.BUG_REPORT, Client.packetWriter.isaacCipher); // L: 1570
 							var6.packetBuffer.writeShort(1 + class392.stringCp1252NullTerminatedByteSize(var4) + class392.stringCp1252NullTerminatedByteSize(var5)); // L: 1571
 							var6.packetBuffer.writeStringCp1252NullTerminated(var4); // L: 1572
 							var6.packetBuffer.method7687(var10); // L: 1573
@@ -570,22 +570,22 @@ public class DynamicObject extends Renderable {
 			if (var7 != null && var7 != ModelData0.localPlayer && var7.username != null && var7.username.equals(var5)) { // L: 9733
 				PacketBufferNode var8;
 				if (var0 == 1) { // L: 9734
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2965, Client.packetWriter.isaacCipher); // L: 9736
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER1, Client.packetWriter.isaacCipher); // L: 9736
 					var8.packetBuffer.writeShort(var3[var6]); // L: 9737
 					var8.packetBuffer.method7687(0); // L: 9738
 					Client.packetWriter.addNode(var8); // L: 9739
 				} else if (var0 == 4) { // L: 9741
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2962, Client.packetWriter.isaacCipher); // L: 9743
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER4, Client.packetWriter.isaacCipher); // L: 9743
 					var8.packetBuffer.writeByte(0); // L: 9744
 					var8.packetBuffer.writeShortAddLE(var3[var6]); // L: 9745
 					Client.packetWriter.addNode(var8); // L: 9746
 				} else if (var0 == 6) { // L: 9748
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2969, Client.packetWriter.isaacCipher); // L: 9750
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER6, Client.packetWriter.isaacCipher); // L: 9750
 					var8.packetBuffer.writeShortAddLE(var3[var6]); // L: 9751
 					var8.packetBuffer.method7687(0); // L: 9752
 					Client.packetWriter.addNode(var8); // L: 9753
 				} else if (var0 == 7) { // L: 9755
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2980, Client.packetWriter.isaacCipher); // L: 9757
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER7, Client.packetWriter.isaacCipher); // L: 9757
 					var8.packetBuffer.writeByteSub(0); // L: 9758
 					var8.packetBuffer.writeShortAddLE(var3[var6]); // L: 9759
 					Client.packetWriter.addNode(var8); // L: 9760

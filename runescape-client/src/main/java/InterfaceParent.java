@@ -161,7 +161,7 @@ public class InterfaceParent extends Node {
 			ClanChannelMember var3 = (ClanChannelMember)var2.members.get(var1); // L: 12465
 			if (var3.rank == -1) {
 				String var4 = var3.username.getName(); // L: 12467
-				PacketBufferNode var5 = WallDecoration.getPacketBufferNode(ClientPacket.field3040, Client.packetWriter.isaacCipher); // L: 12468
+				PacketBufferNode var5 = WallDecoration.getPacketBufferNode(ClientPacket.CLANCHANNEL_KICKUSER, Client.packetWriter.isaacCipher); // L: 12468
 				var5.packetBuffer.writeByte(3 + class392.stringCp1252NullTerminatedByteSize(var4)); // L: 12469
 				var5.packetBuffer.writeByte(var0); // L: 12470
 				var5.packetBuffer.writeShort(var1); // L: 12471

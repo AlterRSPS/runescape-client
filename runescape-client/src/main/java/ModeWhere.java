@@ -146,7 +146,7 @@ public enum ModeWhere implements MouseWheel {
 			Client.mouseCrossState = 0; // L: 9294
 			Client.destinationX = var0; // L: 9295
 			Client.destinationY = var1; // L: 9296
-			var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2981, Client.packetWriter.isaacCipher); // L: 9298
+			var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPLOCU, Client.packetWriter.isaacCipher); // L: 9298
 			var8.packetBuffer.writeInt(class20.selectedItemWidget); // L: 9299
 			var8.packetBuffer.writeShortLE(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9300
 			var8.packetBuffer.writeShortAdd(var0 + SecureRandomCallable.baseX); // L: 9301
@@ -162,7 +162,7 @@ public enum ModeWhere implements MouseWheel {
 			Client.mouseCrossState = 0; // L: 9103
 			Client.destinationX = var0; // L: 9104
 			Client.destinationY = var1; // L: 9105
-			var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3057, Client.packetWriter.isaacCipher); // L: 9106
+			var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPLOCT, Client.packetWriter.isaacCipher); // L: 9106
 			var8.packetBuffer.writeShortAdd(var0 + SecureRandomCallable.baseX); // L: 9107
 			var8.packetBuffer.writeShort(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9108
 			var8.packetBuffer.writeShortAdd(Client.selectedSpellItemId); // L: 9109
@@ -178,7 +178,7 @@ public enum ModeWhere implements MouseWheel {
 			Client.mouseCrossState = 0; // L: 8941
 			Client.destinationX = var0; // L: 8942
 			Client.destinationY = var1; // L: 8943
-			var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2990, Client.packetWriter.isaacCipher); // L: 8945
+			var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPLOC1, Client.packetWriter.isaacCipher); // L: 8945
 			var8.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 8946
 			var8.packetBuffer.writeShortLE(var3); // L: 8947
 			var8.packetBuffer.writeShortAddLE(var0 + SecureRandomCallable.baseX); // L: 8948
@@ -191,7 +191,7 @@ public enum ModeWhere implements MouseWheel {
 			Client.mouseCrossState = 0; // L: 9557
 			Client.destinationX = var0; // L: 9558
 			Client.destinationY = var1; // L: 9559
-			var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3049, Client.packetWriter.isaacCipher); // L: 9561
+			var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPLOC2, Client.packetWriter.isaacCipher); // L: 9561
 			var8.packetBuffer.writeShortAddLE(var3); // L: 9562
 			var8.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9563
 			var8.packetBuffer.writeShortLE(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9564
@@ -204,7 +204,7 @@ public enum ModeWhere implements MouseWheel {
 			Client.mouseCrossState = 0; // L: 9017
 			Client.destinationX = var0; // L: 9018
 			Client.destinationY = var1; // L: 9019
-			var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3041, Client.packetWriter.isaacCipher); // L: 9021
+			var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPLOC3, Client.packetWriter.isaacCipher); // L: 9021
 			var8.packetBuffer.writeShortAddLE(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9022
 			var8.packetBuffer.method7687(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9023
 			var8.packetBuffer.writeShort(var0 + SecureRandomCallable.baseX); // L: 9024
@@ -217,7 +217,7 @@ public enum ModeWhere implements MouseWheel {
 			Client.mouseCrossState = 0; // L: 9163
 			Client.destinationX = var0; // L: 9164
 			Client.destinationY = var1; // L: 9165
-			var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2999, Client.packetWriter.isaacCipher); // L: 9167
+			var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPLOC4, Client.packetWriter.isaacCipher); // L: 9167
 			var8.packetBuffer.writeShort(var3); // L: 9168
 			var8.packetBuffer.writeShort(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9169
 			var8.packetBuffer.writeShort(var0 + SecureRandomCallable.baseX); // L: 9170
@@ -235,7 +235,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9577
 					Client.destinationX = var0; // L: 9578
 					Client.destinationY = var1; // L: 9579
-					var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2985, Client.packetWriter.isaacCipher); // L: 9581
+					var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPNPCU, Client.packetWriter.isaacCipher); // L: 9581
 					var9.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9582
 					var9.packetBuffer.writeShort(FloorUnderlayDefinition.selectedItemId); // L: 9583
 					var9.packetBuffer.writeInt(class20.selectedItemWidget); // L: 9584
@@ -252,7 +252,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9640
 					Client.destinationX = var0; // L: 9641
 					Client.destinationY = var1; // L: 9642
-					var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2984, Client.packetWriter.isaacCipher); // L: 9643
+					var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPNPCT, Client.packetWriter.isaacCipher); // L: 9643
 					var9.packetBuffer.writeShortAddLE(var3); // L: 9644
 					var9.packetBuffer.writeShort(Client.selectedSpellItemId); // L: 9645
 					var9.packetBuffer.wirteByteNeg(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9646
@@ -269,7 +269,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9596
 					Client.destinationX = var0; // L: 9597
 					Client.destinationY = var1; // L: 9598
-					var9 = WallDecoration.getPacketBufferNode(ClientPacket.field3004, Client.packetWriter.isaacCipher); // L: 9600
+					var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPNPC1, Client.packetWriter.isaacCipher); // L: 9600
 					var9.packetBuffer.writeShortAdd(var3); // L: 9601
 					var9.packetBuffer.writeByte(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9602
 					Client.packetWriter.addNode(var9); // L: 9603
@@ -283,7 +283,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9396
 					Client.destinationX = var0; // L: 9397
 					Client.destinationY = var1; // L: 9398
-					var9 = WallDecoration.getPacketBufferNode(ClientPacket.field3030, Client.packetWriter.isaacCipher); // L: 9400
+					var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPNPC2, Client.packetWriter.isaacCipher); // L: 9400
 					var9.packetBuffer.writeShortLE(var3); // L: 9401
 					var9.packetBuffer.wirteByteNeg(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9402
 					Client.packetWriter.addNode(var9); // L: 9403
@@ -297,7 +297,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9280
 					Client.destinationX = var0; // L: 9281
 					Client.destinationY = var1; // L: 9282
-					var9 = WallDecoration.getPacketBufferNode(ClientPacket.field3036, Client.packetWriter.isaacCipher); // L: 9284
+					var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPNPC3, Client.packetWriter.isaacCipher); // L: 9284
 					var9.packetBuffer.wirteByteNeg(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9285
 					var9.packetBuffer.writeShortAddLE(var3); // L: 9286
 					Client.packetWriter.addNode(var9); // L: 9287
@@ -311,7 +311,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 8958
 					Client.destinationX = var0; // L: 8959
 					Client.destinationY = var1; // L: 8960
-					var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2977, Client.packetWriter.isaacCipher); // L: 8962
+					var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPNPC4, Client.packetWriter.isaacCipher); // L: 8962
 					var9.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 8963
 					var9.packetBuffer.writeShortAddLE(var3); // L: 8964
 					Client.packetWriter.addNode(var9); // L: 8965
@@ -325,7 +325,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9380
 					Client.destinationX = var0; // L: 9381
 					Client.destinationY = var1; // L: 9382
-					var9 = WallDecoration.getPacketBufferNode(ClientPacket.field3046, Client.packetWriter.isaacCipher); // L: 9384
+					var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPNPC5, Client.packetWriter.isaacCipher); // L: 9384
 					var9.packetBuffer.writeShortLE(var3); // L: 9385
 					var9.packetBuffer.wirteByteNeg(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9386
 					Client.packetWriter.addNode(var9); // L: 9387
@@ -341,7 +341,7 @@ public enum ModeWhere implements MouseWheel {
 						Client.mouseCrossState = 0; // L: 9440
 						Client.destinationX = var0; // L: 9441
 						Client.destinationY = var1; // L: 9442
-						var9 = WallDecoration.getPacketBufferNode(ClientPacket.field3007, Client.packetWriter.isaacCipher); // L: 9444
+						var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYERU, Client.packetWriter.isaacCipher); // L: 9444
 						var9.packetBuffer.writeShortAdd(PcmPlayer.selectedItemSlot); // L: 9445
 						var9.packetBuffer.writeShortAddLE(var3); // L: 9446
 						var9.packetBuffer.writeInt(class20.selectedItemWidget); // L: 9447
@@ -358,7 +358,7 @@ public enum ModeWhere implements MouseWheel {
 						Client.mouseCrossState = 0; // L: 9484
 						Client.destinationX = var0; // L: 9485
 						Client.destinationY = var1; // L: 9486
-						var9 = WallDecoration.getPacketBufferNode(ClientPacket.field3022, Client.packetWriter.isaacCipher); // L: 9487
+						var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYERT, Client.packetWriter.isaacCipher); // L: 9487
 						var9.packetBuffer.writeInt(ArchiveDiskActionHandler.selectedSpellWidget); // L: 9488
 						var9.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9489
 						var9.packetBuffer.writeShortLE(Client.selectedSpellItemId); // L: 9490
@@ -373,7 +373,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9523
 					Client.destinationX = var0; // L: 9524
 					Client.destinationY = var1; // L: 9525
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2996, Client.packetWriter.isaacCipher); // L: 9527
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJU, Client.packetWriter.isaacCipher); // L: 9527
 					var8.packetBuffer.writeShortAddLE(var0 + SecureRandomCallable.baseX); // L: 9528
 					var8.packetBuffer.writeShortLE(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9529
 					var8.packetBuffer.writeShortAddLE(FloorUnderlayDefinition.selectedItemId); // L: 9530
@@ -389,7 +389,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9354
 					Client.destinationX = var0; // L: 9355
 					Client.destinationY = var1; // L: 9356
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3010, Client.packetWriter.isaacCipher); // L: 9357
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJT, Client.packetWriter.isaacCipher); // L: 9357
 					var8.packetBuffer.writeByte(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9358
 					var8.packetBuffer.writeShortAdd(Client.selectedSpellItemId); // L: 9359
 					var8.packetBuffer.writeShortAddLE(Client.selectedSpellChildIndex); // L: 9360
@@ -405,7 +405,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9059
 					Client.destinationX = var0; // L: 9060
 					Client.destinationY = var1; // L: 9061
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3013, Client.packetWriter.isaacCipher); // L: 9063
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJ1, Client.packetWriter.isaacCipher); // L: 9063
 					var8.packetBuffer.writeShortLE(var0 + SecureRandomCallable.baseX); // L: 9064
 					var8.packetBuffer.writeShortAdd(var3); // L: 9065
 					var8.packetBuffer.writeShortAddLE(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9066
@@ -418,7 +418,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9691
 					Client.destinationX = var0; // L: 9692
 					Client.destinationY = var1; // L: 9693
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2987, Client.packetWriter.isaacCipher); // L: 9695
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJ2, Client.packetWriter.isaacCipher); // L: 9695
 					var8.packetBuffer.wirteByteNeg(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9696
 					var8.packetBuffer.writeShortLE(var0 + SecureRandomCallable.baseX); // L: 9697
 					var8.packetBuffer.writeShortAddLE(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9698
@@ -431,7 +431,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9252
 					Client.destinationX = var0; // L: 9253
 					Client.destinationY = var1; // L: 9254
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2997, Client.packetWriter.isaacCipher); // L: 9256
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJ3, Client.packetWriter.isaacCipher); // L: 9256
 					var8.packetBuffer.writeShort(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9257
 					var8.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9258
 					var8.packetBuffer.writeShortAdd(var0 + SecureRandomCallable.baseX); // L: 9259
@@ -444,7 +444,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 9191
 					Client.destinationX = var0; // L: 9192
 					Client.destinationY = var1; // L: 9193
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2976, Client.packetWriter.isaacCipher); // L: 9195
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJ4, Client.packetWriter.isaacCipher); // L: 9195
 					var8.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9196
 					var8.packetBuffer.writeShortLE(var0 + SecureRandomCallable.baseX); // L: 9197
 					var8.packetBuffer.writeShort(var3); // L: 9198
@@ -457,7 +457,7 @@ public enum ModeWhere implements MouseWheel {
 					Client.mouseCrossState = 0; // L: 8986
 					Client.destinationX = var0; // L: 8987
 					Client.destinationY = var1; // L: 8988
-					var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2978, Client.packetWriter.isaacCipher); // L: 8990
+					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJ5, Client.packetWriter.isaacCipher); // L: 8990
 					var8.packetBuffer.method7687(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 8991
 					var8.packetBuffer.writeShortLE(var3); // L: 8992
 					var8.packetBuffer.writeShortAdd(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 8993
@@ -481,7 +481,7 @@ public enum ModeWhere implements MouseWheel {
 							}
 
 							if (var12) { // L: 9470
-								var11 = WallDecoration.getPacketBufferNode(ClientPacket.field3014, Client.packetWriter.isaacCipher); // L: 9472
+								var11 = WallDecoration.getPacketBufferNode(ClientPacket.BUTTON_CLICK, Client.packetWriter.isaacCipher); // L: 9472
 								var11.packetBuffer.writeInt(var1); // L: 9473
 								Client.packetWriter.addNode(var11); // L: 9474
 							}
@@ -514,7 +514,7 @@ public enum ModeWhere implements MouseWheel {
 							int var10;
 							Widget var14;
 							if (var2 == 28) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3014, Client.packetWriter.isaacCipher); // L: 9498
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.BUTTON_CLICK, Client.packetWriter.isaacCipher); // L: 9498
 								var8.packetBuffer.writeInt(var1); // L: 9499
 								Client.packetWriter.addNode(var8); // L: 9500
 								var14 = class92.getWidget(var1); // L: 9501
@@ -524,7 +524,7 @@ public enum ModeWhere implements MouseWheel {
 									class321.changeGameOptions(var10); // L: 9505
 								}
 							} else if (var2 == 29) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3014, Client.packetWriter.isaacCipher); // L: 9072
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.BUTTON_CLICK, Client.packetWriter.isaacCipher); // L: 9072
 								var8.packetBuffer.writeInt(var1); // L: 9073
 								Client.packetWriter.addNode(var8); // L: 9074
 								var14 = class92.getWidget(var1); // L: 9075
@@ -542,7 +542,7 @@ public enum ModeWhere implements MouseWheel {
 									GrandExchangeOfferTotalQuantityComparator.invalidateWidget(Client.meslayerContinueWidget); // L: 9371
 								}
 							} else if (var2 == 31) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2992, Client.packetWriter.isaacCipher); // L: 8970
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPHELDU, Client.packetWriter.isaacCipher); // L: 8970
 								var8.packetBuffer.writeIntLE(var1); // L: 8971
 								var8.packetBuffer.writeShortLE(var3); // L: 8972
 								var8.packetBuffer.writeShortAddLE(PcmPlayer.selectedItemSlot); // L: 8973
@@ -554,7 +554,7 @@ public enum ModeWhere implements MouseWheel {
 								NPCComposition.field1991 = class92.getWidget(var1); // L: 8979
 								Client.field599 = var0; // L: 8980
 							} else if (var2 == 32) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3025, Client.packetWriter.isaacCipher); // L: 9204
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPHELDT, Client.packetWriter.isaacCipher); // L: 9204
 								var8.packetBuffer.writeShortLE(var0); // L: 9205
 								var8.packetBuffer.writeShort(Client.selectedSpellChildIndex); // L: 9206
 								var8.packetBuffer.writeIntIME(var1); // L: 9207
@@ -565,7 +565,7 @@ public enum ModeWhere implements MouseWheel {
 								NPCComposition.field1991 = class92.getWidget(var1); // L: 9212
 								Client.field599 = var0; // L: 9213
 							} else if (var2 == 33) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2971, Client.packetWriter.isaacCipher); // L: 9150
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPHELD1, Client.packetWriter.isaacCipher); // L: 9150
 								var8.packetBuffer.writeShort(var0); // L: 9151
 								var8.packetBuffer.writeShort(var3); // L: 9152
 								var8.packetBuffer.writeIntIME(var1); // L: 9153
@@ -574,7 +574,7 @@ public enum ModeWhere implements MouseWheel {
 								NPCComposition.field1991 = class92.getWidget(var1); // L: 9156
 								Client.field599 = var0; // L: 9157
 							} else if (var2 == 34) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3045, Client.packetWriter.isaacCipher); // L: 9510
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPHELD2, Client.packetWriter.isaacCipher); // L: 9510
 								var8.packetBuffer.writeShortAdd(var3); // L: 9511
 								var8.packetBuffer.writeInt(var1); // L: 9512
 								var8.packetBuffer.writeShortAddLE(var0); // L: 9513
@@ -583,7 +583,7 @@ public enum ModeWhere implements MouseWheel {
 								NPCComposition.field1991 = class92.getWidget(var1); // L: 9516
 								Client.field599 = var0; // L: 9517
 							} else if (var2 == 35) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3050, Client.packetWriter.isaacCipher); // L: 9408
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPHELD3, Client.packetWriter.isaacCipher); // L: 9408
 								var8.packetBuffer.writeIntIME(var1); // L: 9409
 								var8.packetBuffer.writeShortAdd(var0); // L: 9410
 								var8.packetBuffer.writeShortAdd(var3); // L: 9411
@@ -592,7 +592,7 @@ public enum ModeWhere implements MouseWheel {
 								NPCComposition.field1991 = class92.getWidget(var1); // L: 9414
 								Client.field599 = var0; // L: 9415
 							} else if (var2 == 36) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3028, Client.packetWriter.isaacCipher); // L: 9619
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPHELD4, Client.packetWriter.isaacCipher); // L: 9619
 								var8.packetBuffer.writeShortAddLE(var3); // L: 9620
 								var8.packetBuffer.writeShortAddLE(var0); // L: 9621
 								var8.packetBuffer.writeInt(var1); // L: 9622
@@ -601,7 +601,7 @@ public enum ModeWhere implements MouseWheel {
 								NPCComposition.field1991 = class92.getWidget(var1); // L: 9625
 								Client.field599 = var0; // L: 9626
 							} else if (var2 == 37) {
-								var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2979, Client.packetWriter.isaacCipher); // L: 9030
+								var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPHELD5, Client.packetWriter.isaacCipher); // L: 9030
 								var8.packetBuffer.writeShortLE(var0); // L: 9031
 								var8.packetBuffer.writeShort(var3); // L: 9032
 								var8.packetBuffer.writeInt(var1); // L: 9033
@@ -627,7 +627,7 @@ public enum ModeWhere implements MouseWheel {
 								}
 
 								if (var2 == 39) {
-									var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3024, Client.packetWriter.isaacCipher); // L: 9320
+									var8 = WallDecoration.getPacketBufferNode(ClientPacket.IF1_BUTTON1, Client.packetWriter.isaacCipher); // L: 9320
 									var8.packetBuffer.writeShort(var3); // L: 9321
 									var8.packetBuffer.writeShortAdd(var0); // L: 9322
 									var8.packetBuffer.writeIntME(var1); // L: 9323
@@ -636,7 +636,7 @@ public enum ModeWhere implements MouseWheel {
 									NPCComposition.field1991 = class92.getWidget(var1); // L: 9326
 									Client.field599 = var0; // L: 9327
 								} else if (var2 == 40) {
-									var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3008, Client.packetWriter.isaacCipher); // L: 9654
+									var8 = WallDecoration.getPacketBufferNode(ClientPacket.IF1_BUTTON2, Client.packetWriter.isaacCipher); // L: 9654
 									var8.packetBuffer.writeShortAdd(var3); // L: 9655
 									var8.packetBuffer.writeShortAdd(var0); // L: 9656
 									var8.packetBuffer.writeIntME(var1); // L: 9657
@@ -645,7 +645,7 @@ public enum ModeWhere implements MouseWheel {
 									NPCComposition.field1991 = class92.getWidget(var1); // L: 9660
 									Client.field599 = var0; // L: 9661
 								} else if (var2 == 41) {
-									var8 = WallDecoration.getPacketBufferNode(ClientPacket.field3018, Client.packetWriter.isaacCipher); // L: 9608
+									var8 = WallDecoration.getPacketBufferNode(ClientPacket.IF1_BUTTON3, Client.packetWriter.isaacCipher); // L: 9608
 									var8.packetBuffer.writeShortAddLE(var0); // L: 9609
 									var8.packetBuffer.writeShortAdd(var3); // L: 9610
 									var8.packetBuffer.writeInt(var1); // L: 9611
@@ -654,7 +654,7 @@ public enum ModeWhere implements MouseWheel {
 									NPCComposition.field1991 = class92.getWidget(var1); // L: 9614
 									Client.field599 = var0; // L: 9615
 								} else if (var2 == 42) {
-									var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2961, Client.packetWriter.isaacCipher); // L: 9265
+									var8 = WallDecoration.getPacketBufferNode(ClientPacket.IF1_BUTTON4, Client.packetWriter.isaacCipher); // L: 9265
 									var8.packetBuffer.writeShortAddLE(var0); // L: 9266
 									var8.packetBuffer.writeIntLE(var1); // L: 9267
 									var8.packetBuffer.writeShortLE(var3); // L: 9268
@@ -663,7 +663,7 @@ public enum ModeWhere implements MouseWheel {
 									NPCComposition.field1991 = class92.getWidget(var1); // L: 9271
 									Client.field599 = var0; // L: 9272
 								} else if (var2 == 43) {
-									var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2966, Client.packetWriter.isaacCipher); // L: 9331
+									var8 = WallDecoration.getPacketBufferNode(ClientPacket.IF1_BUTTON5, Client.packetWriter.isaacCipher); // L: 9331
 									var8.packetBuffer.writeShortAddLE(var0); // L: 9332
 									var8.packetBuffer.writeShortLE(var3); // L: 9333
 									var8.packetBuffer.writeInt(var1); // L: 9334
@@ -680,7 +680,7 @@ public enum ModeWhere implements MouseWheel {
 										Client.mouseCrossState = 0; // L: 9677
 										Client.destinationX = var0; // L: 9678
 										Client.destinationY = var1; // L: 9679
-										var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2965, Client.packetWriter.isaacCipher); // L: 9681
+										var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER1, Client.packetWriter.isaacCipher); // L: 9681
 										var9.packetBuffer.writeShort(var3); // L: 9682
 										var9.packetBuffer.method7687(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9683
 										Client.packetWriter.addNode(var9); // L: 9684
@@ -694,7 +694,7 @@ public enum ModeWhere implements MouseWheel {
 										Client.mouseCrossState = 0; // L: 9138
 										Client.destinationX = var0; // L: 9139
 										Client.destinationY = var1; // L: 9140
-										var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2975, Client.packetWriter.isaacCipher); // L: 9142
+										var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER2, Client.packetWriter.isaacCipher); // L: 9142
 										var9.packetBuffer.writeShortLE(var3); // L: 9143
 										var9.packetBuffer.wirteByteNeg(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9144
 										Client.packetWriter.addNode(var9); // L: 9145
@@ -708,7 +708,7 @@ public enum ModeWhere implements MouseWheel {
 										Client.mouseCrossState = 0; // L: 9003
 										Client.destinationX = var0; // L: 9004
 										Client.destinationY = var1; // L: 9005
-										var9 = WallDecoration.getPacketBufferNode(ClientPacket.field3003, Client.packetWriter.isaacCipher); // L: 9007
+										var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER3, Client.packetWriter.isaacCipher); // L: 9007
 										var9.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9008
 										var9.packetBuffer.writeShort(var3); // L: 9009
 										Client.packetWriter.addNode(var9); // L: 9010
@@ -722,7 +722,7 @@ public enum ModeWhere implements MouseWheel {
 										Client.mouseCrossState = 0; // L: 9122
 										Client.destinationX = var0; // L: 9123
 										Client.destinationY = var1; // L: 9124
-										var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2962, Client.packetWriter.isaacCipher); // L: 9126
+										var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER4, Client.packetWriter.isaacCipher); // L: 9126
 										var9.packetBuffer.writeByte(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9127
 										var9.packetBuffer.writeShortAddLE(var3); // L: 9128
 										Client.packetWriter.addNode(var9); // L: 9129
@@ -736,7 +736,7 @@ public enum ModeWhere implements MouseWheel {
 										Client.mouseCrossState = 0; // L: 9045
 										Client.destinationX = var0; // L: 9046
 										Client.destinationY = var1; // L: 9047
-										var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2995, Client.packetWriter.isaacCipher); // L: 9049
+										var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER5, Client.packetWriter.isaacCipher); // L: 9049
 										var9.packetBuffer.writeShort(var3); // L: 9050
 										var9.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9051
 										Client.packetWriter.addNode(var9); // L: 9052
@@ -750,7 +750,7 @@ public enum ModeWhere implements MouseWheel {
 										Client.mouseCrossState = 0; // L: 9708
 										Client.destinationX = var0; // L: 9709
 										Client.destinationY = var1; // L: 9710
-										var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2969, Client.packetWriter.isaacCipher); // L: 9712
+										var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER6, Client.packetWriter.isaacCipher); // L: 9712
 										var9.packetBuffer.writeShortAddLE(var3); // L: 9713
 										var9.packetBuffer.method7687(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9714
 										Client.packetWriter.addNode(var9); // L: 9715
@@ -764,7 +764,7 @@ public enum ModeWhere implements MouseWheel {
 										Client.mouseCrossState = 0; // L: 9543
 										Client.destinationX = var0; // L: 9544
 										Client.destinationY = var1; // L: 9545
-										var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2980, Client.packetWriter.isaacCipher); // L: 9547
+										var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER7, Client.packetWriter.isaacCipher); // L: 9547
 										var9.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9548
 										var9.packetBuffer.writeShortAddLE(var3); // L: 9549
 										Client.packetWriter.addNode(var9); // L: 9550
@@ -778,7 +778,7 @@ public enum ModeWhere implements MouseWheel {
 										Client.mouseCrossState = 0; // L: 9221
 										Client.destinationX = var0; // L: 9222
 										Client.destinationY = var1; // L: 9223
-										var9 = WallDecoration.getPacketBufferNode(ClientPacket.field3019, Client.packetWriter.isaacCipher); // L: 9225
+										var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER8, Client.packetWriter.isaacCipher); // L: 9225
 										var9.packetBuffer.wirteByteNeg(KeyHandler.KeyHandler_pressedKeys[82] ? 1 : 0); // L: 9226
 										var9.packetBuffer.writeShortAddLE(var3); // L: 9227
 										Client.packetWriter.addNode(var9); // L: 9228
@@ -789,7 +789,7 @@ public enum ModeWhere implements MouseWheel {
 											if (var2 == 58) {
 												var16 = ApproximateRouteStrategy.getWidgetChild(var1, var0); // L: 9235
 												if (var16 != null) { // L: 9236
-													var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2963, Client.packetWriter.isaacCipher); // L: 9238
+													var9 = WallDecoration.getPacketBufferNode(ClientPacket.IF_BUTTONT, Client.packetWriter.isaacCipher); // L: 9238
 													var9.packetBuffer.writeIntME(ArchiveDiskActionHandler.selectedSpellWidget); // L: 9239
 													var9.packetBuffer.writeIntLE(var1); // L: 9240
 													var9.packetBuffer.writeShort(var16.itemId); // L: 9241
@@ -808,7 +808,7 @@ public enum ModeWhere implements MouseWheel {
 												Client.mouseCrossState = 0; // L: 9088
 												Client.destinationX = var0; // L: 9089
 												Client.destinationY = var1; // L: 9090
-												var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2994, Client.packetWriter.isaacCipher); // L: 9092
+												var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPLOC5, Client.packetWriter.isaacCipher); // L: 9092
 												var8.packetBuffer.writeShort(GrandExchangeOfferOwnWorldComparator.baseY + var1); // L: 9093
 												var8.packetBuffer.writeShort(var3); // L: 9094
 												var8.packetBuffer.writeShortAddLE(var0 + SecureRandomCallable.baseX); // L: 9095
@@ -822,7 +822,7 @@ public enum ModeWhere implements MouseWheel {
 												Client.mouseCrossY = var7; // L: 9310
 												Client.mouseCrossColor = 2; // L: 9311
 												Client.mouseCrossState = 0; // L: 9312
-												var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2950, Client.packetWriter.isaacCipher); // L: 9314
+												var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPLOC6, Client.packetWriter.isaacCipher); // L: 9314
 												var8.packetBuffer.writeShort(var3); // L: 9315
 												Client.packetWriter.addNode(var8); // L: 9316
 												break label655;
@@ -841,7 +841,7 @@ public enum ModeWhere implements MouseWheel {
 													}
 
 													if (var17 != null) { // L: 9426
-														var11 = WallDecoration.getPacketBufferNode(ClientPacket.field3016, Client.packetWriter.isaacCipher); // L: 9428
+														var11 = WallDecoration.getPacketBufferNode(ClientPacket.OPNPC6, Client.packetWriter.isaacCipher); // L: 9428
 														var11.packetBuffer.writeShortLE(var17.id); // L: 9429
 														Client.packetWriter.addNode(var11); // L: 9430
 													}
@@ -854,7 +854,7 @@ public enum ModeWhere implements MouseWheel {
 												Client.mouseCrossY = var7; // L: 9342
 												Client.mouseCrossColor = 2; // L: 9343
 												Client.mouseCrossState = 0; // L: 9344
-												var8 = WallDecoration.getPacketBufferNode(ClientPacket.field2986, Client.packetWriter.isaacCipher); // L: 9346
+												var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJ6, Client.packetWriter.isaacCipher); // L: 9346
 												var8.packetBuffer.writeShort(var3); // L: 9347
 												Client.packetWriter.addNode(var8); // L: 9348
 												break label655;
@@ -865,7 +865,7 @@ public enum ModeWhere implements MouseWheel {
 												if (var16 != null && var16.itemQuantities[var0] >= 100000) { // L: 8926
 													WorldMapEvent.addGameMessage(27, "", var16.itemQuantities[var0] + " x " + FileSystem.ItemDefinition_get(var3).name);
 												} else {
-													var9 = WallDecoration.getPacketBufferNode(ClientPacket.field2986, Client.packetWriter.isaacCipher); // L: 8929
+													var9 = WallDecoration.getPacketBufferNode(ClientPacket.OPOBJ6, Client.packetWriter.isaacCipher); // L: 8929
 													var9.packetBuffer.writeShort(var3); // L: 8930
 													Client.packetWriter.addNode(var9); // L: 8931
 												}

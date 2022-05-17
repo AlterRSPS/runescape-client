@@ -51,7 +51,7 @@ public class class142 extends class128 {
 			if (var1 >= 0 && var1 < Client.currentClanChannels[var0].method3005()) { // L: 12478
 				ClanChannelMember var2 = (ClanChannelMember)Client.currentClanChannels[var0].members.get(var1); // L: 12479
 				if (var2.rank == -1) { // L: 12480
-					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.field2958, Client.packetWriter.isaacCipher); // L: 12481
+					PacketBufferNode var3 = WallDecoration.getPacketBufferNode(ClientPacket.AFFINEDCLANSETTINGS_ADDBANNED_FROMCHANNEL, Client.packetWriter.isaacCipher); // L: 12481
 					var3.packetBuffer.writeByte(3 + class392.stringCp1252NullTerminatedByteSize(var2.username.getName())); // L: 12482
 					var3.packetBuffer.writeByte(var0); // L: 12483
 					var3.packetBuffer.writeShort(var1); // L: 12484

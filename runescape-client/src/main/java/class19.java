@@ -612,7 +612,7 @@ public class class19 {
 	@Export("clanKickUser")
 	static final void clanKickUser(String var0) {
 		if (PcmPlayer.friendsChat != null) { // L: 12439
-			PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.field2983, Client.packetWriter.isaacCipher); // L: 12440
+			PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.CLAN_KICKUSER, Client.packetWriter.isaacCipher); // L: 12440
 			var1.packetBuffer.writeByte(class392.stringCp1252NullTerminatedByteSize(var0)); // L: 12441
 			var1.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 12442
 			Client.packetWriter.addNode(var1); // L: 12443

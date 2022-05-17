@@ -44,7 +44,7 @@ public class class78 {
 	)
 	@Export("Clan_leaveChat")
 	static final void Clan_leaveChat() {
-		PacketBufferNode var0 = WallDecoration.getPacketBufferNode(ClientPacket.field2970, Client.packetWriter.isaacCipher); // L: 12457
+		PacketBufferNode var0 = WallDecoration.getPacketBufferNode(ClientPacket.CLAN_JOINCHAT_LEAVECHAT, Client.packetWriter.isaacCipher); // L: 12457
 		var0.packetBuffer.writeByte(0); // L: 12458
 		Client.packetWriter.addNode(var0); // L: 12459
 	} // L: 12460

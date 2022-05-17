@@ -234,7 +234,7 @@ public abstract class UrlRequester implements Runnable {
 			}
 		}
 
-		PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.field2988, Client.packetWriter.isaacCipher); // L: 3915
+		PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.CLIENT_CHEAT, Client.packetWriter.isaacCipher); // L: 3915
 		var1.packetBuffer.writeByte(var0.length() + 1); // L: 3916
 		var1.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 3917
 		Client.packetWriter.addNode(var1); // L: 3918

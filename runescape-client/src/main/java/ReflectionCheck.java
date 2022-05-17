@@ -213,7 +213,7 @@ public class ReflectionCheck extends Node {
 			}
 
 			if (var1 == 326) { // L: 12277
-				PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.field3012, Client.packetWriter.isaacCipher); // L: 12279
+				PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.UPDATE_APPEARANCE, Client.packetWriter.isaacCipher); // L: 12279
 				Client.playerAppearance.write(var4.packetBuffer); // L: 12280
 				Client.packetWriter.addNode(var4); // L: 12281
 				return true; // L: 12282

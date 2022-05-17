@@ -523,7 +523,7 @@ public class class301 {
 				ObjectComposition.ObjectDefinition_cachedModelData.clear(); // L: 5918
 				PacketBufferNode var17;
 				if (class82.client.hasFrame()) { // L: 5919
-					var17 = WallDecoration.getPacketBufferNode(ClientPacket.field2948, Client.packetWriter.isaacCipher); // L: 5921
+					var17 = WallDecoration.getPacketBufferNode(ClientPacket.DETECT_MODIFIED_CLIENT, Client.packetWriter.isaacCipher); // L: 5921
 					var17.packetBuffer.writeInt(1057001181); // L: 5922
 					Client.packetWriter.addNode(var17); // L: 5923
 				}
@@ -547,7 +547,7 @@ public class class301 {
 				PendingSpawn.updateGameState(30); // L: 5938
 				ArchiveLoader.playPcmPlayers(); // L: 5939
 				PcmPlayer.method753(); // L: 5940
-				var17 = WallDecoration.getPacketBufferNode(ClientPacket.field3031, Client.packetWriter.isaacCipher); // L: 5941
+				var17 = WallDecoration.getPacketBufferNode(ClientPacket.MAP_BUILD_COMPLETE, Client.packetWriter.isaacCipher); // L: 5941
 				Client.packetWriter.addNode(var17); // L: 5942
 				WorldMap.method7222(); // L: 5943
 			}

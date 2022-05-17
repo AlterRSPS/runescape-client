@@ -1269,7 +1269,7 @@ public class WorldMapRegion {
 										if (class152.method3039(UrlRequester.getWidgetFlags(var9))) { // L: 11419
 											var22 = var9.method5460(); // L: 11420
 											if (var22 != null) { // L: 11421
-												PacketBufferNode var23 = WallDecoration.getPacketBufferNode(ClientPacket.field3000, Client.packetWriter.isaacCipher); // L: 11422
+												PacketBufferNode var23 = WallDecoration.getPacketBufferNode(ClientPacket.UNKNOWN1, Client.packetWriter.isaacCipher); // L: 11422
 												var23.packetBuffer.writeInt(var22[2]); // L: 11423
 												var23.packetBuffer.writeIntIME(var9.id); // L: 11424
 												var23.packetBuffer.writeShortLE(var9.childIndex); // L: 11425

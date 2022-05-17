@@ -131,7 +131,7 @@ public final class WallDecoration {
 		garbageValue = "1555036135"
 	)
 	static final void method4392(String var0, int var1) {
-		PacketBufferNode var2 = getPacketBufferNode(ClientPacket.field3026, Client.packetWriter.isaacCipher); // L: 236
+		PacketBufferNode var2 = getPacketBufferNode(ClientPacket.FRIEND_SETRANK, Client.packetWriter.isaacCipher); // L: 236
 		var2.packetBuffer.writeByte(class392.stringCp1252NullTerminatedByteSize(var0) + 1); // L: 237
 		var2.packetBuffer.wirteByteNeg(var1); // L: 238
 		var2.packetBuffer.writeStringCp1252NullTerminated(var0); // L: 239

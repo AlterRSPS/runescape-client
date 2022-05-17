@@ -167,7 +167,7 @@ public class InvDefinition extends DualNode {
 		if (Client.packetWriter.pendingWrites >= 50 || var0) { // L: 5736
 			Client.packetWriter.pendingWrites = 0; // L: 5737
 			if (!Client.hadNetworkError && Client.packetWriter.getSocket() != null) { // L: 5738
-				PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.field2982, Client.packetWriter.isaacCipher); // L: 5740
+				PacketBufferNode var1 = WallDecoration.getPacketBufferNode(ClientPacket.NO_TIMEOUT, Client.packetWriter.isaacCipher); // L: 5740
 				Client.packetWriter.addNode(var1); // L: 5741
 
 				try {

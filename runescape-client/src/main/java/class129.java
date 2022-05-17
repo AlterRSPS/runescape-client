@@ -92,7 +92,7 @@ public class class129 extends class128 {
 					int var10 = var5 * var8 - var7 * var4 >> 11; // L: 3867
 					int var11 = var9 + ModelData0.localPlayer.x >> 7; // L: 3868
 					int var12 = ModelData0.localPlayer.y - var10 >> 7; // L: 3869
-					PacketBufferNode var13 = WallDecoration.getPacketBufferNode(ClientPacket.field3023, Client.packetWriter.isaacCipher); // L: 3871
+					PacketBufferNode var13 = WallDecoration.getPacketBufferNode(ClientPacket.MOVE_MINIMAPCLICK, Client.packetWriter.isaacCipher); // L: 3871
 					var13.packetBuffer.writeByte(18); // L: 3872
 					var13.packetBuffer.writeByteSub(KeyHandler.KeyHandler_pressedKeys[82] ? (KeyHandler.KeyHandler_pressedKeys[81] ? 2 : 1) : 0); // L: 3873
 					var13.packetBuffer.writeShortAddLE(var12 + GrandExchangeOfferOwnWorldComparator.baseY); // L: 3874
