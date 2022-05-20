@@ -82,12 +82,12 @@ public enum class123 implements MouseWheel {
 		descriptor = "(IIIZB)V",
 		garbageValue = "16"
 	)
-	public static void method2781(int var0, int var1, int var2, boolean var3) {
+	public static void perfomTeleport(int var0, int var1, int var2, boolean var3) {
 		PacketBufferNode var4 = WallDecoration.getPacketBufferNode(ClientPacket.TELEPORT, Client.packetWriter.isaacCipher); // L: 12656
-		var4.packetBuffer.writeShortAdd(var1); // L: 12657
-		var4.packetBuffer.writeShortLE(var0); // L: 12658
-		var4.packetBuffer.writeByteSub(var2); // L: 12659
-		var4.packetBuffer.writeIntIME(var3 ? Client.field482 * -1673751255 * 1079039769 : 0); // L: 12660
+		var4.packetBuffer.writeShortAdd(var1); // Y
+		var4.packetBuffer.writeShortLE(var0); // X
+		var4.packetBuffer.writeByteSub(var2); // Height
+		var4.packetBuffer.writeIntIME(var3 ? Client.field482 * -1673751255 * 1079039769 : 0); // unknown
 		Client.packetWriter.addNode(var4); // L: 12661
 	} // L: 12662
 }

@@ -111,12 +111,12 @@ public class class342 {
 						continue;
 					}
 
-					drawModelComponents(var0, var3.id); // L: 11992
+					drawModelComponents(var0, var3.hash); // L: 11992
 					if (var3.children != null) { // L: 11993
-						drawModelComponents(var3.children, var3.id);
+						drawModelComponents(var3.children, var3.hash);
 					}
 
-					InterfaceParent var4 = (InterfaceParent)Client.interfaceParents.get((long)var3.id); // L: 11994
+					InterfaceParent var4 = (InterfaceParent)Client.interfaceParents.get((long)var3.hash); // L: 11994
 					if (var4 != null) { // L: 11995
 						var5 = var4.group; // L: 11996
 						if (WorldMapDecoration.loadInterface(var5)) { // L: 11998

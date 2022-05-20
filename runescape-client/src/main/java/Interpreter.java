@@ -139,7 +139,7 @@ public class Interpreter {
 			class12.Interpreter_intStackSize -= 2; // L: 825
 			int var4 = Interpreter_intStack[class12.Interpreter_intStackSize]; // L: 826
 			int var5 = Interpreter_intStack[class12.Interpreter_intStackSize + 1]; // L: 827
-			var3.itemId = var4; // L: 828
+			var3.item = var4; // L: 828
 			var3.itemQuantity = var5; // L: 829
 			ItemComposition var6 = FileSystem.ItemDefinition_get(var4); // L: 830
 			var3.modelAngleX = var6.xan2d; // L: 831

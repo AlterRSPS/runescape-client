@@ -27,7 +27,7 @@ public class FloorUnderlayDefinition extends DualNode {
 		intValue = -1688031679
 	)
 	@Export("selectedItemId")
-	static int selectedItemId;
+	static int item;
 	@ObfuscatedName("l")
 	@ObfuscatedGetter(
 		intValue = 1166691661

@@ -290,7 +290,7 @@ public class DynamicObject extends Renderable {
 							PacketBufferNode var6 = WallDecoration.getPacketBufferNode(ClientPacket.BUG_REPORT, Client.packetWriter.isaacCipher); // L: 1570
 							var6.packetBuffer.writeShort(1 + class392.stringCp1252NullTerminatedByteSize(var4) + class392.stringCp1252NullTerminatedByteSize(var5)); // L: 1571
 							var6.packetBuffer.writeStringCp1252NullTerminated(var4); // L: 1572
-							var6.packetBuffer.method7687(var10); // L: 1573
+							var6.packetBuffer.writeByteAdd(var10); // L: 1573
 							var6.packetBuffer.writeStringCp1252NullTerminated(var5); // L: 1574
 							Client.packetWriter.addNode(var6); // L: 1575
 							return 1; // L: 1576
@@ -390,7 +390,7 @@ public class DynamicObject extends Renderable {
 						return 1; // L: 1676
 					} else if (var0 == 3140) {
 						Client.field487 = 3; // L: 1679
-						Client.field657 = var2 ? Interpreter.scriptDotWidget.id * 1115174973 * -203153643 : KeyHandler.scriptActiveWidget.id * 1115174973 * -203153643; // L: 1680
+						Client.field657 = var2 ? Interpreter.scriptDotWidget.hash * 1115174973 * -203153643 : KeyHandler.scriptActiveWidget.hash * 1115174973 * -203153643; // L: 1680
 						return 1; // L: 1681
 					} else {
 						boolean var3;
@@ -572,7 +572,7 @@ public class DynamicObject extends Renderable {
 				if (var0 == 1) { // L: 9734
 					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER1, Client.packetWriter.isaacCipher); // L: 9736
 					var8.packetBuffer.writeShort(var3[var6]); // L: 9737
-					var8.packetBuffer.method7687(0); // L: 9738
+					var8.packetBuffer.writeByteAdd(0); // L: 9738
 					Client.packetWriter.addNode(var8); // L: 9739
 				} else if (var0 == 4) { // L: 9741
 					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER4, Client.packetWriter.isaacCipher); // L: 9743
@@ -582,7 +582,7 @@ public class DynamicObject extends Renderable {
 				} else if (var0 == 6) { // L: 9748
 					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER6, Client.packetWriter.isaacCipher); // L: 9750
 					var8.packetBuffer.writeShortAddLE(var3[var6]); // L: 9751
-					var8.packetBuffer.method7687(0); // L: 9752
+					var8.packetBuffer.writeByteAdd(0); // L: 9752
 					Client.packetWriter.addNode(var8); // L: 9753
 				} else if (var0 == 7) { // L: 9755
 					var8 = WallDecoration.getPacketBufferNode(ClientPacket.OPPLAYER7, Client.packetWriter.isaacCipher); // L: 9757

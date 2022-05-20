@@ -461,7 +461,7 @@ public class WorldMap {
 			if (this.mouseCoord != null && var3) { // L: 210
 				boolean var8 = Client.staffModLevel >= 2; // L: 213
 				if (var8 && KeyHandler.KeyHandler_pressedKeys[82] && KeyHandler.KeyHandler_pressedKeys[81]) { // L: 215
-					class123.method2781(this.mouseCoord.x, this.mouseCoord.y, this.mouseCoord.plane, false); // L: 216
+					class123.perfomTeleport(this.mouseCoord.x, this.mouseCoord.y, this.mouseCoord.plane, false); // L: 216
 				} else {
 					boolean var9 = true; // L: 219
 					if (this.field4557) { // L: 220

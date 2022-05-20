@@ -35,7 +35,7 @@ public class PcmPlayer {
 		intValue = 2000163897
 	)
 	@Export("selectedItemSlot")
-	static int selectedItemSlot;
+	static int clickedSlot;
 	@ObfuscatedName("b")
 	@Export("samples")
 	protected int[] samples;

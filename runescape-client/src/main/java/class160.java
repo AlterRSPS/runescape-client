@@ -69,31 +69,31 @@ public class class160 {
 	@Export("Widget_addToMenu")
 	static final void Widget_addToMenu(Widget var0, int var1, int var2) {
 		if (var0.buttonType == 1) { // L: 11008
-			Projectile.insertMenuItemNoShift(var0.buttonText, "", 24, 0, 0, var0.id); // L: 11009
+			Projectile.insertMenuItemNoShift(var0.buttonText, "", 24, 0, 0, var0.hash); // L: 11009
 		}
 
 		String var3;
 		if (var0.buttonType == 2 && !Client.isSpellSelected) { // L: 11012
 			var3 = TriBool.Widget_getSpellActionName(var0); // L: 11013
 			if (var3 != null) { // L: 11014
-				Projectile.insertMenuItemNoShift(var3, class166.colorStartTag(65280) + var0.spellName, 25, 0, -1, var0.id); // L: 11015
+				Projectile.insertMenuItemNoShift(var3, class166.colorStartTag(65280) + var0.spellName, 25, 0, -1, var0.hash); // L: 11015
 			}
 		}
 
 		if (var0.buttonType == 3) { // L: 11019
-			Projectile.insertMenuItemNoShift("Close", "", 26, 0, 0, var0.id); // L: 11020
+			Projectile.insertMenuItemNoShift("Close", "", 26, 0, 0, var0.hash); // L: 11020
 		}
 
 		if (var0.buttonType == 4) { // L: 11023
-			Projectile.insertMenuItemNoShift(var0.buttonText, "", 28, 0, 0, var0.id); // L: 11024
+			Projectile.insertMenuItemNoShift(var0.buttonText, "", 28, 0, 0, var0.hash); // L: 11024
 		}
 
 		if (var0.buttonType == 5) { // L: 11027
-			Projectile.insertMenuItemNoShift(var0.buttonText, "", 29, 0, 0, var0.id); // L: 11028
+			Projectile.insertMenuItemNoShift(var0.buttonText, "", 29, 0, 0, var0.hash); // L: 11028
 		}
 
 		if (var0.buttonType == 6 && Client.meslayerContinueWidget == null) { // L: 11031
-			Projectile.insertMenuItemNoShift(var0.buttonText, "", 30, 0, -1, var0.id); // L: 11032
+			Projectile.insertMenuItemNoShift(var0.buttonText, "", 30, 0, -1, var0.hash); // L: 11032
 		}
 
 		int var4;
@@ -123,8 +123,8 @@ public class class160 {
 									var10 = UrlRequester.getWidgetFlags(var0); // L: 11053
 									var9 = (var10 >> 30 & 1) != 0; // L: 11055
 									if (var9) { // L: 11057
-										if (var0.id != class20.selectedItemWidget || var19 != PcmPlayer.selectedItemSlot) { // L: 11058
-											Projectile.insertMenuItemNoShift("Use", Client.selectedItemName + " " + "->" + " " + class166.colorStartTag(16748608) + var8.name, 31, var8.id, var19, var0.id); // L: 11059
+										if (var0.hash != class20.component || var19 != PcmPlayer.clickedSlot) { // L: 11058
+											Projectile.insertMenuItemNoShift("Use", Client.selectedItemName + " " + "->" + " " + class166.colorStartTag(16748608) + var8.name, 31, var8.id, var19, var0.hash); // L: 11059
 										}
 										break label328;
 									}
@@ -135,7 +135,7 @@ public class class160 {
 									var9 = (var10 >> 30 & 1) != 0; // L: 11070
 									if (var9) { // L: 11072
 										if ((class113.selectedSpellFlags & 16) == 16) { // L: 11073
-											Projectile.insertMenuItemNoShift(Client.selectedSpellActionName, Client.selectedSpellName + " " + "->" + " " + class166.colorStartTag(16748608) + var8.name, 32, var8.id, var19, var0.id); // L: 11074
+											Projectile.insertMenuItemNoShift(Client.selectedSpellActionName, Client.selectedSpellName + " " + "->" + " " + class166.colorStartTag(16748608) + var8.name, 32, var8.id, var19, var0.hash); // L: 11074
 										}
 										break label328;
 									}
@@ -164,7 +164,7 @@ public class class160 {
 								int var14 = UrlRequester.getWidgetFlags(var0); // L: 11103
 								boolean var24 = (var14 >> 31 & 1) != 0; // L: 11105
 								if (var24) { // L: 11107
-									Projectile.insertMenuItemNoShift("Use", class166.colorStartTag(16748608) + var8.name, 38, var8.id, var19, var0.id); // L: 11108
+									Projectile.insertMenuItemNoShift("Use", class166.colorStartTag(16748608) + var8.name, 38, var8.id, var19, var0.hash); // L: 11108
 								}
 
 								int var16 = UrlRequester.getWidgetFlags(var0); // L: 11112
@@ -207,12 +207,12 @@ public class class160 {
 												var18 = 43;
 											}
 
-											Projectile.insertMenuItemNoShift(var22[var17], class166.colorStartTag(16748608) + var8.name, var18, var8.id, var19, var0.id); // L: 11135
+											Projectile.insertMenuItemNoShift(var22[var17], class166.colorStartTag(16748608) + var8.name, var18, var8.id, var19, var0.hash); // L: 11135
 										}
 									}
 								}
 
-								Projectile.insertMenuItemNoShift("Examine", class166.colorStartTag(16748608) + var8.name, 1005, var8.id, var19, var0.id); // L: 11140
+								Projectile.insertMenuItemNoShift("Examine", class166.colorStartTag(16748608) + var8.name, 1005, var8.id, var19, var0.hash); // L: 11140
 							}
 						}
 					}
@@ -227,32 +227,32 @@ public class class160 {
 				var4 = UrlRequester.getWidgetFlags(var0); // L: 11153
 				boolean var25 = (var4 >> 21 & 1) != 0; // L: 11155
 				if (var25 && (class113.selectedSpellFlags & 32) == 32) { // L: 11157
-					Projectile.insertMenuItemNoShift(Client.selectedSpellActionName, Client.selectedSpellName + " " + "->" + " " + var0.dataText, 58, 0, var0.childIndex, var0.id); // L: 11158
+					Projectile.insertMenuItemNoShift(Client.selectedSpellActionName, Client.selectedSpellName + " " + "->" + " " + var0.dataText, 58, 0, var0.slot, var0.hash); // L: 11158
 				}
 			} else {
 				for (var19 = 9; var19 >= 5; --var19) { // L: 11163
 					String var21 = class193.method3801(var0, var19); // L: 11164
 					if (var21 != null) { // L: 11165
-						Projectile.insertMenuItemNoShift(var21, var0.dataText, 1007, var19 + 1, var0.childIndex, var0.id); // L: 11166
+						Projectile.insertMenuItemNoShift(var21, var0.dataText, 1007, var19 + 1, var0.slot, var0.hash); // L: 11166
 					}
 				}
 
 				var3 = TriBool.Widget_getSpellActionName(var0); // L: 11170
 				if (var3 != null) { // L: 11171
-					Projectile.insertMenuItemNoShift(var3, var0.dataText, 25, 0, var0.childIndex, var0.id); // L: 11172
+					Projectile.insertMenuItemNoShift(var3, var0.dataText, 25, 0, var0.slot, var0.hash); // L: 11172
 				}
 
 				for (var4 = 4; var4 >= 0; --var4) { // L: 11175
 					String var20 = class193.method3801(var0, var4); // L: 11176
 					if (var20 != null) { // L: 11177
-						class175.insertMenuItem(var20, var0.dataText, 57, var4 + 1, var0.childIndex, var0.id, var0.prioritizeMenuEntry); // L: 11178
+						class175.insertMenuItem(var20, var0.dataText, 57, var4 + 1, var0.slot, var0.hash, var0.prioritizeMenuEntry); // L: 11178
 					}
 				}
 
 				var5 = UrlRequester.getWidgetFlags(var0); // L: 11183
 				boolean var23 = (var5 & 1) != 0; // L: 11185
 				if (var23) { // L: 11187
-					Projectile.insertMenuItemNoShift("Continue", "", 30, 0, var0.childIndex, var0.id); // L: 11188
+					Projectile.insertMenuItemNoShift("Continue", "", 30, 0, var0.slot, var0.hash); // L: 11188
 				}
 			}
 		}

@@ -260,7 +260,7 @@ public class class10 {
 									}
 
 									if (var14 == -2147483645) { // L: 146
-										var14 = var0.widget != null ? var0.widget.id * 1115174973 * -203153643 : -1;
+										var14 = var0.widget != null ? var0.widget.hash * 1115174973 * -203153643 : -1;
 									}
 
 									if (var14 == -2147483644) { // L: 147
@@ -268,15 +268,15 @@ public class class10 {
 									}
 
 									if (var14 == -2147483643) { // L: 148
-										var14 = var0.widget != null ? var0.widget.childIndex * -776270713 * -224921289 : -1;
+										var14 = var0.widget != null ? var0.widget.slot * -776270713 * -224921289 : -1;
 									}
 
 									if (var14 == -2147483642) { // L: 149
-										var14 = var0.dragTarget != null ? var0.dragTarget.id * 1115174973 * -203153643 : -1;
+										var14 = var0.dragTarget != null ? var0.dragTarget.hash * 1115174973 * -203153643 : -1;
 									}
 
 									if (var14 == -2147483641) { // L: 150
-										var14 = var0.dragTarget != null ? var0.dragTarget.childIndex * -776270713 * -224921289 : -1;
+										var14 = var0.dragTarget != null ? var0.dragTarget.slot * -776270713 * -224921289 : -1;
 									}
 
 									if (var14 == -2147483640) { // L: 151
@@ -627,9 +627,9 @@ public class class10 {
 	)
 	@Export("clickWidget")
 	static final void clickWidget(Widget var0, int var1, int var2) {
-		if (Client.clickedWidget == null && !Client.isMenuOpen) { // L: 11776
+		if (Client.source == null && !Client.isMenuOpen) { // L: 11776
 			if (var0 != null && class146.method2992(var0) != null) { // L: 11777
-				Client.clickedWidget = var0; // L: 11778
+				Client.source = var0; // L: 11778
 				Client.clickedWidgetParent = class146.method2992(var0); // L: 11779
 				Client.widgetClickX = var1; // L: 11780
 				Client.widgetClickY = var2; // L: 11781

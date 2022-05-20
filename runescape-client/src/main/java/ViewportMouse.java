@@ -89,7 +89,7 @@ public class ViewportMouse {
 
 		for (int var9 = 0; var9 < var0.length; ++var9) { // L: 10219
 			Widget var10 = var0[var9]; // L: 10220
-			if (var10 != null && (var10.parentId == var1 || var1 == -1412584499 && var10 == Client.clickedWidget)) { // L: 10221 10222
+			if (var10 != null && (var10.parentId == var1 || var1 == -1412584499 && var10 == Client.source)) { // L: 10221 10222
 				int var11;
 				if (var8 == -1) { // L: 10224
 					Client.rootWidgetXs[Client.rootWidgetCount] = var10.x + var6; // L: 10225
@@ -113,7 +113,7 @@ public class ViewportMouse {
 					int var14 = var10.transparencyTop; // L: 10238
 					int var15;
 					int var16;
-					if (var10 == Client.clickedWidget) { // L: 10239
+					if (var10 == Client.source) { // L: 10239
 						if (var1 != -1412584499 && !var10.isScrollBar) { // L: 10240
 							BuddyRankComparator.field1408 = var0; // L: 10241
 							class151.field1729 = var6; // L: 10242
@@ -261,12 +261,12 @@ public class ViewportMouse {
 								}
 							}
 
-							drawInterface(var0, var10.id, var15, var16, var17, var18, var12 - var10.scrollX, var13 - var10.scrollY, var11); // L: 10350
+							drawInterface(var0, var10.hash, var15, var16, var17, var18, var12 - var10.scrollX, var13 - var10.scrollY, var11); // L: 10350
 							if (var10.children != null) { // L: 10351
-								drawInterface(var10.children, var10.id, var15, var16, var17, var18, var12 - var10.scrollX, var13 - var10.scrollY, var11);
+								drawInterface(var10.children, var10.hash, var15, var16, var17, var18, var12 - var10.scrollX, var13 - var10.scrollY, var11);
 							}
 
-							InterfaceParent var30 = (InterfaceParent)Client.interfaceParents.get((long)var10.id); // L: 10352
+							InterfaceParent var30 = (InterfaceParent)Client.interfaceParents.get((long)var10.hash); // L: 10352
 							if (var30 != null) { // L: 10353
 								class175.drawWidgets(var30.group, var15, var16, var17, var18, var12, var13, var11); // L: 10354
 							}
@@ -279,7 +279,7 @@ public class ViewportMouse {
 							}
 
 							if (var10.children != null) { // L: 10361
-								drawInterface(var10.children, var10.id, var15, var16, var17, var18, var12 - var10.scrollX, var13 - var10.scrollY, var11);
+								drawInterface(var10.children, var10.hash, var15, var16, var17, var18, var12 - var10.scrollX, var13 - var10.scrollY, var11);
 							}
 
 							Rasterizer2D.Rasterizer2D_setClip(var2, var3, var4, var5); // L: 10362
@@ -323,7 +323,7 @@ public class ViewportMouse {
 												var26 = var10.itemIds[var19] - 1; // L: 10385
 												if (var22 + 32 > var2 && var22 < var4 && var23 + 32 > var3 && var23 < var5 || var10 == Canvas.dragInventoryWidget && var19 == Client.dragItemSlotSource) { // L: 10386
 													SpritePixels var35;
-													if (Client.isItemSelected == 1 && var19 == PcmPlayer.selectedItemSlot && var10.id == class20.selectedItemWidget) { // L: 10388
+													if (Client.isItemSelected == 1 && var19 == PcmPlayer.clickedSlot && var10.hash == class20.component) { // L: 10388
 														var35 = PacketWriter.getItemSprite(var26, var10.itemQuantities[var19], 2, 0, 2, false);
 													} else {
 														var35 = PacketWriter.getItemSprite(var26, var10.itemQuantities[var19], 1, 3153952, 2, false); // L: 10389
@@ -453,8 +453,8 @@ public class ViewportMouse {
 												}
 											}
 
-											if (var10.isIf3 && var10.itemId != -1) { // L: 10484
-												ItemComposition var45 = FileSystem.ItemDefinition_get(var10.itemId); // L: 10485
+											if (var10.isIf3 && var10.item != -1) { // L: 10484
+												ItemComposition var45 = FileSystem.ItemDefinition_get(var10.item); // L: 10485
 												var44 = var45.name; // L: 10486
 												if (var44 == null) { // L: 10487
 													var44 = "null";
@@ -486,8 +486,8 @@ public class ViewportMouse {
 												GrandExchangeOfferTotalQuantityComparator.invalidateWidget(var10);
 											}
 										} else {
-											if (var10.itemId != -1) { // L: 10506
-												var40 = PacketWriter.getItemSprite(var10.itemId, var10.itemQuantity, var10.outline, var10.spriteShadow, var10.itemQuantityMode, false);
+											if (var10.item != -1) { // L: 10506
+												var40 = PacketWriter.getItemSprite(var10.item, var10.itemQuantity, var10.outline, var10.spriteShadow, var10.itemQuantityMode, false);
 											} else {
 												var40 = var10.getSprite(false, UserComparator7.urlRequester); // L: 10507
 											}
@@ -543,8 +543,8 @@ public class ViewportMouse {
 
 											Model var41 = null; // L: 10541
 											var22 = 0; // L: 10542
-											if (var10.itemId != -1) { // L: 10543
-												var33 = FileSystem.ItemDefinition_get(var10.itemId); // L: 10544
+											if (var10.item != -1) { // L: 10543
+												var33 = FileSystem.ItemDefinition_get(var10.item); // L: 10544
 												if (var33 != null) { // L: 10545
 													var33 = var33.getCountObj(var10.itemQuantity); // L: 10546
 													var41 = var33.getModel(1); // L: 10547

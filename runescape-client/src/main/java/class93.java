@@ -103,10 +103,10 @@ public class class93 {
 			class144.runScriptEvent(var5); // L: 9775
 		}
 
-		Client.selectedSpellItemId = var3; // L: 9777
+		Client._201Verify = var3; // L: 9777
 		Client.isSpellSelected = true; // L: 9778
-		ArchiveDiskActionHandler.selectedSpellWidget = var0; // L: 9779
-		Client.selectedSpellChildIndex = var1; // L: 9780
+		ArchiveDiskActionHandler._201Hash = var0; // L: 9779
+		Client._201SpellSlot = var1; // L: 9780
 		class113.selectedSpellFlags = var2; // L: 9781
 		GrandExchangeOfferTotalQuantityComparator.invalidateWidget(var4); // L: 9782
 	} // L: 9783

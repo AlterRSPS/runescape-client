@@ -34,7 +34,7 @@ public class ArchiveDiskActionHandler implements Runnable {
 		intValue = 1167654825
 	)
 	@Export("selectedSpellWidget")
-	static int selectedSpellWidget;
+	static int _201Hash;
 
 	static {
 		ArchiveDiskActionHandler_requestQueue = new NodeDeque(); // L: 9

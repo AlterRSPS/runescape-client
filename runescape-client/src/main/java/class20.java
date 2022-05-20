@@ -12,7 +12,7 @@ public class class20 implements Callable {
 		intValue = -1111023185
 	)
 	@Export("selectedItemWidget")
-	static int selectedItemWidget;
+	static int component;
 	@ObfuscatedName("o")
 	@ObfuscatedSignature(
 		descriptor = "Ly;"

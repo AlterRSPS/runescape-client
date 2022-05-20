@@ -242,7 +242,7 @@ public class WorldMapAreaData extends WorldMapArea {
 
 				return 1; // L: 749
 			} else if (var0 == ScriptOpcodes.CC_RESUME_PAUSEBUTTON) { // L: 751
-				Skills.resumePauseWidget(var3.id, var3.childIndex); // L: 752
+				Skills.resumePauseWidget(var3.hash, var3.slot); // L: 752
 				Client.meslayerContinueWidget = var3; // L: 753
 				GrandExchangeOfferTotalQuantityComparator.invalidateWidget(var3); // L: 754
 				return 1; // L: 755

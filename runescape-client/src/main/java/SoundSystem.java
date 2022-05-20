@@ -92,8 +92,8 @@ public class SoundSystem implements Runnable {
 				} else {
 					Widget var12 = new Widget(); // L: 494
 					var12.type = var4; // L: 495
-					var12.parentId = var12.id = var6.id; // L: 496
-					var12.childIndex = var11; // L: 497
+					var12.parentId = var12.hash = var6.hash; // L: 496
+					var12.slot = var11; // L: 497
 					var12.isIf3 = true; // L: 498
 					var6.children[var11] = var12; // L: 499
 					if (var2) { // L: 500
@@ -110,8 +110,8 @@ public class SoundSystem implements Runnable {
 			Widget var3;
 			if (var0 == ScriptOpcodes.CC_DELETE) { // L: 505
 				var3 = var2 ? Interpreter.scriptDotWidget : KeyHandler.scriptActiveWidget; // L: 506
-				Widget var10 = class92.getWidget(var3.id); // L: 507
-				var10.children[var3.childIndex] = null; // L: 508
+				Widget var10 = class92.getWidget(var3.hash); // L: 507
+				var10.children[var3.slot] = null; // L: 508
 				GrandExchangeOfferTotalQuantityComparator.invalidateWidget(var10); // L: 509
 				return 1; // L: 510
 			} else if (var0 == ScriptOpcodes.CC_DELETEALL) { // L: 512

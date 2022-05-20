@@ -836,7 +836,7 @@ public class Buffer extends Node {
 		descriptor = "(II)V",
 		garbageValue = "1876057688"
 	)
-	public void method7687(int var1) {
+	public void writeByteAdd(int var1) {
 		this.array[++this.offset - 1] = (byte)(var1 + 128); // L: 525
 	} // L: 526
 
@@ -1100,17 +1100,17 @@ public class Buffer extends Node {
 		descriptor = "(I)I",
 		garbageValue = "421037189"
 	)
-	public int readIntLE() {
-		this.offset += 4; // L: 654
-		return (this.array[this.offset - 4] & 255) + ((this.array[this.offset - 3] & 255) << 8) + ((this.array[this.offset - 2] & 255) << 16) + ((this.array[this.offset - 1] & 255) << 24); // L: 655
-	}
+		public int readIntLE() {
+			this.offset += 4; // L: 654
+			return (this.array[this.offset - 4] & 255) + ((this.array[this.offset - 3] & 255) << 8) + ((this.array[this.offset - 2] & 255) << 16) + ((this.array[this.offset - 1] & 255) << 24); // L: 655
+		}
 
 	@ObfuscatedName("dv")
 	@ObfuscatedSignature(
 		descriptor = "(I)I",
 		garbageValue = "-1322409525"
 	)
-	public int readIntIME() {
+	public int readIntME() {
 		this.offset += 4; // L: 659
 		return ((this.array[this.offset - 2] & 255) << 24) + ((this.array[this.offset - 4] & 255) << 8) + (this.array[this.offset - 3] & 255) + ((this.array[this.offset - 1] & 255) << 16); // L: 660
 	}
@@ -1120,7 +1120,7 @@ public class Buffer extends Node {
 		descriptor = "(B)I",
 		garbageValue = "-19"
 	)
-	public int readIntME() {
+	public int Maybe_I_readIntME() {
 		this.offset += 4; // L: 664
 		return ((this.array[this.offset - 1] & 255) << 8) + ((this.array[this.offset - 4] & 255) << 16) + (this.array[this.offset - 2] & 255) + ((this.array[this.offset - 3] & 255) << 24); // L: 665
 	}

@@ -54,7 +54,7 @@ param=14=0
 param=6=0
 param=2=https://payments.jagex.com/
 param=1=1
-param=3=false
+param=3=true
 param=17=http://www.runescape.com/g=oldscape/slr.ws?order=LPWM
 param=5=0
 param=7=0

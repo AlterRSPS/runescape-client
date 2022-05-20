@@ -192,12 +192,12 @@ public class UserComparator8 extends AbstractUserComparator {
 	static void revalidateWidgetScroll(Widget[] var0, Widget var1, boolean var2) {
 		int var3 = var1.scrollWidth != 0 ? var1.scrollWidth * 1123320165 * 1605814381 : var1.width * -1172311447 * -153829927; // L: 10765
 		int var4 = var1.scrollHeight != 0 ? var1.scrollHeight * 530662929 * -578131215 : var1.height * 214283987 * -459533989; // L: 10766
-		Language.resizeInterface(var0, var1.id, var3, var4, var2); // L: 10767
+		Language.resizeInterface(var0, var1.hash, var3, var4, var2); // L: 10767
 		if (var1.children != null) { // L: 10768
-			Language.resizeInterface(var1.children, var1.id, var3, var4, var2);
+			Language.resizeInterface(var1.children, var1.hash, var3, var4, var2);
 		}
 
-		InterfaceParent var5 = (InterfaceParent)Client.interfaceParents.get((long)var1.id); // L: 10769
+		InterfaceParent var5 = (InterfaceParent)Client.interfaceParents.get((long)var1.hash); // L: 10769
 		if (var5 != null) { // L: 10770
 			int var6 = var5.group; // L: 10771
 			if (WorldMapDecoration.loadInterface(var6)) { // L: 10773

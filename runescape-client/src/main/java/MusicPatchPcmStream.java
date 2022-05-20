@@ -220,7 +220,7 @@ public class MusicPatchPcmStream extends PcmStream {
 						runComponentCloseListeners(var3.children, var1);
 					}
 
-					InterfaceParent var4 = (InterfaceParent)Client.interfaceParents.get((long)var3.id); // L: 11751
+					InterfaceParent var4 = (InterfaceParent)Client.interfaceParents.get((long)var3.hash); // L: 11751
 					if (var4 != null) { // L: 11752
 						WorldMapLabelSize.runIntfCloseListeners(var4.group, var1);
 					}
@@ -235,9 +235,9 @@ public class MusicPatchPcmStream extends PcmStream {
 				}
 
 				if (var1 == 1 && var3.onSubChange != null) { // L: 11760
-					if (var3.childIndex >= 0) { // L: 11761
-						Widget var6 = class92.getWidget(var3.id); // L: 11762
-						if (var6 == null || var6.children == null || var3.childIndex >= var6.children.length || var3 != var6.children[var3.childIndex]) { // L: 11763
+					if (var3.slot >= 0) { // L: 11761
+						Widget var6 = class92.getWidget(var3.hash); // L: 11762
+						if (var6 == null || var6.children == null || var3.slot >= var6.children.length || var3 != var6.children[var3.slot]) { // L: 11763
 							continue;
 						}
 					}

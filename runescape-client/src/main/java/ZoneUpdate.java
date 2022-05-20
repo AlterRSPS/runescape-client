@@ -29,7 +29,7 @@ public class ZoneUpdate {
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final ZoneUpdate LOC_DEL;
+	public static final ZoneUpdate LOC_ADD_CHANGE;
 	@ObfuscatedName("m")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
@@ -39,7 +39,7 @@ public class ZoneUpdate {
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
 	)
-	public static final ZoneUpdate LOC_ADD_CHANGE;
+	public static final ZoneUpdate LOC_DEL;
 	@ObfuscatedName("s")
 	@ObfuscatedSignature(
 		descriptor = "Lja;"
@@ -72,9 +72,9 @@ public class ZoneUpdate {
 		OBJ_COUNT = new ZoneUpdate(7); // L: 6
 		MAPPROJ_ANIM = new ZoneUpdate(15); // L: 7
 		PREFETCH_GAMEOBJECTS = new ZoneUpdate(14); // L: 8
-		LOC_DEL = new ZoneUpdate(4); // L: 9
+		LOC_ADD_CHANGE = new ZoneUpdate(4); // L: 9
 		OBJ_DEL = new ZoneUpdate(3); // L: 10
-		LOC_ADD_CHANGE = new ZoneUpdate(2); // L: 11
+		LOC_DEL = new ZoneUpdate(2); // L: 11
 		AREA_SOUND = new ZoneUpdate(5); // L: 12
 		OBJ_ADD = new ZoneUpdate(5); // L: 13
 		LOC_ANIM = new ZoneUpdate(4); // L: 14

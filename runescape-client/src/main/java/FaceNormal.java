@@ -49,7 +49,7 @@ public class FaceNormal {
 				var7 = var2 ? Interpreter.scriptDotWidget : KeyHandler.scriptActiveWidget; // L: 1287
 				var4 = Interpreter.Interpreter_intStack[--class12.Interpreter_intStackSize]; // L: 1288
 				if (var4 >= 1 && var4 <= 10) { // L: 1289
-					class93 var8 = new class93(var4, var7.id, var7.childIndex, var7.itemId); // L: 1292
+					class93 var8 = new class93(var4, var7.hash, var7.slot, var7.item); // L: 1292
 					Interpreter.field821.add(var8); // L: 1293
 					return 1; // L: 1294
 				} else {
@@ -61,7 +61,7 @@ public class FaceNormal {
 				var4 = Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize + 1]; // L: 1299
 				int var5 = Interpreter.Interpreter_intStack[class12.Interpreter_intStackSize + 2]; // L: 1300
 				if (var5 >= 1 && var5 <= 10) { // L: 1301
-					class93 var6 = new class93(var5, var3, var4, class92.getWidget(var3).itemId); // L: 1304
+					class93 var6 = new class93(var5, var3, var4, class92.getWidget(var3).item); // L: 1304
 					Interpreter.field821.add(var6); // L: 1305
 					return 1; // L: 1306
 				} else {

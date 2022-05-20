@@ -299,7 +299,10 @@ final class GrandExchangeOfferNameComparator implements Comparator {
 		if ((updateBlock & 4096) != 0) { // L: 498
 			System.out.println("Gfx");
 			var2.spotAnimation = var0.readUShortAddLE(); // L: 499
-			var5 = var0.readIntIME(); // L: 500
+			var5 = var0.readIntME(); // L: 500
+
+			System.out.println("var2.spotAnimation: " + var2.spotAnimation);
+			System.out.println("var5: " + var5);
 			var2.spotAnimationHeight = var5 >> 16; // L: 501
 			var2.field1185 = (var5 & 65535) + Client.cycle; // L: 502
 			var2.spotAnimationFrame = 0; // L: 503

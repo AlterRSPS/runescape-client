@@ -41,7 +41,7 @@ public class class321 {
 		}
 
 		if (var6 != -1 && var7 != null) { // L: 11002
-			class175.insertMenuItem(var7, class166.colorStartTag(16748608) + var1.name, var6, var1.id, var2, var0.id, var4); // L: 11003
+			class175.insertMenuItem(var7, class166.colorStartTag(16748608) + var1.name, var6, var1.id, var2, var0.hash, var4); // L: 11003
 		}
 
 	} // L: 11005

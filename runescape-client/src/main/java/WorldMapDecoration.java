@@ -59,7 +59,7 @@ public class WorldMapDecoration {
 						byte[] var3 = class134.Widget_archive.takeFile(var0, var2); // L: 256
 						if (var3 != null) { // L: 257
 							NetSocket.Widget_interfaceComponents[var0][var2] = new Widget(); // L: 258
-							NetSocket.Widget_interfaceComponents[var0][var2].id = var2 + (var0 << 16); // L: 259
+							NetSocket.Widget_interfaceComponents[var0][var2].hash = var2 + (var0 << 16); // L: 259
 							if (var3[0] == -1) { // L: 260
 								NetSocket.Widget_interfaceComponents[var0][var2].decode(new Buffer(var3));
 							} else {

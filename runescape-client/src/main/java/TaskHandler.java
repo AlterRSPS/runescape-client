@@ -192,6 +192,7 @@ public class TaskHandler implements Runnable {
 	)
 	@Export("widgetDefaultMenuAction")
 	static void widgetDefaultMenuAction(int var0, int var1, int var2, int var3, String var4) {
+		System.out.println("widgetDefaultMenuAction:var0 " + var0);
 		Widget var5 = ApproximateRouteStrategy.getWidgetChild(var1, var2); // L: 9808
 		if (var5 != null) { // L: 9809
 			if (var5.onOp != null) { // L: 9810

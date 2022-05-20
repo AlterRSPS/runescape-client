@@ -54,13 +54,13 @@ public class Widget extends Node {
 		intValue = 1115174973
 	)
 	@Export("id")
-	public int id;
+	public int hash;
 	@ObfuscatedName("ap")
 	@ObfuscatedGetter(
 		intValue = -776270713
 	)
 	@Export("childIndex")
-	public int childIndex;
+	public int slot;
 	@ObfuscatedName("as")
 	@ObfuscatedGetter(
 		intValue = -1972844397
@@ -636,7 +636,7 @@ public class Widget extends Node {
 		intValue = -756375481
 	)
 	@Export("itemId")
-	public int itemId;
+	public int item;
 	@ObfuscatedName("fu")
 	@ObfuscatedGetter(
 		intValue = -572001819
@@ -723,8 +723,8 @@ public class Widget extends Node {
 
 	public Widget() {
 		this.isIf3 = false; // L: 59
-		this.id = -1; // L: 60
-		this.childIndex = -1; // L: 61
+		this.hash = -1; // L: 60
+		this.slot = -1; // L: 61
 		this.buttonType = 0; // L: 63
 		this.contentType = 0; // L: 64
 		this.xAlignment = 0; // L: 65
@@ -802,7 +802,7 @@ public class Widget extends Node {
 		this.mouseOverRedirect = -1; // L: 196
 		this.spellName = ""; // L: 197
 		this.buttonText = "Ok"; // L: 198
-		this.itemId = -1; // L: 201
+		this.item = -1; // L: 201
 		this.itemQuantity = 0; // L: 202
 		this.modelFrame = 0; // L: 203
 		this.modelFrameCycle = 0; // L: 204
@@ -839,7 +839,7 @@ public class Widget extends Node {
 		if (this.parentId == 65535) { // L: 280
 			this.parentId = -1;
 		} else {
-			this.parentId += this.id & -65536; // L: 281
+			this.parentId += this.hash & -65536; // L: 281
 		}
 
 		this.mouseOverRedirect = var1.readUnsignedShort(); // L: 282
@@ -1104,7 +1104,7 @@ public class Widget extends Node {
 		if (this.parentId == 65535) { // L: 449
 			this.parentId = -1;
 		} else {
-			this.parentId += this.id & -65536; // L: 450
+			this.parentId += this.hash & -65536; // L: 450
 		}
 
 		this.isHidden = var1.readUnsignedByte() == 1; // L: 451

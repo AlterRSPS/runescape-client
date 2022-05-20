@@ -90,7 +90,7 @@ public class ClientPacket implements class261 {
 	static final ClientPacket FRIEND_SETRANK = new ClientPacket(78, -1); // L: 83
 	static final ClientPacket IDLE_LOGOUT = new ClientPacket(79, 0); // L: 84
 	static final ClientPacket OPHELD4 = new ClientPacket(80, 8); // L: 85
-	static final ClientPacket UNKNOWN2 = new ClientPacket(81, 16); // L: 86
+	static final ClientPacket IF_BUTTOND = new ClientPacket(81, 16); // L: 86
 	static final ClientPacket OPNPC2 = new ClientPacket(82, 3); // L: 87
 	static final ClientPacket MAP_BUILD_COMPLETE = new ClientPacket(83, 0); // L: 88
 	static final ClientPacket MESSAGE_PRIVATE = new ClientPacket(84, -2); // L: 89

@@ -42,7 +42,18 @@ public class class194 {
 		garbageValue = "-67"
 	)
 	public static ZoneUpdate[] method3807() {
-		return new ZoneUpdate[]{ZoneUpdate.MAP_ANIM, ZoneUpdate.OBJ_COUNT, ZoneUpdate.MAPPROJ_ANIM, ZoneUpdate.PREFETCH_GAMEOBJECTS, ZoneUpdate.LOC_DEL, ZoneUpdate.OBJ_DEL, ZoneUpdate.LOC_ADD_CHANGE, ZoneUpdate.AREA_SOUND, ZoneUpdate.OBJ_ADD, ZoneUpdate.LOC_ANIM}; // L: 17
+		return new ZoneUpdate[]{
+				ZoneUpdate.MAP_ANIM, // 0
+				ZoneUpdate.OBJ_COUNT, // 1
+				ZoneUpdate.MAPPROJ_ANIM, // 2
+				ZoneUpdate.PREFETCH_GAMEOBJECTS, // 3
+				ZoneUpdate.LOC_ADD_CHANGE, // 4
+				ZoneUpdate.OBJ_DEL, // 5
+				ZoneUpdate.LOC_DEL,  // 6
+				ZoneUpdate.AREA_SOUND,  // 7
+				ZoneUpdate.OBJ_ADD,  // 8
+				ZoneUpdate.LOC_ANIM // 9
+		};
 	}
 
 	@ObfuscatedName("q")

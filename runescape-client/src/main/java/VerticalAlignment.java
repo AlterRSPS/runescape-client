@@ -73,11 +73,11 @@ public enum VerticalAlignment implements MouseWheel {
 		Widget var3;
 		if (var0 == ScriptOpcodes.IF_GETINVOBJECT) { // L: 1410
 			var3 = class92.getWidget(Interpreter.Interpreter_intStack[--class12.Interpreter_intStackSize]); // L: 1411
-			Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.itemId; // L: 1412
+			Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.item; // L: 1412
 			return 1; // L: 1413
 		} else if (var0 == ScriptOpcodes.IF_GETINVCOUNT) { // L: 1415
 			var3 = class92.getWidget(Interpreter.Interpreter_intStack[--class12.Interpreter_intStackSize]); // L: 1416
-			if (var3.itemId != -1) { // L: 1417
+			if (var3.item != -1) { // L: 1417
 				Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.itemQuantity;
 			} else {
 				Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = 0; // L: 1418

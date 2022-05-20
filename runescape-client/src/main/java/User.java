@@ -237,7 +237,7 @@ public class User implements Comparable {
 			var13 = ModelData0.localPlayer.plane; // L: 5547
 			var14 = (HorizontalAlignment.oculusOrbFocalPointX >> 7) + SecureRandomCallable.baseX; // L: 5548
 			var15 = (class28.oculusOrbFocalPointY >> 7) + GrandExchangeOfferOwnWorldComparator.baseY; // L: 5549
-			class123.method2781(var14, var15, var13, true); // L: 5550
+			class123.perfomTeleport(var14, var15, var13, true); // L: 5550
 		}
 
 	} // L: 5553

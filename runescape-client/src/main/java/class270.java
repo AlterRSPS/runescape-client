@@ -41,10 +41,10 @@ public class class270 {
 	static int method5036(int var0, Script var1, boolean var2) {
 		Widget var3 = var2 ? Interpreter.scriptDotWidget : KeyHandler.scriptActiveWidget; // L: 1199
 		if (var0 == ScriptOpcodes.CC_GETINVOBJECT) { // L: 1200
-			Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.itemId; // L: 1201
+			Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.item; // L: 1201
 			return 1; // L: 1202
 		} else if (var0 == ScriptOpcodes.CC_GETINVCOUNT) { // L: 1204
-			if (var3.itemId != -1) { // L: 1205
+			if (var3.item != -1) { // L: 1205
 				Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.itemQuantity;
 			} else {
 				Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = 0; // L: 1206
@@ -52,7 +52,7 @@ public class class270 {
 
 			return 1; // L: 1207
 		} else if (var0 == ScriptOpcodes.CC_GETID) { // L: 1209
-			Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.childIndex; // L: 1210
+			Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.slot; // L: 1210
 			return 1; // L: 1211
 		} else if (var0 == 1707) { // L: 1213
 			Interpreter.Interpreter_intStack[++class12.Interpreter_intStackSize - 1] = var3.method5498() ? 1 : 0; // L: 1214

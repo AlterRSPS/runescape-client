@@ -770,7 +770,7 @@ public abstract class UrlRequester implements Runnable {
 	)
 	@Export("getWidgetFlags")
 	static int getWidgetFlags(Widget var0) {
-		IntegerNode var1 = (IntegerNode)Client.widgetFlags.get((long)var0.childIndex + ((long)var0.id << 32)); // L: 12503
+		IntegerNode var1 = (IntegerNode)Client.widgetFlags.get((long)var0.slot + ((long)var0.hash << 32)); // L: 12503
 		return var1 != null ? var1.integer : var0.flags; // L: 12504 12505
 	}
 }

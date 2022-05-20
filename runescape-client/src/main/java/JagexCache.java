@@ -265,7 +265,7 @@ public class JagexCache {
 			}
 
 			if ((var4 & 1024) != 0) { // L: 8192
-				var3.field1210 = var0.readIntME(); // L: 8193
+				var3.field1210 = var0.Maybe_I_readIntME(); // L: 8193
 			}
 
 			if ((var4 & 2) != 0) { // L: 8195

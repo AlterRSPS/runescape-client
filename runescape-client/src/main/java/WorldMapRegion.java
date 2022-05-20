@@ -1089,7 +1089,7 @@ public class WorldMapRegion {
 					}
 				}
 
-				if (var9 == Client.clickedWidget) { // L: 11277
+				if (var9 == Client.source) { // L: 11277
 					Client.field675 = true; // L: 11278
 					Client.field653 = var26; // L: 11279
 					Client.field612 = var11; // L: 11280
@@ -1104,12 +1104,12 @@ public class WorldMapRegion {
 					default:
 						break;
 					case 2:
-						if (Client.field657 == var9.id >>> 16) { // L: 11286
+						if (Client.field657 == var9.hash >>> 16) { // L: 11286
 							var34 = true; // L: 11287
 						}
 						break;
 					case 3:
-						if (var9.id == Client.field657) { // L: 11291
+						if (var9.hash == Client.field657) { // L: 11291
 							var34 = true; // L: 11292
 						}
 					}
@@ -1128,7 +1128,7 @@ public class WorldMapRegion {
 								}
 
 								if (SoundSystem.widgetDragDuration == 0) { // L: 11310
-									Client.clickedWidget = null; // L: 11311
+									Client.source = null; // L: 11311
 									Client.clickedWidgetParent = null; // L: 11312
 								}
 
@@ -1202,10 +1202,10 @@ public class WorldMapRegion {
 
 								if (var28) { // L: 11381
 									if (var20 < 10) { // L: 11382
-										TaskHandler.widgetDefaultMenuAction(var20 + 1, var9.id, var9.childIndex, var9.itemId, "");
+										TaskHandler.widgetDefaultMenuAction(var20 + 1, var9.hash, var9.slot, var9.item, "");
 									} else if (var20 == 10) { // L: 11383
 										MusicPatchNode2.Widget_runOnTargetLeave(); // L: 11384
-										class93.selectSpell(var9.id, var9.childIndex, WorldMapSection1.Widget_unpackTargetMask(UrlRequester.getWidgetFlags(var9)), var9.itemId); // L: 11385
+										class93.selectSpell(var9.hash, var9.slot, WorldMapSection1.Widget_unpackTargetMask(UrlRequester.getWidgetFlags(var9)), var9.item); // L: 11385
 										Client.selectedSpellActionName = TriBool.Widget_getSpellActionName(var9); // L: 11386
 										if (Client.selectedSpellActionName == null) { // L: 11387
 											Client.selectedSpellActionName = "null";
@@ -1271,8 +1271,8 @@ public class WorldMapRegion {
 											if (var22 != null) { // L: 11421
 												PacketBufferNode var23 = WallDecoration.getPacketBufferNode(ClientPacket.UNKNOWN1, Client.packetWriter.isaacCipher); // L: 11422
 												var23.packetBuffer.writeInt(var22[2]); // L: 11423
-												var23.packetBuffer.writeIntIME(var9.id); // L: 11424
-												var23.packetBuffer.writeShortLE(var9.childIndex); // L: 11425
+												var23.packetBuffer.writeIntIME(var9.hash); // L: 11424
+												var23.packetBuffer.writeShortLE(var9.slot); // L: 11425
 												var23.packetBuffer.writeIntIME(var22[1]); // L: 11426
 												var23.packetBuffer.writeIntIME(var22[0]); // L: 11427
 												var23.packetBuffer.writeInt(var9.method5458()); // L: 11428
@@ -1287,8 +1287,8 @@ public class WorldMapRegion {
 								ServerPacket.worldMap.method7025(var17, var18, var35 & var36, var35 & var21); // L: 11437
 							}
 
-							if (Client.clickedWidget != null && var9 != Client.clickedWidget && var35 && class229.method4727(UrlRequester.getWidgetFlags(var9))) { // L: 11439
-								Client.draggedOnWidget = var9;
+							if (Client.source != null && var9 != Client.source && var35 && class229.method4727(UrlRequester.getWidgetFlags(var9))) { // L: 11439
+								Client.dest = var9;
 							}
 
 							if (var9 == Client.clickedWidgetParent) { // L: 11440
@@ -1308,7 +1308,7 @@ public class WorldMapRegion {
 									Client.scriptEvents.addFirst(var37); // L: 11452
 								}
 
-								if (Client.clickedWidget != null || Canvas.dragInventoryWidget != null || Client.isMenuOpen) { // L: 11454
+								if (Client.source != null || Canvas.dragInventoryWidget != null || Client.isMenuOpen) { // L: 11454
 									var21 = false; // L: 11455
 									var36 = false; // L: 11456
 									var35 = false; // L: 11457
@@ -1580,7 +1580,7 @@ public class WorldMapRegion {
 						}
 
 						if (!var9.isIf3) { // L: 11696
-							if (Client.clickedWidget != null || Canvas.dragInventoryWidget != null || Client.isMenuOpen) { // L: 11697
+							if (Client.source != null || Canvas.dragInventoryWidget != null || Client.isMenuOpen) { // L: 11697
 								continue;
 							}
 
@@ -1602,12 +1602,12 @@ public class WorldMapRegion {
 						}
 
 						if (var9.type == 0) { // L: 11707
-							updateInterface(var0, var9.id, var12, var13, var14, var15, var26 - var9.scrollX, var11 - var9.scrollY); // L: 11708
+							updateInterface(var0, var9.hash, var12, var13, var14, var15, var26 - var9.scrollX, var11 - var9.scrollY); // L: 11708
 							if (var9.children != null) { // L: 11709
-								updateInterface(var9.children, var9.id, var12, var13, var14, var15, var26 - var9.scrollX, var11 - var9.scrollY);
+								updateInterface(var9.children, var9.hash, var12, var13, var14, var15, var26 - var9.scrollX, var11 - var9.scrollY);
 							}
 
-							InterfaceParent var30 = (InterfaceParent)Client.interfaceParents.get((long)var9.id); // L: 11710
+							InterfaceParent var30 = (InterfaceParent)Client.interfaceParents.get((long)var9.hash); // L: 11710
 							if (var30 != null) { // L: 11711
 								if (var30.type == 0 && MouseHandler.MouseHandler_x >= var12 && MouseHandler.MouseHandler_y >= var13 && MouseHandler.MouseHandler_x < var14 && MouseHandler.MouseHandler_y < var15 && !Client.isMenuOpen) { // L: 11712
 									for (ScriptEvent var31 = (ScriptEvent)Client.scriptEvents.last(); var31 != null; var31 = (ScriptEvent)Client.scriptEvents.previous()) { // L: 11713
@@ -1618,7 +1618,7 @@ public class WorldMapRegion {
 									}
 
 									if (SoundSystem.widgetDragDuration == 0) { // L: 11719
-										Client.clickedWidget = null; // L: 11720
+										Client.source = null; // L: 11720
 										Client.clickedWidgetParent = null; // L: 11721
 									}
 

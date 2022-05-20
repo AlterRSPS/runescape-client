@@ -48,8 +48,8 @@ public class class273 {
 	static Widget method5077(int var0, Widget var1, int var2, int var3, int var4, int var5, int var6, float[] var7) {
 		Widget var8 = new Widget(); // L: 900
 		var8.type = var0; // L: 901
-		var8.parentId = var1.id; // L: 902
-		var8.childIndex = var2; // L: 903
+		var8.parentId = var1.hash; // L: 902
+		var8.slot = var2; // L: 903
 		var8.isIf3 = true; // L: 904
 		var8.xAlignment = var3; // L: 905
 		var8.yAlignment = var4; // L: 906

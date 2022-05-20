@@ -58,7 +58,7 @@ public class MusicPatchNode2 {
 	@Export("Widget_runOnTargetLeave")
 	static void Widget_runOnTargetLeave() {
 		if (Client.isSpellSelected) { // L: 9786
-			Widget var0 = ApproximateRouteStrategy.getWidgetChild(ArchiveDiskActionHandler.selectedSpellWidget, Client.selectedSpellChildIndex); // L: 9787
+			Widget var0 = ApproximateRouteStrategy.getWidgetChild(ArchiveDiskActionHandler._201Hash, Client._201SpellSlot); // L: 9787
 			if (var0 != null && var0.onTargetLeave != null) { // L: 9788
 				ScriptEvent var1 = new ScriptEvent(); // L: 9789
 				var1.widget = var0; // L: 9790
@@ -66,7 +66,7 @@ public class MusicPatchNode2 {
 				class144.runScriptEvent(var1); // L: 9792
 			}
 
-			Client.selectedSpellItemId = -1; // L: 9794
+			Client._201Verify = -1; // L: 9794
 			Client.isSpellSelected = false; // L: 9795
 			GrandExchangeOfferTotalQuantityComparator.invalidateWidget(var0); // L: 9796
 		}
